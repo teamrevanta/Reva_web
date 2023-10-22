@@ -46,11 +46,11 @@
 
   .slider_section .detail-box h1 {
     font-size: 1rem;
-    /* display :none; */
+    display :none;
   }
 
   .slider_section {
-    padding: 75px 0;
+    padding: 75px 0px;
   }
 
   .contact_section .form_container {
@@ -62,6 +62,7 @@
 @media (max-width: 767px) {
   .slider_section .detail-box {
     text-align: center;
+    
   }
 
   .slider_section .detail-box .btn-box {
@@ -127,7 +128,9 @@
 
 @media (max-width: 420px) {}
 
-@media (max-width: 376px) {}
+@media (max-width: 376px) {
+
+}
 
 @media (min-width: 1200px) {
   .container {

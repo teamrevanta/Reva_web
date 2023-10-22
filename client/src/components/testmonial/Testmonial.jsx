@@ -28,10 +28,11 @@ const Testmonial = () => {
                           </div>
                           <div className="detail-box">
                             <p>
-                              Team Revanta is an amazing opportunity to nourish
-                              the leadership,learning skills in budding
-                              engineers. It helped me to bag offers from
-                              Deloitte.
+                              "Revanta isn't just a club; it's a vibrant
+                              ecosystem of ideas, innovation, and camaraderie.
+                              Being part of Revanta was more than building solar
+                              electric vehicles; it was a transformative journey
+                              where passion met purpose"
                             </p>
                           </div>
                         </div>
@@ -46,10 +47,12 @@ const Testmonial = () => {
                           </div>
                           <div className="detail-box">
                             <p>
-                              Team Revanta is an amazing opportunity to nourish
-                              the leadership,learning skills in budding
-                              engineers. It helped me to bag offers from DMI
-                              Finance.
+                              "Together, we harnessed the power of renewable
+                              energy, shaping not just our vehicles but also our
+                              futures. Revanta taught us that sustainable
+                              technology isn't just a concept; it's a way of
+                              life, and we leave with a deep sense of pride in
+                              contributing to a greener tomorrow."
                             </p>
                           </div>
                         </div>

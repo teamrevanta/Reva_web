@@ -781,6 +781,8 @@ a:focus {
 
 .contact_section {
   position: relative;
+  
+  margin-bottom: 10px;
 }
 
 .contact_section .heading_container {
@@ -842,9 +844,10 @@ a:focus {
   text-transform: uppercase;
   display: inline-block;
   padding: 12px 55px;
+  width: 60%;
   background-color: #da7426;
   color: #ffffff;
-  border-radius: 0px;
+  border-radius: 9px;
   -webkit-transition: all .3s;
   transition: all .3s;
   border: 1px solid #da7426;

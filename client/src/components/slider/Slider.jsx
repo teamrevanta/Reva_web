@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
   return (
@@ -19,12 +20,12 @@ const Slider = () => {
                     Dream Up
                   </h1>
                   <div className="btn-box">
-                    <a href="" className="btn1">
+                    <Link to="/about" className="btn1">
                       Read More
-                    </a>
-                    <a href="" className="btn2">
+                    </Link>
+                    <Link to="/contact" className="btn2">
                       Contact Us
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -38,12 +39,12 @@ const Slider = () => {
                     Vehicles
                   </h1>
                   <div className="btn-box">
-                    <a href="" className="btn1">
+                    <Link to="/about" className="btn1">
                       Read More
-                    </a>
-                    <a href="" className="btn2">
+                    </Link>
+                    <Link to="/contact" className="btn2">
                       Contact Us
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -57,12 +58,12 @@ const Slider = () => {
                     India
                   </h1>
                   <div className="btn-box">
-                    <a href="" className="btn1">
+                    <Link to="/about" className="btn1">
                       Read More
-                    </a>
-                    <a href="" className="btn2">
+                    </Link>
+                    <Link to="/contact" className="btn2">
                       Contact Us
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

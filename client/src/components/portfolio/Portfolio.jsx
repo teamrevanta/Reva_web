@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import images from "./data"; // Import images from data.js
 import "./portfolio.css";
+import { Link } from "react-router-dom";
 const Portfolio = () => {
   const [filter, setFilter] = useState("*");
 
@@ -23,38 +24,38 @@ const Portfolio = () => {
           <div className="carousel-wrap ">
             <div className="filter_box">
               <nav className="owl-filter-bar">
-                <a
-                  href="#"
+                <Link
+                  to="/gallery"
                   className={`item ${filter === "*" ? "active" : ""}`}
                   onClick={() => handleFilterClick("*")}
                 >
                   All
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/gallery"
                   className={`item ${
                     filter === "achievements" ? "active" : ""
                   }`}
                   onClick={() => handleFilterClick("achievements")}
                 >
                   Achievements
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/gallery"
                   className={`item ${
                     filter === "manufacturing" ? "active" : ""
                   }`}
                   onClick={() => handleFilterClick("manufacturing")}
                 >
                   MANUFACTURING
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/gallery"
                   className={`item ${filter === "events" ? "active" : ""}`}
                   onClick={() => handleFilterClick("events")}
                 >
                   EVENTS
-                </a>
+                </Link>
 
                 {/* Add more filter options as needed */}
               </nav>
@@ -65,7 +66,7 @@ const Portfolio = () => {
       <div className="gallery">
         {filteredImages.map((image, index) => (
           <div className="gallery-item" key={index}>
-            <img src={image.url} alt={`Image ${index + 1}`} />
+            <img src={image.url} alt=" " />
           </div>
         ))}
       </div>
