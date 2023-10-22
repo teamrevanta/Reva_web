@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -24,7 +25,7 @@ const About = () => {
                   Kualalumpur, Malaysia. Both of these were under the Gasoline
                   category.
                 </p>
-                <a href="">Read More</a>
+                <Link to="/about">Read More</Link>
               </div>
             </div>
             <div className="col-md-6 ">

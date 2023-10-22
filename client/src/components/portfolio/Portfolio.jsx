@@ -41,7 +41,7 @@ const Portfolio = () => {
                   Achievements
                 </Link>
                 <Link
-                  to="/gallery"
+                  to="/Reva_web/gallery"
                   className={`item ${
                     filter === "manufacturing" ? "active" : ""
                   }`}

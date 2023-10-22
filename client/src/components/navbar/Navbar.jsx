@@ -27,16 +27,14 @@ const Navbar = () => {
               </a>
             </div>
             <div className="social_box">
-              <a href="">
+              <a href="https://www.facebook.com/aboutrevanta/">
                 <i className="fa fa-facebook" aria-hidden="true"></i>
               </a>
-              <a href="">
-                <i className="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
+
+              <a href="https://in.linkedin.com/company/team-revanta">
                 <i className="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="https://www.instagram.com/revanta_nit_jsr/?hl=en">
                 <i className="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </div>
