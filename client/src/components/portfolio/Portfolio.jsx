@@ -25,14 +25,14 @@ const Portfolio = () => {
             <div className="filter_box">
               <nav className="owl-filter-bar">
                 <Link
-                  to="/gallery"
+                  to="/Reva_web/gallery"
                   className={`item ${filter === "*" ? "active" : ""}`}
                   onClick={() => handleFilterClick("*")}
                 >
                   All
                 </Link>
                 <Link
-                  to="/gallery"
+                  to="/Reva_web/gallery"
                   className={`item ${
                     filter === "achievements" ? "active" : ""
                   }`}
@@ -50,7 +50,7 @@ const Portfolio = () => {
                   MANUFACTURING
                 </Link>
                 <Link
-                  to="/gallery"
+                  to="/Reva_web/gallery"
                   className={`item ${filter === "events" ? "active" : ""}`}
                   onClick={() => handleFilterClick("events")}
                 >

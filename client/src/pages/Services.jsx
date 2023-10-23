@@ -118,7 +118,7 @@ const Services = () => {
             </div>
           </div>
           <div className="btn-box">
-            <Link to="/achievements">Read More</Link>
+            <Link to="/Reva_web/achievements">Read More</Link>
           </div>
         </div>
       </section>

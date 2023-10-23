@@ -25,7 +25,7 @@ const About = () => {
                   Kualalumpur, Malaysia. Both of these were under the Gasoline
                   category.
                 </p>
-                <Link to="/about">Read More</Link>
+                <Link to="/Reva_web/about">Read More</Link>
               </div>
             </div>
             <div className="col-md-6 ">

@@ -33,67 +33,84 @@ const Contact = () => {
               Get In <span>Touch</span>
             </h2>
           </div>
-
-          <div className="col-md-12 px-0">
-            <div className="form_container">
-              <form ref={formRef} onSubmit={handleSubmit}>
-                <div className="form-row">
-                  <div className="form-group col">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Your Name"
-                      name="user_name"
-                    />
+          <div class="form-row">
+            <div className="col-md-6 px-0">
+              <div className="form_container">
+                <form ref={formRef} onSubmit={handleSubmit}>
+                  <div className="form-row">
+                    <div className="form-group col">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Your Name"
+                        name="user_name"
+                      />
+                    </div>
+                  </div>
+                  <div className="form-row">
+                    <div className="form-group col-lg-6">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Phone Number"
+                        name="user_phone"
+                      />
+                    </div>
+                    <div className="form-group col-lg-6">
+                      <select
+                        name="user_choice"
+                        id=""
+                        className="form-control wide"
+                      >
+                        <option value="">Select Service</option>
+                        <option value="Sponsorship">Sponsorship</option>
+                        <option value="Advertisement">Advertisement</option>
+                        <option value="Message">Message</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="form-row">
+                    <div className="form-group col">
+                      <input
+                        type="email"
+                        className="form-control"
+                        placeholder="Email"
+                        name="user_email"
+                      />
+                    </div>
+                  </div>
+                  <div className="form-row">
+                    <div className="form-group col">
+                      <input
+                        type="text"
+                        className="message-box form-control"
+                        placeholder="Message"
+                        name="message"
+                      />
+                    </div>
+                  </div>
+                  <div className="btn_box">
+                    <button>SEND</button>
+                  </div>
+                  {done && "Thank You..."}
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6 px-0">
+              <div class="map_container">
+                <div class="map">
+                  <div id="googleMap">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.6863766624465!2d86.144116!3d22.777017399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e4daa475a5cd%3A0xd87b53fadcd771a1!2sNational%20Institute%20of%20Technology%2C%20Jamshedpur!5e0!3m2!1sen!2sin!4v1698064838121!5m2!1sen!2sin"
+                      width="600"
+                      height="450"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
                   </div>
                 </div>
-                <div className="form-row">
-                  <div className="form-group col-lg-6">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Phone Number"
-                      name="user_phone"
-                    />
-                  </div>
-                  <div className="form-group col-lg-6">
-                    <select
-                      name="user_choice"
-                      id=""
-                      className="form-control wide"
-                    >
-                      <option value="">Select Service</option>
-                      <option value="Sponsorship">Sponsorship</option>
-                      <option value="Advertisement">Advertisement</option>
-                      <option value="Message">Message</option>
-                    </select>
-                  </div>
-                </div>
-                <div className="form-row">
-                  <div className="form-group col">
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Email"
-                      name="user_email"
-                    />
-                  </div>
-                </div>
-                <div className="form-row">
-                  <div className="form-group col">
-                    <input
-                      type="text"
-                      className="message-box form-control"
-                      placeholder="Message"
-                      name="message"
-                    />
-                  </div>
-                </div>
-                <div className="btn_box">
-                  <button>SEND</button>
-                </div>
-                {done && "Thank You..."}
-              </form>
+              </div>
             </div>
           </div>
         </div>

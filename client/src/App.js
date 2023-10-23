@@ -14,12 +14,12 @@ const App = () => {
     <div>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/achievements" element={<Services />} />
-        <Route path="/gallery" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
+        <Route exact path="/Reva_web/" element={<Home />} />
+        <Route path="/Reva_web/about" element={<About />} />
+        <Route path="/Reva_web/achievements" element={<Services />} />
+        <Route path="/Reva_web/gallery" element={<Portfolio />} />
+        <Route path="/Reva_web/contact" element={<Contact />} />
+        <Route path="/Reva_web/login" element={<Login />} />
       </Routes>
       <Footer />
     </div>

@@ -20,10 +20,10 @@ const Slider = () => {
                     Dream Up
                   </h1>
                   <div className="btn-box">
-                    <Link to="/about" className="btn1">
+                    <Link to="/Reva_web/about" className="btn1">
                       Read More
                     </Link>
-                    <Link to="/contact" className="btn2">
+                    <Link to="/Reva_web/contact" className="btn2">
                       Contact Us
                     </Link>
                   </div>
@@ -39,10 +39,10 @@ const Slider = () => {
                     Vehicles
                   </h1>
                   <div className="btn-box">
-                    <Link to="/about" className="btn1">
+                    <Link to="/Reva_web/about" className="btn1">
                       Read More
                     </Link>
-                    <Link to="/contact" className="btn2">
+                    <Link to="/Reva_web/contact" className="btn2">
                       Contact Us
                     </Link>
                   </div>
@@ -58,10 +58,10 @@ const Slider = () => {
                     India
                   </h1>
                   <div className="btn-box">
-                    <Link to="/about" className="btn1">
+                    <Link to="/Reva_web/about" className="btn1">
                       Read More
                     </Link>
-                    <Link to="/contact" className="btn2">
+                    <Link to="/Reva_web/contact" className="btn2">
                       Contact Us
                     </Link>
                   </div>
