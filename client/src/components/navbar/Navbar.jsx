@@ -8,23 +8,16 @@ const Navbar = () => {
       <header className="header_section">
         <div className="header_top">
           <div className="container-fluid header_top_container">
-            <a className="navbar-brand " href="index.html">
-              {" "}
-              Team<span>Revanta</span>{" "}
-            </a>
+            Team<span>Revanta</span>
             <div className="contact_nav">
-              <a href="">
-                <i className="fa fa-map-marker" aria-hidden="true"></i>
-                <span>Location</span>
-              </a>
-              <a href="">
-                <i className="fa fa-phone" aria-hidden="true"></i>
-                <span>Call : +01 123455678990</span>
-              </a>
-              <a href="">
-                <i className="fa fa-envelope" aria-hidden="true"></i>
-                <span>teamrevanta@gmail.com</span>
-              </a>
+              <i className="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Location</span>
+
+              <i className="fa fa-phone" aria-hidden="true"></i>
+              <span>Call : +01 123455678990</span>
+
+              <i className="fa fa-envelope" aria-hidden="true"></i>
+              <span>teamrevanta@gmail.com</span>
             </div>
             <div className="social_box">
               <a href="https://www.facebook.com/aboutrevanta/">
@@ -43,7 +36,7 @@ const Navbar = () => {
         <div className="header_bottom">
           <div className="container-fluid">
             <nav className="navbar navbar-expand-lg custom_nav-container ">
-              <a className="navbar-brand navbar_brand_mobile" href="index.html">
+              <a className="navbar-brand navbar_brand_mobile" href=" ">
                 {" "}
                 Team<span>Revanta</span>{" "}
               </a>
@@ -81,7 +74,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/Reva_web/gallery" className="nav-link">
+                    <Link to="/Reva_web/PhotoPage" className="nav-link">
                       Gallery
                     </Link>
                   </li>

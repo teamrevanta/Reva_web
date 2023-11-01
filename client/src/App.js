@@ -8,6 +8,9 @@ import Services from "./pages/Services";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Login from "./pages/login/Login";
+import AboutPage from "./pages/aboutPage/AboutPage";
+import AchievementPage from "./pages/achievementPage/AchievementPage";
+import PhotoPage from "./pages/photoPage/PhotoPage";
 
 const App = () => {
   return (
@@ -20,6 +23,9 @@ const App = () => {
         <Route path="/Reva_web/gallery" element={<Portfolio />} />
         <Route path="/Reva_web/contact" element={<Contact />} />
         <Route path="/Reva_web/login" element={<Login />} />
+        <Route path="/Reva_web/aboutPage" element={<AboutPage />} />
+        <Route path="/Reva_web/achievementPage" element={<AchievementPage />} />
+        <Route path="/Reva_web/PhotoPage" element={<PhotoPage />} />
       </Routes>
       <Footer />
     </div>

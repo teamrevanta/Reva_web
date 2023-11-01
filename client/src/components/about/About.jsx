@@ -25,12 +25,12 @@ const About = () => {
                   Kualalumpur, Malaysia. Both of these were under the Gasoline
                   category.
                 </p>
-                <Link to="/Reva_web/about">Read More</Link>
+                <Link to="/Reva_web/aboutPage">Read More</Link>
               </div>
             </div>
             <div className="col-md-6 ">
               <div className="img-box">
-                <img src="images/about-img.png" alt="" />
+                <img src="images/about-image.jpg" alt="" />
               </div>
             </div>
           </div>

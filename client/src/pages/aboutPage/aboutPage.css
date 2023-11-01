@@ -1,0 +1,32 @@
+.custom-boxes-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .custom-box {
+    width: 350px;
+    height: 450px;
+    background-color: #a498c4;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .custom-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(240, 4, 4);
+  }
+  
+  .custom-box h2 {
+    color: rgb(211, 140, 6);
+  }
+  
+  .custom-box p {
+    color: black;
+  }
+  

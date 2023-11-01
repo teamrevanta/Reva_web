@@ -8,10 +8,7 @@ const Footer = () => {
         <div className="info_container layout_padding2">
           <div className="container">
             <div className="info_logo">
-              <a className="navbar-brand" href="index.html">
-                {" "}
-                Team<span>Revanta</span>{" "}
-              </a>
+              Team<span>Revanta</span>{" "}
             </div>
             <div className="info_main">
               <div className="row">
@@ -124,8 +121,8 @@ const Footer = () => {
       <footer className="footer_section">
         <div className="container">
           <p>
-            &copy; <span id="displayYear"></span> All Rights Reserved By
-            <a href="https://html.design/">Team Revanta, Nit Jamshedpur</a>
+            &copy; <span id="displayYear"></span> All Rights Reserved By Team
+            Revanta, Nit Jamshedpur
           </p>
         </div>
       </footer>
