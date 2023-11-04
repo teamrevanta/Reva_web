@@ -45,6 +45,10 @@ const images = [
     category: "manufacturing",
   },
   {
+    url: "https://i.ibb.co/1J3Yr8H/IMG-20230317-195534.jpg",
+    category: "events",
+  },
+  {
     url: "https://i.ibb.co/5YN8cYx/IMG-20230317-184025.jpg",
     category: "events",
   },
@@ -52,10 +56,7 @@ const images = [
     url: "https://i.ibb.co/kSdgkTD/IMG-20230317-184044.jpg",
     category: "events",
   },
-  {
-    url: "https://i.ibb.co/1J3Yr8H/IMG-20230317-195534.jpg",
-    category: "events",
-  },
+
   // ... other image objects with category information
 ];
 

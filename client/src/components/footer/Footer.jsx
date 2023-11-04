@@ -7,9 +7,11 @@ const Footer = () => {
       <section className="info_section ">
         <div className="info_container layout_padding2">
           <div className="container">
-            <div className="info_logo">
-              Team<span>Revanta</span>{" "}
-            </div>
+            <a href="" className=" navbar-brand ">
+              <div className="info_logo">
+                Team<span>Revanta</span>{" "}
+              </div>
+            </a>
             <div className="info_main">
               <div className="row">
                 <div className="col-md-3 col-lg-2">
@@ -51,14 +53,26 @@ const Footer = () => {
                 <div className="col-md-3 mx-auto  ">
                   <h5>social media</h5>
                   <div className="social_box">
-                    <a href="https://www.facebook.com/aboutrevanta/">
+                    <a
+                      href="https://www.facebook.com/aboutrevanta/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <i className="fa fa-facebook" aria-hidden="true"></i>
                     </a>
 
-                    <a href="https://in.linkedin.com/company/team-revanta">
+                    <a
+                      href="https://in.linkedin.com/company/team-revanta"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <i className="fa fa-linkedin" aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.instagram.com/revanta_nit_jsr/?hl=en">
+                    <a
+                      href="https://www.instagram.com/revanta_nit_jsr/?hl=en"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <i className="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                   </div>
@@ -79,7 +93,12 @@ const Footer = () => {
                   <div className="info_contact ">
                     <div className="row">
                       <div className="col-md-3">
-                        <a href="#" className="link-box">
+                        <a
+                          href="https://maps.app.goo.gl/7X2tga4AHiFQ9gcn6"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="link-box"
+                        >
                           <i
                             className="fa fa-map-marker"
                             aria-hidden="true"
@@ -88,13 +107,23 @@ const Footer = () => {
                         </a>
                       </div>
                       <div className="col-md-5">
-                        <a href="#" className="link-box">
+                        <a
+                          href="https://wa.me/9155360718"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="link-box"
+                        >
                           <i className="fa fa-phone" aria-hidden="true"></i>
-                          <span>Call +01 1234567890</span>
+                          <span>Call +01 9155360718</span>
                         </a>
                       </div>
                       <div className="col-md-4">
-                        <a href="#" className="link-box">
+                        <a
+                          href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=teamrevanta@gmail.com"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="link-box"
+                        >
                           <i className="fa fa-envelope" aria-hidden="true"></i>
                           <span>teamrevanta@gmail.com</span>
                         </a>

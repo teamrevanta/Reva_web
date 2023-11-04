@@ -6,7 +6,7 @@ const Testmonial = () => {
       <section className="client_section layout_padding">
         <div className="container">
           <div className="heading_container heading_center">
-            <h2>Testimonial</h2>
+            <h2>Captain's Voice</h2>
           </div>
           <div className="row">
             <div className="col-md-9 mx-auto">
@@ -25,6 +25,7 @@ const Testmonial = () => {
                               <img src="images/rajat.jpeg" alt="" />
                             </div>
                             <h5>Rajat Raj</h5>
+                            <p>2k20</p>
                           </div>
                           <div className="detail-box">
                             <p>
@@ -44,6 +45,7 @@ const Testmonial = () => {
                               <img src="images/abhisek.jpeg" alt="" />
                             </div>
                             <h5>Abhisek</h5>
+                            <p>2k19</p>
                           </div>
                           <div className="detail-box">
                             <p>
@@ -53,6 +55,28 @@ const Testmonial = () => {
                               technology isn't just a concept; it's a way of
                               life, and we leave with a deep sense of pride in
                               contributing to a greener tomorrow."
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="carousel-item">
+                        <div className="box">
+                          <div className="client_id">
+                            <div className="img-box">
+                              <img src="images/Priyanshu.jpeg" alt="" />
+                            </div>
+                            <h5>Priyanshu</h5>
+                            <p>2k21</p>
+                          </div>
+                          <div className="detail-box">
+                            <p>
+                              "It became a thriving ecosystem brimming with
+                              boundless ideas, unwavering innovation, and
+                              genuine camaraderie. Being a part of Revanta
+                              transcended the mere act of constructing solar
+                              electric vehicles; it evolved into a profound and
+                              transformative journey where our passion
+                              seamlessly intertwined with purpose."
                             </p>
                           </div>
                         </div>

@@ -33,7 +33,7 @@ const Contact = () => {
               Get In <span>Touch</span>
             </h2>
           </div>
-          <div class="form-row">
+          <div className="form-row">
             <div className="col-md-6 px-0">
               <div className="form_container">
                 <form ref={formRef} onSubmit={handleSubmit}>

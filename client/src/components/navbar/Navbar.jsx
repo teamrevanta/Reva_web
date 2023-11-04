@@ -8,26 +8,58 @@ const Navbar = () => {
       <header className="header_section">
         <div className="header_top">
           <div className="container-fluid header_top_container">
-            Team<span>Revanta</span>
+            <a className="navbar-brand " href="">
+              {" "}
+              Team<span>Revanta</span>{" "}
+            </a>
             <div className="contact_nav">
-              <i className="fa fa-map-marker" aria-hidden="true"></i>
-              <span>Location</span>
+              <a
+                href="https://maps.app.goo.gl/7X2tga4AHiFQ9gcn6"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Location</span>
+              </a>
+              <a
+                href="https://wa.me/9155360718"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fa fa-phone" aria-hidden="true"></i>
+                <span>Call : +91 9155360718</span>
+              </a>
 
-              <i className="fa fa-phone" aria-hidden="true"></i>
-              <span>Call : +01 123455678990</span>
-
-              <i className="fa fa-envelope" aria-hidden="true"></i>
-              <span>teamrevanta@gmail.com</span>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=teamrevanta@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fa fa-envelope" aria-hidden="true"></i>
+                <span>teamrevanta@gmail.com</span>
+              </a>
             </div>
-            <div className="social_box">
-              <a href="https://www.facebook.com/aboutrevanta/">
+            <div className="social_box" target="_blank">
+              <a
+                href="https://www.facebook.com/aboutrevanta/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i className="fa fa-facebook" aria-hidden="true"></i>
               </a>
 
-              <a href="https://in.linkedin.com/company/team-revanta">
+              <a
+                href="https://in.linkedin.com/company/team-revanta"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i className="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="https://www.instagram.com/revanta_nit_jsr/?hl=en">
+              <a
+                href="https://www.instagram.com/revanta_nit_jsr/?hl=en"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i className="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </div>
@@ -36,7 +68,7 @@ const Navbar = () => {
         <div className="header_bottom">
           <div className="container-fluid">
             <nav className="navbar navbar-expand-lg custom_nav-container ">
-              <a className="navbar-brand navbar_brand_mobile" href=" ">
+              <a className="navbar-brand navbar_brand_mobile" href="index.html">
                 {" "}
                 Team<span>Revanta</span>{" "}
               </a>

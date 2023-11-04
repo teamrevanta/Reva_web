@@ -1,4 +1,3 @@
-import Batch from "../batches/Batch";
 import "./aboutPage.css";
 
 const AboutPage = () => {
@@ -75,7 +74,6 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
-      <Batch />
     </div>
   );
 };

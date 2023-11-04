@@ -3,7 +3,7 @@ import images from "./data"; // Import images from data.js
 import "./portfolio.css";
 import { Link } from "react-router-dom";
 const Portfolio = () => {
-  const [filter, setFilter] = useState("*");
+  const [filter, setFilter] = useState("events");
 
   const handleFilterClick = (filterValue) => {
     setFilter(filterValue);

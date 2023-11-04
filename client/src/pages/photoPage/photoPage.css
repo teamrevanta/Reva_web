@@ -23,25 +23,25 @@
     border-radius: 10px;
     box-sizing: border-box;
   }
-  .alumni-list {
+  .batch-list {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .alumni-item {
+  .batch-item {
     border: 1px solid #ccc;
     padding: 20px;
     margin: 10px;
     width: 300px;
   }
 
-  .alumni-item img {
+  .batch-item img {
     width: 100%;
     max-height: 200px;
     object-fit: cover;
   }
 
-  .alumni-item a {
+  .batch-item a {
     display: block;
     margin-top: 10px;
   }
