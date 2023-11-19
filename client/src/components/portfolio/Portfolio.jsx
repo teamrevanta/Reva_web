@@ -25,14 +25,21 @@ const Portfolio = () => {
             <div className="filter_box">
               <nav className="owl-filter-bar">
                 <Link
-                  to="/Reva_web/gallery"
+                  to="/Reva_web/"
                   className={`item ${filter === "*" ? "active" : ""}`}
                   onClick={() => handleFilterClick("*")}
                 >
                   All
                 </Link>
                 <Link
-                  to="/Reva_web/gallery"
+                  to="/Reva_web/"
+                  className={`item ${filter === "events" ? "active" : ""}`}
+                  onClick={() => handleFilterClick("events")}
+                >
+                  EVENTS
+                </Link>
+                <Link
+                  to="/Reva_web/"
                   className={`item ${
                     filter === "achievements" ? "active" : ""
                   }`}
@@ -41,20 +48,13 @@ const Portfolio = () => {
                   Achievements
                 </Link>
                 <Link
-                  to="/Reva_web/gallery"
+                  to="/Reva_web/"
                   className={`item ${
                     filter === "manufacturing" ? "active" : ""
                   }`}
                   onClick={() => handleFilterClick("manufacturing")}
                 >
                   MANUFACTURING
-                </Link>
-                <Link
-                  to="/Reva_web/gallery"
-                  className={`item ${filter === "events" ? "active" : ""}`}
-                  onClick={() => handleFilterClick("events")}
-                >
-                  EVENTS
                 </Link>
 
                 {/* Add more filter options as needed */}

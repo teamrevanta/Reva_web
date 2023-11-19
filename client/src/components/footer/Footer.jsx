@@ -114,7 +114,7 @@ const Footer = () => {
                           className="link-box"
                         >
                           <i className="fa fa-phone" aria-hidden="true"></i>
-                          <span>Call +01 9155360718</span>
+                          <span>Call +91 9155360718</span>
                         </a>
                       </div>
                       <div className="col-md-4">

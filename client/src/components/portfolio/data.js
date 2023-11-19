@@ -33,15 +33,23 @@ const images = [
     category: "achievements",
   },
   {
-    url: "https://i.ibb.co/TqfmXbh/m5.jpg",
+    url: "images/events/m2.jpg",
     category: "manufacturing",
   },
   {
-    url: "https://i.ibb.co/x5qSSNR/m1.jpg",
+    url: "images/events/m3.jpg",
     category: "manufacturing",
   },
   {
-    url: "https://i.ibb.co/W3TDQTs/m6.jpg",
+    url: "images/events/m4.jpg",
+    category: "manufacturing",
+  },
+  {
+    url: "images/events/m5.jpg",
+    category: "manufacturing",
+  },
+  {
+    url: "images/events/m6.jpg",
     category: "manufacturing",
   },
   {
