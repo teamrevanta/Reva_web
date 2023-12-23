@@ -117,8 +117,13 @@ const Navbar = () => {
                   </li>
 
                   <li className="nav-item">
-                    <Link to="/Reva_web/Ourteam" className="nav-link">
+                    <Link to="/Reva_web/ourteam" className="nav-link">
                       Team
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/Reva_web/sponsor" className="nav-link">
+                      Sponsor Us
                     </Link>
                   </li>
                   <li className="nav-item">

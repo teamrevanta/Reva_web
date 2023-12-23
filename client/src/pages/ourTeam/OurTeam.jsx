@@ -6,7 +6,8 @@ const OurTeam = () => {
   return (
     <div>
       <img
-        src="./images/events/Revanta_group.jpg"
+        // src="./images/events/Revanta_group.jpg"
+        src="https://i.ibb.co/jTstbH6/Revanta-group.jpg"
         alt="O"
         style={{
           width: "45%",

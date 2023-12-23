@@ -244,7 +244,7 @@ export const members2k21 = [
     post: "Web Head",
     linkedinLink:
       "https://www.linkedin.com/in/bittu-thakur-618774211?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    img: "images/members2k21/Bittu.jpg",
+    img: "images/members2k21/BittuThakur.jpeg",
   },
   {
     name: "Shaket Shubham",

@@ -14,6 +14,7 @@ import PhotoPage from "./pages/photoPage/PhotoPage";
 import Youtube from "./components/youtube/Youtube";
 import OurTeam from "./pages/ourTeam/OurTeam";
 import Gallery from "./pages/gallery/Gallery";
+import Sponsor from "./pages/Sponsor/Sponsor";
 
 const App = () => {
   return (
@@ -30,7 +31,8 @@ const App = () => {
         <Route path="/Reva_web/achievementPage" element={<AchievementPage />} />
         <Route path="/Reva_web/PhotoPage" element={<PhotoPage />} />
         <Route path="/Reva_web/youtube" element={<Youtube />} />
-        <Route path="/Reva_web/OurTeam" element={<OurTeam />} />
+        <Route path="/Reva_web/ourTeam" element={<OurTeam />} />
+        <Route path="/Reva_web/sponsor" element={<Sponsor />} />
       </Routes>
       <Footer />
     </div>
