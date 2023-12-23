@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Dropdown } from "react-bootstrap";
-import batches from "./data";
+
 import "./photoPage.css";
 
 import {
@@ -8,12 +8,12 @@ import {
   members2k19,
   members2k20,
   members2k22,
-  events,
+  // events,
 } from "./data";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 
 const PhotoPage = () => {
-  const [selectedBatch, setSelectedBatch] = useState("Events");
+  const [selectedBatch, setSelectedBatch] = useState("Present Team(2k21)");
 
   const handleBatchSelect = (batch) => {
     setSelectedBatch(batch);
@@ -28,11 +28,13 @@ const PhotoPage = () => {
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item onClick={() => handleBatchSelect("Events")}>
+            {/* <Dropdown.Item onClick={() => handleBatchSelect("Events")}>
               Events
-            </Dropdown.Item>
-            <Dropdown.Item onClick={() => handleBatchSelect("Batch 2k21")}>
-              Batch 2k21
+            </Dropdown.Item> */}
+            <Dropdown.Item
+              onClick={() => handleBatchSelect("Present Team(2k21)")}
+            >
+              Present Team(2k21)
             </Dropdown.Item>
             <Dropdown.Item onClick={() => handleBatchSelect("Batch 2k22")}>
               Batch 2k22
@@ -72,8 +74,8 @@ const PhotoPage = () => {
           </div>
         )}
 
-        {/* Images for Batch 2k21 */}
-        {selectedBatch === "Batch 2k21" && (
+        {/* Images for Present Team(2k21) */}
+        {selectedBatch === "Present Team(2k21)" && (
           <div className="batch-list">
             {members2k21.map((batch) => (
               <div key={batch.id} className="batch-item">
@@ -156,17 +158,16 @@ const PhotoPage = () => {
         )} */}
 
         {/* Images for Events */}
-        {selectedBatch === "Events" && (
+        {/* {selectedBatch === "Events" && (
           <div className="batch-list">
             {events.map((batch) => (
               <div key={batch.id} className="batch-item">
                 <img src={batch.img} alt={batch.name} />
-                {/* <p>{batch.name}</p>
-                <p>{batch.date}</p> */}
+               
               </div>
             ))}
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

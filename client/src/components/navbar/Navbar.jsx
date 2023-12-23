@@ -106,7 +106,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/Reva_web/PhotoPage" className="nav-link">
+                    <Link to="/Reva_web/Gallery" className="nav-link">
                       Gallery
                     </Link>
                   </li>
@@ -115,19 +115,17 @@ const Navbar = () => {
                       Contact Us
                     </Link>
                   </li>
+
                   <li className="nav-item">
-                    <Link to="/Reva_web/login" className="nav-link">
-                      Login
+                    <Link to="/Reva_web/Ourteam" className="nav-link">
+                      Team
                     </Link>
                   </li>
-                  <form className="form-inline">
-                    <button
-                      className="btn  my-2 my-sm-0 nav_search-btn"
-                      type="submit"
-                    >
-                      <i className="fa fa-search" aria-hidden="true"></i>
-                    </button>
-                  </form>
+                  <li className="nav-item">
+                    <Link to="/Reva_web/youtube" className="nav-link">
+                      <i className="fa fa-youtube" aria-hidden="true"></i>
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </nav>

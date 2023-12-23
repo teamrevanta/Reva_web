@@ -7,10 +7,13 @@ import About from "./components/about/About";
 import Services from "./pages/Services";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
-import Login from "./pages/login/Login";
+
 import AboutPage from "./pages/aboutPage/AboutPage";
 import AchievementPage from "./pages/achievementPage/AchievementPage";
 import PhotoPage from "./pages/photoPage/PhotoPage";
+import Youtube from "./components/youtube/Youtube";
+import OurTeam from "./pages/ourTeam/OurTeam";
+import Gallery from "./pages/gallery/Gallery";
 
 const App = () => {
   return (
@@ -20,12 +23,14 @@ const App = () => {
         <Route exact path="/Reva_web/" element={<Home />} />
         <Route path="/Reva_web/about" element={<About />} />
         <Route path="/Reva_web/achievements" element={<Services />} />
-        <Route path="/Reva_web/gallery" element={<Portfolio />} />
+        <Route path="/Reva_web/Gallery" element={<Gallery />} />
         <Route path="/Reva_web/contact" element={<Contact />} />
-        <Route path="/Reva_web/login" element={<Login />} />
+
         <Route path="/Reva_web/aboutPage" element={<AboutPage />} />
         <Route path="/Reva_web/achievementPage" element={<AchievementPage />} />
         <Route path="/Reva_web/PhotoPage" element={<PhotoPage />} />
+        <Route path="/Reva_web/youtube" element={<Youtube />} />
+        <Route path="/Reva_web/OurTeam" element={<OurTeam />} />
       </Routes>
       <Footer />
     </div>

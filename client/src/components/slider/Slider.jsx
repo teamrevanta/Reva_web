@@ -19,14 +19,14 @@ const Slider = () => {
                     The Things NITians <br />
                     Dream Up
                   </h1>
-                  <div className="btn-box">
+                  {/* <div className="btn-box">
                     <Link to="/Reva_web/about" className="btn1">
                       Read More
                     </Link>
                     <Link to="/Reva_web/contact" className="btn2">
                       Contact Us
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -38,14 +38,14 @@ const Slider = () => {
                     The Solar Electric <br />
                     Vehicles
                   </h1>
-                  <div className="btn-box">
+                  {/* <div className="btn-box">
                     <Link to="/Reva_web/about" className="btn1">
                       Read More
                     </Link>
                     <Link to="/Reva_web/contact" className="btn2">
                       Contact Us
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -57,19 +57,19 @@ const Slider = () => {
                     The Future of <br />
                     India
                   </h1>
-                  <div className="btn-box">
+                  {/* <div className="btn-box">
                     <Link to="/Reva_web/about" className="btn1">
                       Read More
                     </Link>
                     <Link to="/Reva_web/contact" className="btn2">
                       Contact Us
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
-          <div className="carousel_btn-box">
+          {/* <div className="carousel_btn-box">
             <a
               className="carousel-control-prev"
               href="#customCarousel1"
@@ -88,7 +88,7 @@ const Slider = () => {
               <i className="fa fa-arrow-right" aria-hidden="true"></i>
               <span className="sr-only">Next</span>
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

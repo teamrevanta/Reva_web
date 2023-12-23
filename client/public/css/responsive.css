@@ -17,6 +17,7 @@
 @media (max-width: 992px) {
   .hero_area {
     height:auto;
+    
   }
 
   .header_section .header_top {
@@ -56,16 +57,21 @@
   .contact_section .form_container {
     background-color: #003471;
     padding: 45px 25px;
+    
   }
 }
 
 @media (max-width: 767px) {
+
+  .slider_section.btn-box{
+   display: none;
+  }
   .slider_section .detail-box {
     text-align: center;
     
   }
 
-  .slider_section .detail-box .btn-box {
+  .slider_section .detail-box  {
     justify-content: center;
   }
 
@@ -78,7 +84,7 @@
     visibility: visible;
   }
 
-  .contact_section .form_container .btn_box {
+  .contact_section .form_container  {
     justify-content: center;
   }
 
@@ -110,7 +116,7 @@
 
   .header_section .header_top .contact_nav a {
     margin: 0;
-    margin-left: 15px;
+    margin-left:5px;
   }
 
   .client_section .box {

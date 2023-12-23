@@ -26,43 +26,43 @@ export const leads = [
 const images = [
   {
     url: "https://i.ibb.co/HGRR7wG/achiv.jpg",
-    category: "achievements",
+    category: "Our Participation",
   },
   {
     url: "https://i.ibb.co/0sns4bH/shivshakti.jpg",
-    category: "achievements",
+    category: "Our Participation",
   },
   {
     url: "images/events/m2.jpg",
-    category: "manufacturing",
+    category: "Manufacturing",
   },
   {
     url: "images/events/m3.jpg",
-    category: "manufacturing",
+    category: "Manufacturing",
   },
   {
     url: "images/events/m4.jpg",
-    category: "manufacturing",
+    category: "Manufacturing",
   },
   {
     url: "images/events/m5.jpg",
-    category: "manufacturing",
+    category: "Manufacturing",
   },
   {
     url: "images/events/m6.jpg",
-    category: "manufacturing",
+    category: "Manufacturing",
   },
   {
     url: "https://i.ibb.co/1J3Yr8H/IMG-20230317-195534.jpg",
-    category: "events",
+    category: "Events",
   },
   {
     url: "https://i.ibb.co/5YN8cYx/IMG-20230317-184025.jpg",
-    category: "events",
+    category: "Events",
   },
   {
     url: "https://i.ibb.co/kSdgkTD/IMG-20230317-184044.jpg",
-    category: "events",
+    category: "Events",
   },
 
   // ... other image objects with category information

@@ -48,7 +48,10 @@ const Footer = () => {
                 </div>
                 <div className="col-md-3 ">
                   <h5>Manufacturing</h5>
-                  <p>Sokhi Enterprise sponsors us to do fabrication works.</p>
+                  <p>
+                    Sokhi Enterprise Pvt Ltd sponsors us to do fabrication
+                    works.
+                  </p>
                 </div>
                 <div className="col-md-3 mx-auto  ">
                   <h5>social media</h5>
