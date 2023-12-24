@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Slider.css"; // Assuming you save the CSS in a file named Slider.css
+import "./Slider.css";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -28,12 +28,12 @@ const Slider = () => {
     {
       //   image: "images/slider/Sen.jpg",
       image: "https://i.ibb.co/Cm0DYpw/Sen.jpg",
-      writeup: "Batch 2k20&Batch 2k21",
+      writeup: "Batch 2k20 & 2k21",
     },
     {
       //   image: "images/slider/female.jpg",
       image: "https://i.ibb.co/hKTrTDX/female.jpg",
-      writeup: "Female",
+      writeup: "Revanta Girls",
     },
   ];
 

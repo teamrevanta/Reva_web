@@ -28,9 +28,9 @@ const About = () => {
                 <Link to="/Reva_web/aboutPage">Read More</Link>
               </div>
             </div>
-            <div className="col-md-6 ">
+            <div className="col-md-5 ">
               <div className="img-box">
-                <img src="images/about-image.jpg" alt="" />
+                <img src="images/about-image.jpg" alt="hjbj" />
               </div>
             </div>
           </div>

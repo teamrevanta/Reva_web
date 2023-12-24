@@ -1,13 +1,13 @@
-/* Add your global styles here if needed */
+
 
 .slider-container {
     position: relative;
     width: 100%;
-    max-width: 1100px; /* Adjust the max-width as needed */
+    max-width: 1100px; 
     margin: 0 auto;
     overflow: hidden;
-    border: 1px solid #ddd; /* Add a border or other styling as desired */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border: 1px solid #ddd; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   }
   
   .slide-image {

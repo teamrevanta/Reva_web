@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./footer.css";
 
 const Footer = () => {
   return (
@@ -95,7 +96,7 @@ const Footer = () => {
                 <div className="col-lg-9">
                   <div className="info_contact ">
                     <div className="row">
-                      <div className="col-md-3">
+                      <div className="col-md-4">
                         <a
                           href="https://maps.app.goo.gl/7X2tga4AHiFQ9gcn6"
                           target="_blank"
@@ -106,10 +107,10 @@ const Footer = () => {
                             className="fa fa-map-marker"
                             aria-hidden="true"
                           ></i>
-                          <span>Location</span>
+                          <span>Nit Jamshedpur</span>
                         </a>
                       </div>
-                      <div className="col-md-5">
+                      <div className="col-md-4">
                         <a
                           href="https://wa.me/9155360718"
                           target="_blank"
@@ -120,7 +121,7 @@ const Footer = () => {
                           <span>Call +91 9155360718</span>
                         </a>
                       </div>
-                      <div className="col-md-4">
+                      <div className="col-md-2">
                         <a
                           href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=teamrevanta@gmail.com"
                           target="_blank"
@@ -134,7 +135,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-1">
                   <div className="info_form ">
                     <form action="">
                       <input type="email" placeholder="Enter Your Email" />

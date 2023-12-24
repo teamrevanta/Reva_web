@@ -19,7 +19,7 @@ const Navbar = () => {
                 rel="noreferrer"
               >
                 <i className="fa fa-map-marker" aria-hidden="true"></i>
-                <span>Location</span>
+                <span>Nit Jamshedpur</span>
               </a>
               <a
                 href="https://wa.me/9155360718"
@@ -100,11 +100,7 @@ const Navbar = () => {
                       Achievements
                     </Link>
                   </li>
-                  <li className="nav-item">
-                    <Link to="/Reva_web/about" className="nav-link">
-                      About
-                    </Link>
-                  </li>
+
                   <li className="nav-item">
                     <Link to="/Reva_web/Gallery" className="nav-link">
                       Gallery

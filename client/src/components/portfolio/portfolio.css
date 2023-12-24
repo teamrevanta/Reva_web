@@ -56,8 +56,8 @@
 }
 
 .gallery_item img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: auto;
 }
 
@@ -66,7 +66,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-
 
 .modals {
   position: fixed;
@@ -82,12 +81,26 @@
 }
 
 .modals_content {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 90%;
+  max-height: 90%;
+  background: #fff; /* Add a white background for better visibility */
+  overflow:scroll; /* Hide overflow content */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow */
+  border-radius: 8px; /* Add rounded corners */
 }
 
 .modals_content img {
   width: 100%;
   height: 100%;
-  object-fit:contain;
+  object-fit: contain;
+  border-radius: 8px; /* Add rounded corners for the image */
 }
+
+@media (max-width: 400px) {
+  .modals_content {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0; /* Remove border-radius for mobile view */
+  }
+}
+

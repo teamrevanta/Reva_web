@@ -22,7 +22,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route exact path="/Reva_web/" element={<Home />} />
-        <Route path="/Reva_web/about" element={<About />} />
+
         <Route path="/Reva_web/achievements" element={<Services />} />
         <Route path="/Reva_web/Gallery" element={<Gallery />} />
         <Route path="/Reva_web/contact" element={<Contact />} />
