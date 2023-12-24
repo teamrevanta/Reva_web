@@ -6,27 +6,27 @@ const Slider = () => {
 
   const slides = [
     {
-      image: "./images/slider/Revanta_group.jpg",
+      image: "images/slider/Revanta_group.jpg",
       writeup: "Revanta Family",
     },
     {
-      image: "./images/slider/mech.jpg",
+      image: "images/slider/mech.jpg",
       writeup: "Mechanical",
     },
     {
-      image: "./images/slider/Pie.jpg",
+      image: "images/slider/Pie.jpg",
       writeup: "Pie&Ecm",
     },
     {
-      image: "./images/slider/Elec.jpg",
+      image: "images/slider/Elec.jpg",
       writeup: "Electrical",
     },
     {
-      image: "./images/slider/Sen.jpg",
+      image: "images/slider/Sen.jpg",
       writeup: "Batch 2k20&Batch 2k21",
     },
     {
-      image: "./images/slider/female.jpg",
+      image: "images/slider/female.jpg",
       writeup: "Female",
     },
   ];
