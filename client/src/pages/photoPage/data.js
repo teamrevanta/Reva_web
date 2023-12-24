@@ -223,7 +223,7 @@ export const members2k21 = [
     post: "Captain",
     linkedinLink:
       "https://www.linkedin.com/in/priyanshu-raj-7049a522b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    img: "images/members2k21/Priyanshuraj.jpeg",
+    img: "images/members2k21/Priyanshu.jpg",
   },
   {
     name: "Ayushi Kumari",
@@ -237,7 +237,7 @@ export const members2k21 = [
     post: "Team Manager",
     linkedinLink:
       "https://www.linkedin.com/in/aditya-pal-1a0026229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    img: "images/members2k21/AdityaPal.png",
+    img: "images/members2k21/Aditya.jpg",
   },
   {
     name: "Bittu Thakur",

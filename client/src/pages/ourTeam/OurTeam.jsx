@@ -5,7 +5,7 @@ import PhotoPage from "../photoPage/PhotoPage";
 const OurTeam = () => {
   return (
     <div>
-      <img
+      {/* <img
         // src="./images/events/Revanta_group.jpg"
         src="https://i.ibb.co/jTstbH6/Revanta-group.jpg"
         alt="O"
@@ -16,7 +16,7 @@ const OurTeam = () => {
           border: "3px solid #0d6efd",
           borderRadius: "10px",
         }}
-      />
+      /> */}
       <PhotoPage />
     </div>
   );
