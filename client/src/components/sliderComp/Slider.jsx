@@ -6,27 +6,33 @@ const Slider = () => {
 
   const slides = [
     {
-      image: "images/slider/Revanta_group.jpg",
+      //   image: "images/slider/Revanta_group.jpg",
+      image: "https://i.ibb.co/RTQpx6k/Revanta-group.jpg",
       writeup: "Revanta Family",
     },
     {
-      image: "images/slider/mech.jpg",
+      //   image: "images/slider/mech.jpg",
+      image: "https://i.ibb.co/27p81Qz/mech.jpg",
       writeup: "Mechanical",
     },
     {
-      image: "images/slider/Pie.jpg",
+      //   image: "images/slider/Pie.jpg",
+      image: "https://i.ibb.co/Wc145wp/Pie.jpg",
       writeup: "Pie&Ecm",
     },
     {
-      image: "images/slider/Elec.jpg",
+      //   image: "images/slider/Elec.jpg",
+      image: "https://i.ibb.co/W2Z0RQ4/Elec.jpg",
       writeup: "Electrical",
     },
     {
-      image: "images/slider/Sen.jpg",
+      //   image: "images/slider/Sen.jpg",
+      image: "https://i.ibb.co/Cm0DYpw/Sen.jpg",
       writeup: "Batch 2k20&Batch 2k21",
     },
     {
-      image: "images/slider/female.jpg",
+      //   image: "images/slider/female.jpg",
+      image: "https://i.ibb.co/hKTrTDX/female.jpg",
       writeup: "Female",
     },
   ];
