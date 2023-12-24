@@ -1,0 +1,35 @@
+/* Add your global styles here if needed */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #ddd; /* Add a border or other styling as desired */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .writeup-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+    color: #fff; /* Text color */
+    padding: 10px;
+  }
+  
+  .writeup-text {
+    margin: 0; /* Remove default margin for the paragraph */
+  }
+  
+  /* Add more styling as needed */
+  

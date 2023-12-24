@@ -59,4 +59,15 @@
     flex: 0 0 100%; /* One column per row on even smaller screens */
     max-width: 100%;
   }
+  .container {
+    max-width: 70%;
+    overflow: hidden; /* Prevent content overflow */
+  }
+}
+@media (max-width: 400px) {
+
+  .container {
+    max-width: 90%;
+ 
+  }
 }
