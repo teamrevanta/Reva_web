@@ -441,7 +441,7 @@ export const members2k20 = [
     name: "Sanjeev P. Verma",
     post: "Technical and Design Head",
     linkedinLink: "https://www.linkedin.com/in/sanjeev-pratap-verma-156987213/",
-    img: "./images/members2k20/sanjeev_pratap_verma.jpeg",
+    img: "./images/members2k20/SanjeevVerma.jpg",
   },
   {
     name: "Anushka",

@@ -19,7 +19,7 @@ const FacultyAdvisorDetails = () => {
               {" "}
               <i class="fa fa-envelope" aria-hidden="true">
                 {" "}
-                Kdpsingh.me@nit jsr.ac.in
+                Kdpsingh.me@nitjsr.ac.in
               </i>
             </p>
 

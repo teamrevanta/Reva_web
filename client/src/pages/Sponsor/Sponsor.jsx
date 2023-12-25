@@ -57,7 +57,11 @@ const Sponsor = () => {
             </li>
           </ul>
 
-          <button>Know More</button>
+          <button>
+            <a href="https://wa.me/9155360718" target="_blank" rel="noreferrer">
+              Know More{" "}
+            </a>
+          </button>
         </div>
         <div class="Sponser_plans">
           <img src="./images/sponsor/pngwing.com (31).png" alt="31" />
@@ -73,7 +77,11 @@ const Sponsor = () => {
               car is on display.
             </li>
           </ul>
-          <button>Know More</button>
+          <button>
+            <a href="https://wa.me/9155360718" target="_blank" rel="noreferrer">
+              Know More{" "}
+            </a>
+          </button>
         </div>
         <div class="Sponser_plans">
           <img src="./images/sponsor/pngwing.com (29).png" alt="29" />
@@ -84,18 +92,27 @@ const Sponsor = () => {
             <li>Medium size logo on the team website,banners, and posters.</li>
             <li>Position for a logo on a team car.</li>
           </ul>
-          <button>Know More</button>
+          <button>
+            <a href="https://wa.me/9155360718" target="_blank" rel="noreferrer">
+              Know More{" "}
+            </a>
+          </button>
         </div>
         <div class="Sponser_plans">
           <img src="./images/sponsor/pngwing.com (30).png" alt="30" />
 
           <h3>Bronze Partners</h3>
-          <h3>Below INR 11,00</h3>
+          <h3>Below INR 11,000</h3>
           <ul>
             <li>Small size logo on the team website and banners.</li>
             <li>Position for a small size logo on a team car.</li>
           </ul>
-          <button>Know More</button>
+
+          <button>
+            <a href="https://wa.me/9155360718" target="_blank" rel="noreferrer">
+              Know More{" "}
+            </a>
+          </button>
         </div>
       </div>
       <div className="PreviousSponsors">
@@ -103,7 +120,7 @@ const Sponsor = () => {
           <h3>Our Previous Sponsors</h3>
           <div className="redline2"></div>
           <div className="Sponser_subhead">
-            it was only possible because of the support of these companoes that
+            it was only possible because of the support of these companies that
             our journey has been successful. <br />
             So, as a token of respect,we put out the names of these companies in
             front of you dignitaries

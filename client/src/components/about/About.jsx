@@ -30,7 +30,12 @@ const About = () => {
             </div>
             <div className="col-md-5 ">
               <div className="img-box">
-                <img src="images/about-image.jpg" alt="hjbj" />
+                {/* <img src="images/about-image.jpg" alt="hjbj" /> */}
+                <img
+                  src="./images/participation/img43.JPG"
+                  alt="hjbj"
+                  style={{ borderRadius: "12px" }}
+                />
               </div>
             </div>
           </div>

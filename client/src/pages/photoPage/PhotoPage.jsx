@@ -67,7 +67,7 @@ const PhotoPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <LinkedIn />
+                  <LinkedIn style={{ color: "blue" }} />
                 </a>
               </div>
             ))}
@@ -88,7 +88,7 @@ const PhotoPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <LinkedIn />
+                  <LinkedIn style={{ color: "blue" }} />
                 </a>
               </div>
             ))}
@@ -109,7 +109,7 @@ const PhotoPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <LinkedIn />
+                  <LinkedIn style={{ color: "blue" }} />
                 </a>
               </div>
             ))}
@@ -129,7 +129,7 @@ const PhotoPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <LinkedIn />
+                  <LinkedIn style={{ color: "blue" }} />
                 </a>
               </div>
             ))}
@@ -152,18 +152,6 @@ const PhotoPage = () => {
                 >
                   <LinkedIn />
                 </a>
-              </div>
-            ))}
-          </div>
-        )} */}
-
-        {/* Images for Events */}
-        {/* {selectedBatch === "Events" && (
-          <div className="batch-list">
-            {events.map((batch) => (
-              <div key={batch.id} className="batch-item">
-                <img src={batch.img} alt={batch.name} />
-               
               </div>
             ))}
           </div>

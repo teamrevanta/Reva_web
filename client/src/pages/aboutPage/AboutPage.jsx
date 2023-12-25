@@ -29,7 +29,7 @@ const AboutPage = () => {
               </div>
               <div className="col-md-6 ">
                 <div className="img-box">
-                  <img src="images/about-image.jpg" alt="" />
+                  <img src="./images/participation/img43.JPG" alt="jn" />
                 </div>
               </div>
             </div>
