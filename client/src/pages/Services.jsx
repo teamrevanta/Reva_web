@@ -13,7 +13,7 @@ const Services = () => {
             </h2>
           </div>
           <div className="row">
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-4 col-md-4">
               <div className="box ">
                 <div className="img-box">
                   <img src="images/s1.png" alt="" />
@@ -25,13 +25,12 @@ const Services = () => {
                     Vehicle Championship-2019 held at Chandigarh, led by Agarwal
                     Nidhaan Nawalkishore(PIE). Our vehicle 'IMPERIUM 2.0' was
                     proven best in suspension , 4th in designing , 6th in B Plan
-                    , 30+ innovations (including - Drift monotoring system, lane
-                    change indicator, Rough driving alert system etc).
+                    , 30+ innovations
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-4 col-md-4">
               <div className="box ">
                 <div className="img-box">
                   <img src="images/s2.png" alt="" />
@@ -41,15 +40,14 @@ const Services = () => {
                   <p>
                     In the year 2017 the team took part in Electric Solar
                     Vehicle Championship-2017 held at A.P., led by Gaurav Kumar
-                    Singh(EEE).Our vehicle 'ELAN' was declared as one of the
-                    lightest & efficient vehicle of the event.It is a matter of
-                    proud for the institute as we stood 9th among 85 teams from
-                    all over the country.
+                    Singh(EEE).Our vehicle 'ELAN' was declared lightest &
+                    efficient vehicle of the event.It is a matter of proud for
+                    the institute as we stood 9th among 85 teams.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-4 col-md-4">
               <div className="box ">
                 <div className="img-box">
                   <img src="images/s3.png" alt="" />
@@ -66,7 +64,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-4 col-md-4">
               <div className="box ">
                 <div className="img-box">
                   <img src="images/s4.png" alt="" />
@@ -82,7 +80,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-4 col-md-4">
               <div className="box ">
                 <div className="img-box">
                   <img src="images/s5.png" alt="" />
@@ -99,7 +97,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-4 col-md-4">
               <div className="box ">
                 <div className="img-box">
                   <img src="images/s6.png" alt="" />
@@ -109,9 +107,8 @@ const Services = () => {
                   <p>
                     Currently the team is engaged in doing research to improve
                     the mileage and efficiency of Electric-Solar Vehicle. The
-                    team is also looking forward to make an ultra-light, cost
-                    effective Hybrid-Vehicle. The team switched into the
-                    Electric Solar Hybrid Category
+                    team is also looking forward to make an ultra-light. The
+                    team switched into the Electric Solar Hybrid Category
                   </p>
                 </div>
               </div>

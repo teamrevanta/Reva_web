@@ -1,0 +1,56 @@
+/* Add your existing styles if any */
+
+.contact-profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .profile-card {
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .profile-card h3 {
+    margin: 10px 0;
+  }
+  
+  .profile-details p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .profile-details a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .profile-details a:hover {
+    text-decoration: underline;
+  }
+  .profile-card:hover {
+    transform: scale(1.1); /* Enlarge the advisor box on hover */
+  }
+  @media (max-width: 768px) {
+    .contact-profiles {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-card {
+      width: 80%;
+    }
+  }
+  

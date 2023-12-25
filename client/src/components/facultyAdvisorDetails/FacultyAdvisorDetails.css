@@ -1,0 +1,53 @@
+.faculty-advisor-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #58bff7; /* Adjust color as needed */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+.faculty-advisor-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  }
+  
+  .faculty-advisor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px; /* Adjust the margin to control the space between advisors */
+    max-width: 400px; /* Set a maximum width for each advisor on larger screens */
+    text-align:left; /* Center text within the advisor box */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+  }
+  
+  .faculty-advisor:hover {
+    transform: scale(1.1); /* Enlarge the advisor box on hover */
+  }
+  
+  .faculty-advisor img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .faculty-advisor h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .faculty-advisor p {
+    margin: 5px 0;
+  }
+  
+  .faculty-advisor a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .faculty-advisor a:hover {
+    text-decoration: underline;
+  }
+  

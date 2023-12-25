@@ -129,7 +129,7 @@ const Footer = () => {
                           className="link-box"
                         >
                           <i className="fa fa-envelope" aria-hidden="true"></i>
-                          <span>teamrevanta@gmail.com</span>
+                          <span>revanta@nitjsr.ac.in</span>
                         </a>
                       </div>
                     </div>

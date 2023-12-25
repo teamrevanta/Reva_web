@@ -1,51 +1,213 @@
-/* Sponsor.css */
-.sponsor-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+.Sponser_heading{
+    width: 100%;
+    height: 100px;
+}
+.Sponser_heading h3{
+    display: flex;
+    justify-content: center;
+    font-family:"Rajdhani" ;
+    letter-spacing: 5px;
+    font-size: 30px;
+    padding-top:3%;
+    
+}
+.sponsor-download{
+  display: flex;
+  justify-content: center;
+  font-family:"Rajdhani" ;
+  letter-spacing: 5px;
+  font-size: 20px;
+  margin-left: 40%;
+  margin-top: 2px;
+ 
+ 
+}
+.PreviousSponsors{
+padding-top: 6%;
+}
+.redline{
+    width: 114px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 711px;
+    border-radius: 166px;
+    top: 68px;
+    height: 3px;
+    background-color: red;
+}
+.Sponser_subhead{
+    display: flex;
+    justify-content: center;
+    font-family:"Rajdhani" ;
+    font-weight: 600;
+    margin-left: 20px;
+    letter-spacing: 2px;
+   
+}
+.Sponser_row{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10PX;
+    margin-right: 1%;
+    
+}
+.Sponser_plans{
+    flex-basis: 31%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    background: -webkit-linear-gradient(#cac8ff 0%, #b8c8ff 100%);
+
+}
+.Sponser_plans img{
+    width: 110px;
+    height: 100px;
+   
+}
+.Sponser_plans h3{
+    font-family:"Rajdhani" ;
+    font-weight: 600;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 2px;
+
+}
+.Sponser_plans ul {
+    list-style:square;
+    display: inline-block;
+}
+.Sponser_plans ul li {
+    padding-top: 10px;
+    font-family: "Rajdhani";
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: white;
+}
+.Sponser_plans button{
+    margin-top: auto;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    outline: 0;
+    font-family: "Rajdhani";
+    letter-spacing: 2px;
+    font-weight: 700;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+}
+.Sponser_plans button:hover{
+    background-color: white;
+    color: black;
+}
+.redline2{
+    width: 171px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 683px;
+    border-radius: 166px;
+    top: 836px;
+    height: 3px;
+    background-color: red;
+}
+.BankDetails{
+  padding-bottom: 15%;
+}
+.Sponser_img{
+  padding-top: 4%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.Sponser_img img{
+width: 700px;
+height: 500px;
+margin-bottom: 40px;
+}
+.redline3{
+    width: 131px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 697px;
+    border-radius: 166px;
+    top: 1521px;
+    height: 3px;
+    background-color: red;
+}
+.details{
+     display: flex;
+     flex-direction: column;
+     font-family: 'Rajdhani';
+     font-weight: 600;
+     font-size: 20px;
+     align-items: center;
+    
+}
+@media(max-width:1000px){
+    .redline{
+        display: none;
+
+    }
+    .redline2{
+        display: none;
+    }
+    .redline3{
+        display: none;
+    }
   
-  .sponsor-title {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 30px;
+}
+@media(max-width:900px){
+
+    .Sponser_row{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 10PX;
+        margin-right: 1%;
+        
+    }
+    .Sponser_img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .Sponser_img img{
+    width: 700px;
+    height: 500px;
+    margin-bottom: 40px;
+    }
+.BankDetails{
+  padding-bottom: 15%;
+}
+
+}
+@media(max-width:400px){
+  .BankDetails{
+    padding-bottom: 300px;
   }
   .sponsor-download{
-    
-    box-align: center;
-    font-size: 1.5em;
-    border-radius: 8px;
-    background-color: rgb(92, 236, 236);
+    justify-content: right;
+   position: relative;
+   font-size: small;
+   
   }
-  .sponsor-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .sponsor-item {
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  }
-  
-  .sponsor-logo {
-    max-width: 100px;
-    max-height: 100px;
-    margin-bottom: 10px;
-  }
-  
-  .sponsor-name {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .sponsor-website {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-    display: block;
-  }
-  
+}

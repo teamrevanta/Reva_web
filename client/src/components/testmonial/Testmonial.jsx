@@ -29,11 +29,13 @@ const Testmonial = () => {
                           </div>
                           <div className="detail-box">
                             <p>
-                              "Revanta isn't just a club; it's a vibrant
-                              ecosystem of ideas, innovation, and camaraderie.
-                              Being part of Revanta was more than building solar
-                              electric vehicles; it was a transformative journey
-                              where passion met purpose"
+                              "Steering Revanta taught me: leadership ain't
+                              solo. It's trust, passion, shared laughter.These
+                              grease-stained geniuses, my sun-powered family. We
+                              weathered every storm, every deadline, with
+                              laughter and trust. Built more than an EV, a
+                              legacy of sunshine and grit. Keep chasing the
+                              horizon, Revanta!"
                             </p>
                           </div>
                         </div>
@@ -64,20 +66,25 @@ const Testmonial = () => {
                         <div className="box">
                           <div className="client_id">
                             <div className="img-box">
-                              <img src="images/Priyanshu.jpeg" alt="" />
+                              <img
+                                src="images/members2k21/Priyanshu.jpg"
+                                alt=""
+                              />
                             </div>
                             <h5>Priyanshu Raj</h5>
                             <p>2k21</p>
                           </div>
                           <div className="detail-box">
                             <p>
-                              "It became a thriving ecosystem brimming with
-                              boundless ideas, unwavering innovation, and
-                              genuine camaraderie. Being a part of Revanta
-                              transcended the mere act of constructing solar
-                              electric vehicles; it evolved into a profound and
-                              transformative journey where our passion
-                              seamlessly intertwined with purpose."
+                              "Team Revanta's work culture is a symphony of
+                              collaboration and expertise. Within our technical
+                              pursuits, we foster an environment where every
+                              member's contribution is valued and respected. As
+                              the team captain, steering this collective effort
+                              has been a privilege. Witnessing the fusion of
+                              diverse talents and the unwavering dedication to
+                              achieving our goals has been an immensely
+                              fulfilling experience."
                             </p>
                           </div>
                         </div>

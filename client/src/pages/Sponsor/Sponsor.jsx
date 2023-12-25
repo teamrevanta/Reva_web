@@ -27,34 +27,104 @@ const Sponsor = () => {
   };
 
   return (
-    <div className="sponsor-container">
-      <h1 className="sponsor-title">Our Sponsors</h1>
-
-      <button onClick={downloadPdf} className="sponsor-download">
-        REVANTA BROCHURE
-        <i className="fa fa-download" aria-hidden="true"></i>
-      </button>
-      <div className="sponsor-list">
-        {sponsors.map((sponsor) => (
-          <div key={sponsor.id} className="sponsor-item">
-            <img
-              src={sponsor.logo}
-              alt={`${sponsor.name} Logo`}
-              className="sponsor-logo"
-            />
-            <h3 className="sponsor-name">{sponsor.name}</h3>
-            <a
-              href={sponsor.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="sponsor-website"
-            >
-              Visit Website
-            </a>
-          </div>
-        ))}
+    <>
+      <div className="Sponser_heading">
+        <h3>Sponsor Us</h3>
+        <div className="redline"></div>
+        <div className="Sponser_subhead">
+          "Contribute towards a greener India and play your role in to forefront
+          in the solar race"
+        </div>
+        <button onClick={downloadPdf} className="sponsor-download">
+          REVANTA BROCHURE
+          <i className="fa fa-download" aria-hidden="true"></i>
+        </button>
       </div>
-    </div>
+
+      <div class="Sponser_row">
+        <div class="Sponser_plans">
+          <img src="./images/sponsor/pngwing.com (32).png" alt="32" />
+
+          <h3>Principal Partners</h3>
+          <h3>INR 41,000 And Above</h3>
+          <ul>
+            <li>Large size logo on the team website,banners, and posters.</li>
+            <li>Prederred position for a large size logo on a team car.</li>
+            <li>Special acknowledgment in media and press releases.</li>
+            <li>
+              Special mention and promotion in events and public gatherings
+              where the car is on display.
+            </li>
+          </ul>
+
+          <button>Know More</button>
+        </div>
+        <div class="Sponser_plans">
+          <img src="./images/sponsor/pngwing.com (31).png" alt="31" />
+
+          <h3>Gold Partners</h3>
+          <h3>INR 21,000 - 40,000</h3>
+          <ul>
+            <li>Large size logo on the team website,banners, and posters.</li>
+            <li>Prederred position for a logo on a team car.</li>
+            <li>Acknowledgment in media and press releases.</li>
+            <li>
+              Mention and promotion in events and public gatherings where the
+              car is on display.
+            </li>
+          </ul>
+          <button>Know More</button>
+        </div>
+        <div class="Sponser_plans">
+          <img src="./images/sponsor/pngwing.com (29).png" alt="29" />
+
+          <h3>Silver Partners</h3>
+          <h3>INR 11,000 - 20,000</h3>
+          <ul>
+            <li>Medium size logo on the team website,banners, and posters.</li>
+            <li>Position for a logo on a team car.</li>
+          </ul>
+          <button>Know More</button>
+        </div>
+        <div class="Sponser_plans">
+          <img src="./images/sponsor/pngwing.com (30).png" alt="30" />
+
+          <h3>Bronze Partners</h3>
+          <h3>Below INR 11,00</h3>
+          <ul>
+            <li>Small size logo on the team website and banners.</li>
+            <li>Position for a small size logo on a team car.</li>
+          </ul>
+          <button>Know More</button>
+        </div>
+      </div>
+      <div className="PreviousSponsors">
+        <div className="Sponser_heading">
+          <h3>Our Previous Sponsors</h3>
+          <div className="redline2"></div>
+          <div className="Sponser_subhead">
+            it was only possible because of the support of these companoes that
+            our journey has been successful. <br />
+            So, as a token of respect,we put out the names of these companies in
+            front of you dignitaries
+          </div>
+        </div>
+        <div className="Sponser_img">
+          <img src="./images/sponsor/Screenshot (44).png" alt="44" />
+        </div>
+      </div>
+      <div className="BankDetails">
+        <div className="Sponser_heading">
+          <h3>Bank Details</h3>
+          <div className="redline3"></div>
+          <div className="details">
+            <p>Account Name - REVANTA N.I.T JAMSHEDPUR</p>
+            <p>Account Number - 31071926039</p>
+            <p>IFSC CODE - SBIN0001882</p>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

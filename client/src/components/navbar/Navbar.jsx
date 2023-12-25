@@ -31,12 +31,12 @@ const Navbar = () => {
               </a>
 
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=teamrevanta@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=revanta@nitjsr.ac.in"
                 target="_blank"
                 rel="noreferrer"
               >
                 <i className="fa fa-envelope" aria-hidden="true"></i>
-                <span>teamrevanta@gmail.com</span>
+                <span>revanta@nitjsr.ac.in</span>
               </a>
             </div>
             <div className="social_box" target="_blank">

@@ -3,10 +3,8 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/footer/Footer";
 import { Routes, Route } from "react-router-dom";
-import About from "./components/about/About";
+
 import Services from "./pages/Services";
-import Portfolio from "./components/portfolio/Portfolio";
-import Contact from "./components/contact/Contact";
 
 import AboutPage from "./pages/aboutPage/AboutPage";
 import AchievementPage from "./pages/achievementPage/AchievementPage";
@@ -15,6 +13,7 @@ import Youtube from "./components/youtube/Youtube";
 import OurTeam from "./pages/ourTeam/OurTeam";
 import Gallery from "./pages/gallery/Gallery";
 import Sponsor from "./pages/Sponsor/Sponsor";
+import ContactPage from "./pages/contactPage/ContactPage";
 
 const App = () => {
   return (
@@ -25,7 +24,7 @@ const App = () => {
 
         <Route path="/Reva_web/achievements" element={<Services />} />
         <Route path="/Reva_web/Gallery" element={<Gallery />} />
-        <Route path="/Reva_web/contact" element={<Contact />} />
+        <Route path="/Reva_web/contact" element={<ContactPage />} />
 
         <Route path="/Reva_web/aboutPage" element={<AboutPage />} />
         <Route path="/Reva_web/achievementPage" element={<AchievementPage />} />
