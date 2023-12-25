@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const formRef = useRef();
@@ -17,9 +19,25 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setDone(true);
+          toast.success("Message sent successfully", {
+            position: "top-right",
+            autoClose: 5000, // 3 seconds
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          });
         },
         (error) => {
           console.log(error.text);
+          toast.error("Please try later", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          });
         }
       );
   };
@@ -92,7 +110,7 @@ const Contact = () => {
                   <div className="btn_box">
                     <button>SEND</button>
                   </div>
-                  {done && "Thank You..."}
+                  {done && <ToastContainer />}
                 </form>
               </div>
             </div>
