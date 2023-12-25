@@ -3,7 +3,13 @@ import { Dropdown } from "react-bootstrap";
 
 import "./Gallery.css";
 
-import { Manufacturing, Celebration, Events } from "./data";
+import {
+  Manufacturing,
+  Celebration,
+  Events,
+  Participation,
+  Group,
+} from "./data";
 
 const Gallery = () => {
   const [selectedBatch, setSelectedBatch] = useState("Manufacturing");
@@ -35,6 +41,9 @@ const Gallery = () => {
             <Dropdown.Item onClick={() => handleBatchSelect("Celebration")}>
               Celebration
             </Dropdown.Item>
+            <Dropdown.Item onClick={() => handleBatchSelect("Group Photos")}>
+              Group Photos
+            </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </div>
@@ -61,18 +70,26 @@ const Gallery = () => {
             ))}
           </div>
         )}
-
-        {/* Images for Our Participation */}
-        {/* {selectedBatch === "Celebration" && (
+        {selectedBatch === "Group Photos" && (
           <div className="batch-list">
-            {members2k19.map((batch) => (
+            {Group.map((batch) => (
               <div key={batch.id} className="batch-item">
                 <img src={batch.img} alt={batch.name} />
-               
               </div>
             ))}
           </div>
-        )} */}
+        )}
+
+        {/* Images for Our Participation */}
+        {selectedBatch === "Our Participation" && (
+          <div className="batch-list">
+            {Participation.map((batch) => (
+              <div key={batch.id} className="batch-item">
+                <img src={batch.img} alt={batch.name} />
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Images for Events */}
         {selectedBatch === "Events" && (

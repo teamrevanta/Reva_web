@@ -130,6 +130,321 @@ export const Events = [
     img: "./images/events/IMG_20231126_200656.jpg",
     name: "Event Image 25",
   },
+];
+export const Participation = [
+  {
+    id: 1,
+    img: "./images/participation/img1.jpg",
+    name: "Participation Image 1",
+  },
+  {
+    id: 2,
+    img: "./images/participation/img2.jpg",
+    name: "Participation Image 2",
+  },
+  {
+    id: 3,
+    img: "./images/participation/img3.jpg",
+    name: "Participation Image 3",
+  },
+  {
+    id: 4,
+    img: "./images/participation/img4.jpg",
+    name: "Participation Image 4",
+  },
+  {
+    id: 5,
+    img: "./images/participation/img5.jpg",
+    name: "Participation Image 5",
+  },
+  {
+    id: 6,
+    img: "./images/participation/img6.jpg",
+    name: "Participation Image 6",
+  },
+  {
+    id: 7,
+    img: "./images/participation/img7.jpg",
+    name: "Participation Image 7",
+  },
+  {
+    id: 8,
+    img: "./images/participation/img8.jpg",
+    name: "Participation Image 8",
+  },
+  {
+    id: 9,
+    img: "./images/participation/img9.jpg",
+    name: "Participation Image 9",
+  },
+  {
+    id: 10,
+    img: "./images/participation/img10.jpg",
+    name: "Participation Image 10",
+  },
+  {
+    id: 11,
+    img: "./images/participation/img11.jpg",
+    name: "Participation Image 11",
+  },
+  {
+    id: 12,
+    img: "./images/participation/img12.jpg",
+    name: "Participation Image 12",
+  },
+  {
+    id: 13,
+    img: "./images/participation/img13.jpg",
+    name: "Participation Image 13",
+  },
+  {
+    id: 14,
+    img: "./images/participation/img14.jpg",
+    name: "Participation Image 14",
+  },
+  {
+    id: 15,
+    img: "./images/participation/img15.jpg",
+    name: "Participation Image 15",
+  },
+  {
+    id: 16,
+    img: "./images/participation/img16.jpg",
+    name: "Participation Image 16",
+  },
+  {
+    id: 17,
+    img: "./images/participation/img17.jpg",
+    name: "Participation Image 17",
+  },
+  {
+    id: 18,
+    img: "./images/participation/img18.jpg",
+    name: "Participation Image 18",
+  },
+  {
+    id: 19,
+    img: "./images/participation/img19.jpg",
+    name: "Participation Image 19",
+  },
+  {
+    id: 20,
+    img: "./images/participation/img20.jpg",
+    name: "Participation Image 20",
+  },
+  {
+    id: 21,
+    img: "./images/participation/img21.jpg",
+    name: "Participation Image 21",
+  },
+  {
+    id: 22,
+    img: "./images/participation/img22.jpg",
+    name: "Participation Image 22",
+  },
+  {
+    id: 23,
+    img: "./images/participation/img23.jpg",
+    name: "Participation Image 23",
+  },
+  {
+    id: 24,
+    img: "./images/participation/img24.jpg",
+    name: "Participation Image 24",
+  },
+  {
+    id: 25,
+    img: "./images/participation/img25.jpg",
+    name: "Participation Image 25",
+  },
+  {
+    id: 26,
+    img: "./images/participation/img26.jpg",
+    name: "Participation Image 26",
+  },
+  {
+    id: 27,
+    img: "./images/participation/img27.jpg",
+    name: "Participation Image 27",
+  },
+  {
+    id: 28,
+    img: "./images/participation/img28.jpg",
+    name: "Participation Image 28",
+  },
+  {
+    id: 29,
+    img: "./images/participation/img29.jpg",
+    name: "Participation Image 29",
+  },
+  {
+    id: 30,
+    img: "./images/participation/img30.jpg",
+    name: "Participation Image 30",
+  },
+  {
+    id: 31,
+    img: "./images/participation/img31.jpg",
+    name: "Participation Image 31",
+  },
+  {
+    id: 32,
+    img: "./images/participation/img32.jpg",
+    name: "Participation Image 32",
+  },
+  {
+    id: 33,
+    img: "./images/participation/img33.jpg",
+    name: "Participation Image 33",
+  },
+  {
+    id: 34,
+    img: "./images/participation/img34.jpg",
+    name: "Participation Image 34",
+  },
+  {
+    id: 35,
+    img: "./images/participation/img35.jpg",
+    name: "Participation Image 35",
+  },
+  {
+    id: 36,
+    img: "./images/participation/img36.jpg",
+    name: "Participation Image 36",
+  },
+  {
+    id: 37,
+    img: "./images/participation/img37.jpg",
+    name: "Participation Image 37",
+  },
+  {
+    id: 38,
+    img: "./images/participation/img38.jpg",
+    name: "Participation Image 38",
+  },
+  {
+    id: 39,
+    img: "./images/participation/img39.jpg",
+    name: "Participation Image 39",
+  },
+  {
+    id: 40,
+    img: "./images/participation/img40.jpg",
+    name: "Participation Image 40",
+  },
+  {
+    id: 41,
+    img: "./images/participation/img41.jpg",
+    name: "Participation Image 41",
+  },
+  {
+    id: 42,
+    img: "./images/participation/img42.jpg",
+    name: "Participation Image 42",
+  },
+  {
+    id: 43,
+    img: "./images/participation/img43.jpg",
+    name: "Participation Image 43",
+  },
+  {
+    id: 44,
+    img: "./images/participation/img44.jpg",
+    name: "Participation Image 44",
+  },
+  {
+    id: 45,
+    img: "./images/participation/img45.jpg",
+    name: "Participation Image 45",
+  },
+  {
+    id: 46,
+    img: "./images/participation/img46.jpg",
+    name: "Participation Image 46",
+  },
+  {
+    id: 47,
+    img: "./images/participation/img47.jpg",
+    name: "Participation Image 47",
+  },
+  {
+    id: 48,
+    img: "./images/participation/img48.jpg",
+    name: "Participation Image 48",
+  },
+  {
+    id: 49,
+    img: "./images/participation/img49.jpg",
+    name: "Participation Image 49",
+  },
+  {
+    id: 50,
+    img: "./images/participation/img50.jpg",
+    name: "Participation Image 50",
+  },
+  {
+    id: 51,
+    img: "./images/participation/img51.jpg",
+    name: "Participation Image 51",
+  },
+  {
+    id: 52,
+    img: "./images/participation/img52.jpg",
+    name: "Participation Image 52",
+  },
+  {
+    id: 53,
+    img: "./images/participation/img53.jpg",
+    name: "Participation Image 53",
+  },
+  {
+    id: 54,
+    img: "./images/participation/img54.jpg",
+    name: "Participation Image 54",
+  },
+  {
+    id: 55,
+    img: "./images/participation/img55.jpg",
+    name: "Participation Image 55",
+  },
+  {
+    id: 56,
+    img: "./images/participation/img56.jpg",
+    name: "Participation Image 56",
+  },
+  {
+    id: 57,
+    img: "./images/participation/img57.jpg",
+    name: "Participation Image 57",
+  },
+  {
+    id: 58,
+    img: "./images/participation/img58.jpg",
+    name: "Participation Image 58",
+  },
+  {
+    id: 59,
+    img: "./images/participation/img59.jpg",
+    name: "Participation Image 59",
+  },
+  {
+    id: 60,
+    img: "./images/participation/img60.jpg",
+    name: "Participation Image 60",
+  },
+  {
+    id: 61,
+    img: "./images/participation/img61.jpg",
+    name: "Participation Image 61",
+  },
+  {
+    id: 62,
+    img: "./images/participation/img62.jpg",
+    name: "Participation Image 62",
+  },
+];
+
+export const Group = [
   { id: 1, img: "./images/events/IMG_3202.JPG", name: "Event Image 1" },
   { id: 2, img: "./images/events/IMG_3207.JPG", name: "Event Image 2" },
   { id: 3, img: "./images/events/IMG_3216.JPG", name: "Event Image 3" },

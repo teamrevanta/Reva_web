@@ -149,6 +149,24 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div>
+          Designed By:
+          <a
+            href="https://www.linkedin.com/in/bittu-thakur-618774211?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Bittu Kumar Thakur
+          </a>{" "}
+          &{" "}
+          <a
+            href="https://www.linkedin.com/in/shaket-shubham-7939b6214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Shaket Shubham
+          </a>
+        </div>
       </section>
 
       <footer className="footer_section">

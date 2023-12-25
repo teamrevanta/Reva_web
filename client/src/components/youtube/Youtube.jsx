@@ -17,7 +17,10 @@ const Youtube = () => {
                 aria-expanded="true"
                 aria-controls="innerCollapseOne"
               >
-                Video 1
+                <i class="fa fa-play" aria-hidden="true">
+                  {" "}
+                  1
+                </i>
               </button>
             </h2>
             <div
@@ -48,7 +51,9 @@ const Youtube = () => {
                 aria-expanded="false"
                 aria-controls="innerCollapseTwo"
               >
-                Video 2
+                <i class="fa fa-play" aria-hidden="true">
+                  2
+                </i>
               </button>
             </h2>
             <div
@@ -58,11 +63,13 @@ const Youtube = () => {
             >
               <div className="accordion-body">
                 <div className="youtube-video">
-                  <iframe
+                  <video
                     className="youtube-video-iframe"
-                    src="https://www.youtube.com/embed/79JFP5GLJqg?si=rmSqGjYaoj52X7D2"
-                    title="YouTube video"
-                  ></iframe>
+                    controls // Add controls for user interaction
+                    autoPlay={false} // Set autoPlay to false
+                  >
+                    <source src="./video/3.mp4" type="video/mp4" />
+                  </video>
                 </div>
               </div>
             </div>
@@ -79,22 +86,24 @@ const Youtube = () => {
                 aria-expanded="false"
                 aria-controls="innerCollapseThree"
               >
-                Video 3
+                <i class="fa fa-play" aria-hidden="true">
+                  3
+                </i>
               </button>
             </h2>
-            <div
-              id="innerCollapseThree"
-              className="accordion-collapse collapse"
-              data-bs-parent="#innerAccordion"
-            >
-              <div className="accordion-body">
-                <div className="youtube-video">
-                  <iframe
-                    className="youtube-video-iframe"
-                    src="https://www.youtube.com/embed/1n8uEsfjtA0?si=tveyLdv3ZvU1ufEA"
-                    title="YouTube video"
-                  ></iframe>
-                </div>
+          </div>
+          <div
+            id="innerCollapseThree"
+            className="accordion-collapse collapse"
+            data-bs-parent="#innerAccordion"
+          >
+            <div className="accordion-body">
+              <div className="youtube-video">
+                <iframe
+                  className="youtube-video-iframe"
+                  src="https://www.youtube.com/embed/1n8uEsfjtA0?si=tveyLdv3ZvU1ufEA"
+                  title="YouTube video"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -110,7 +119,9 @@ const Youtube = () => {
                 aria-expanded="false"
                 aria-controls="innerCollapseFour"
               >
-                Video 4
+                <i class="fa fa-play" aria-hidden="true">
+                  4
+                </i>
               </button>
             </h2>
             <div
@@ -141,7 +152,9 @@ const Youtube = () => {
                 aria-expanded="false"
                 aria-controls="innerCollapseFive"
               >
-                Video 5
+                <i class="fa fa-play" aria-hidden="true">
+                  5
+                </i>
               </button>
             </h2>
             <div
@@ -172,7 +185,9 @@ const Youtube = () => {
                 aria-expanded="false"
                 aria-controls="innerCollapseSix"
               >
-                Video 6
+                <i class="fa fa-play" aria-hidden="true">
+                  6
+                </i>
               </button>
             </h2>
             <div
@@ -191,6 +206,73 @@ const Youtube = () => {
               </div>
             </div>
           </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#innerCollapseSeven"
+                aria-expanded="false"
+                aria-controls="innerCollapseSeven"
+              >
+                <i className="fa fa-play" aria-hidden="true">
+                  7
+                </i>
+              </button>
+            </h2>
+            <div
+              id="innerCollapseSeven"
+              className="accordion-collapse collapse"
+              data-bs-parent="#innerAccordion"
+            >
+              <div className="accordion-body">
+                <div className="youtube-video">
+                  <video
+                    className="youtube-video-iframe"
+                    controls // Add controls for user interaction
+                    autoPlay={false} // Set autoPlay to false
+                  >
+                    <source src="./video/1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#innerCollapseEight"
+                aria-expanded="false"
+                aria-controls="innerCollapseEight"
+              >
+                <i className="fa fa-play" aria-hidden="true">
+                  8
+                </i>
+              </button>
+            </h2>
+            <div
+              id="innerCollapseEight"
+              className="accordion-collapse collapse"
+              data-bs-parent="#innerAccordion"
+            >
+              <div className="accordion-body">
+                <div className="youtube-video">
+                  <video
+                    className="youtube-video-iframe"
+                    controls // Add controls for user interaction
+                    autoPlay={false} // Set autoPlay to false
+                  >
+                    <source src="./video/2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Add more accordion items as needed */}
         </div>
       </div>

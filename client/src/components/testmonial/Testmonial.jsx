@@ -44,17 +44,18 @@ const Testmonial = () => {
                             <div className="img-box">
                               <img src="images/abhisek.jpeg" alt="" />
                             </div>
-                            <h5>Abhisek</h5>
+                            <h5>Abhishek Kumar</h5>
                             <p>2k19</p>
                           </div>
                           <div className="detail-box">
                             <p>
-                              "Together, we harnessed the power of renewable
-                              energy, shaping not just our vehicles but also our
-                              futures. Revanta taught us that sustainable
-                              technology isn't just a concept; it's a way of
-                              life, and we leave with a deep sense of pride in
-                              contributing to a greener tomorrow."
+                              "Working with a team always comes with numerous
+                              challenges. Successfully steering through them
+                              helps you grow in every dimension. One should see
+                              these challenges as opportunities for
+                              self-development, and being a part of a team like
+                              Team Revanta has been a comprehensive package of
+                              development for me."
                             </p>
                           </div>
                         </div>
@@ -65,7 +66,7 @@ const Testmonial = () => {
                             <div className="img-box">
                               <img src="images/Priyanshu.jpeg" alt="" />
                             </div>
-                            <h5>Priyanshu</h5>
+                            <h5>Priyanshu Raj</h5>
                             <p>2k21</p>
                           </div>
                           <div className="detail-box">

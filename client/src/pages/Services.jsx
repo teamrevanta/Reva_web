@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -117,9 +117,9 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="btn-box">
+          {/* <div className="btn-box">
             <Link to="/Reva_web/achievementPage">Read More</Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

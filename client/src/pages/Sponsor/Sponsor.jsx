@@ -18,10 +18,22 @@ const Sponsor = () => {
     },
     // Add more sponsors as needed
   ];
+  const downloadPdf = () => {
+    const pdfPath = "./docs/REVANTA BROCHURE.pdf";
+    const link = document.createElement("a");
+    link.href = pdfPath;
+    link.download = "REVANTA BROCHURE.pdf";
+    link.click();
+  };
 
   return (
     <div className="sponsor-container">
       <h1 className="sponsor-title">Our Sponsors</h1>
+
+      <button onClick={downloadPdf} className="sponsor-download">
+        REVANTA BROCHURE
+        <i className="fa fa-download" aria-hidden="true"></i>
+      </button>
       <div className="sponsor-list">
         {sponsors.map((sponsor) => (
           <div key={sponsor.id} className="sponsor-item">
