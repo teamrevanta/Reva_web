@@ -18,28 +18,28 @@ const Footer = () => {
                 <div className="col-md-3 col-lg-2">
                   <div className="info_link-box">
                     <h5>Useful Link</h5>
-                    <ul>
-                      <li className=" active">
+                    <ul className="info_link-ul">
+                      <li className=" info_link-li">
                         <Link to="/Reva_web/" className=" ">
                           Home
                         </Link>
                       </li>
-                      <li className="">
-                        <Link to="/Reva_web/about" className=" ">
-                          About
+                      <li className="info_link-li">
+                        <Link to="/Reva_web/ourteam" className=" ">
+                          Team
                         </Link>
                       </li>
-                      <li className="">
+                      <li className="info_link-li">
                         <Link to="/Reva_web/achievements" className=" ">
                           Achievements
                         </Link>
                       </li>
-                      <li className="">
-                        <Link to="/Reva_web/gallery" className=" ">
+                      <li className="info_link-li">
+                        <Link to="/Reva_web/Gallery" className=" ">
                           Gallery
                         </Link>
                       </li>
-                      <li className="">
+                      <li className="info_link-li">
                         <Link to="/Reva_web/contact" className=" ">
                           Contact Us
                         </Link>
@@ -135,7 +135,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-1">
+                {/* <div className="col-md-1">
                   <div className="info_form ">
                     <form action="">
                       <input type="email" placeholder="Enter Your Email" />
@@ -144,7 +144,7 @@ const Footer = () => {
                       </button>
                     </form>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

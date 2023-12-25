@@ -1,3 +1,9 @@
 .row{
     justify-content: left;
 }
+.info_link-li:hover{
+ font-weight: 900;
+}
+.info_bottom{
+    cursor: pointer;
+}
