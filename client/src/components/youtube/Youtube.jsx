@@ -3,29 +3,129 @@ import "./youtube.css"; // Import your CSS file for styling
 
 const Youtube = () => {
   return (
-    <>
+    <div className="Youtube-cont">
       <div className="accordion-body">
         <div className="accordion" id="innerAccordion">
           {/* Accordion Item #1 */}
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button
-                className="accordion-button"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#innerCollapseOne"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="innerCollapseOne"
               >
-                <i class="fa fa-play" aria-hidden="true">
-                  {" "}
+                <i className="fa fa-play" aria-hidden="true">
                   1
                 </i>
               </button>
             </h2>
             <div
               id="innerCollapseOne"
-              className="accordion-collapse collapse show"
+              className="accordion-collapse  show"
+              data-bs-parent="#innerAccordion"
+            >
+              <div className="accordion-body">
+                <div className="youtube-video">
+                  <video
+                    className="youtube-video-iframe"
+                    controls // Add controls for user interaction
+                    autoPlay={false} // Set autoPlay to false
+                  >
+                    <source src="./video/4.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#innerCollapseTen"
+                aria-expanded="false"
+                aria-controls="innerCollapseTen"
+              >
+                <i className="fa fa-play" aria-hidden="true">
+                  2
+                </i>
+              </button>
+            </h2>
+            <div
+              id="innerCollapseTen"
+              className="accordion-collapse collapse"
+              data-bs-parent="#innerAccordion"
+            >
+              <div className="accordion-body">
+                <div className="youtube-video">
+                  <video
+                    className="youtube-video-iframe"
+                    controls // Add controls for user interaction
+                    autoPlay={false} // Set autoPlay to false
+                  >
+                    <source src="./video/5.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#innerCollapseEleven"
+                aria-expanded="false"
+                aria-controls="innerCollapseEleven"
+              >
+                <i className="fa fa-play" aria-hidden="true">
+                  3
+                </i>
+              </button>
+            </h2>
+            <div
+              id="innerCollapseEleven"
+              className="accordion-collapse collapse"
+              data-bs-parent="#innerAccordion"
+            >
+              <div className="accordion-body">
+                <div className="youtube-video">
+                  <video
+                    className="youtube-video-iframe"
+                    controls // Add controls for user interaction
+                    autoPlay={false} // Set autoPlay to false
+                  >
+                    <source src="./video/6.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#innerCollapseNine"
+                aria-expanded="false"
+                aria-controls="innerCollapseNine"
+              >
+                <i class="fa fa-play" aria-hidden="true">
+                  {" "}
+                  4
+                </i>
+              </button>
+            </h2>
+            <div
+              id="innerCollapseNine"
+              className="accordion-collapse collapse "
               data-bs-parent="#innerAccordion"
             >
               <div className="accordion-body">
@@ -52,7 +152,7 @@ const Youtube = () => {
                 aria-controls="innerCollapseTwo"
               >
                 <i class="fa fa-play" aria-hidden="true">
-                  2
+                  5
                 </i>
               </button>
             </h2>
@@ -87,7 +187,7 @@ const Youtube = () => {
                 aria-controls="innerCollapseThree"
               >
                 <i class="fa fa-play" aria-hidden="true">
-                  3
+                  6
                 </i>
               </button>
             </h2>
@@ -120,7 +220,7 @@ const Youtube = () => {
                 aria-controls="innerCollapseFour"
               >
                 <i class="fa fa-play" aria-hidden="true">
-                  4
+                  7
                 </i>
               </button>
             </h2>
@@ -153,7 +253,7 @@ const Youtube = () => {
                 aria-controls="innerCollapseFive"
               >
                 <i class="fa fa-play" aria-hidden="true">
-                  5
+                  8
                 </i>
               </button>
             </h2>
@@ -186,7 +286,7 @@ const Youtube = () => {
                 aria-controls="innerCollapseSix"
               >
                 <i class="fa fa-play" aria-hidden="true">
-                  6
+                  9
                 </i>
               </button>
             </h2>
@@ -217,7 +317,7 @@ const Youtube = () => {
                 aria-controls="innerCollapseSeven"
               >
                 <i className="fa fa-play" aria-hidden="true">
-                  7
+                  10
                 </i>
               </button>
             </h2>
@@ -250,7 +350,7 @@ const Youtube = () => {
                 aria-controls="innerCollapseEight"
               >
                 <i className="fa fa-play" aria-hidden="true">
-                  8
+                  11
                 </i>
               </button>
             </h2>
@@ -276,7 +376,7 @@ const Youtube = () => {
           {/* Add more accordion items as needed */}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

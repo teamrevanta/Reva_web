@@ -33,6 +33,18 @@ const images = [
     category: "Our Participation",
   },
   {
+    url: "images/car/ESVC (83).jpg",
+    category: "Manufacturing",
+  },
+  {
+    url: "images/car/ESVC (89).jpg",
+    category: "Manufacturing",
+  },
+  {
+    url: "images/car/revantacar-removebg-preview.png",
+    category: "Manufacturing",
+  },
+  {
     url: "images/events/m2.jpg",
     category: "Manufacturing",
   },

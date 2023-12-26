@@ -118,13 +118,24 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/Reva_web/sponsor" className="nav-link">
+                    <Link
+                      to="/Reva_web/sponsor"
+                      className="nav-link blinking-link"
+                    >
                       Sponsor Us
                     </Link>
                   </li>
-                  <li className="nav-item">
-                    <Link to="/Reva_web/youtube" className="nav-link">
-                      <i className="fa fa-youtube" aria-hidden="true"></i>
+                  <li className="nav-item" style={{ fontSize: "24px" }}>
+                    <Link
+                      to="/Reva_web/youtube"
+                      className="nav-link"
+                      style={{ fontSize: "24px" }}
+                    >
+                      <i
+                        className="fa fa-youtube"
+                        aria-hidden="true"
+                        style={{ fontSize: "24px" }}
+                      ></i>
                     </Link>
                   </li>
                 </ul>

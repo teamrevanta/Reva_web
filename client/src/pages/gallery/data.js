@@ -19,11 +19,6 @@ export const Manufacturing = [
     img: "./images/manufacturing/05.jpg",
     name: "Manufacturing Image 5",
   },
-  {
-    id: 6,
-    img: "./images/manufacturing/01.jpg",
-    name: "Manufacturing Image 6",
-  },
 
   {
     id: 7,

@@ -1,27 +1,27 @@
 /* General Styles */
 
-.gallery-container {
+.gallery-containers {
   padding: 20px;
 }
 
-.batch-dropdown {
+.batch-dropdowns {
   margin-bottom: 20px;
 }
 
-.image-gallery {
+.image-gallerys {
   display: flex;
   flex-wrap: wrap;
 }
 
 /* Image Container Styles */
 
-.image-container {
+.image-containers {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
 }
 
-.image-container img {
+.image-containers img {
   width: calc(33.33% - 20px); /* Display 3 images in one row */
   margin: 10px;
   border-radius: 10px;
@@ -29,20 +29,20 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.image-container img:hover {
+.image-containers img:hover {
   transform: scale(1.1);
   background-color: #3498db; /* Change background color on hover to blue */
   transition: background-color 0.3s ease-in-out;
 }
 
-/* Batch List and Item Styles */
+/* batch List and Item Styles */
 
-.batch-list {
+.batch-lists {
   display: flex;
   flex-wrap: wrap;
 }
 
-.batch-item {
+.batch-items {
   border: 1px solid #ccc;
   padding: 20px;
   margin: 10px;
@@ -50,18 +50,18 @@
   transition: box-shadow 0.3s ease-in-out;
 }
 
-.batch-item:hover {
+.batch-items:hover {
   box-shadow: 0 0 10px rgba(67, 92, 234, 0.2);
 }
 
-.batch-item img {
+.batch-items img {
   width: 100%;
   max-height: 200px;
   object-fit: auto;
   border-radius: 5px;
 }
 
-.batch-item a {
+.batch-items a {
   display: block;
   margin-top: 10px;
   text-decoration: none;
@@ -72,27 +72,27 @@
 /* Media Queries */
 
 @media (max-width: 768px) {
-  .image-container {
+  .image-containers {
     width: calc(50% - 20px); /* 2 images per row on smaller screens */
   }
 
-  .image-container img {
+  .image-containers img {
     width: calc(50% - 20px);
   }
 
-  .batch-item {
+  .batch-items {
     width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  .image-container {
+  .image-containers {
     width: 100%; /* 1 image per row on mobile screens */
     flex-direction: column;
     align-items: center;
   }
 
-  .image-container img {
+  .image-containers img {
     width: 80%;
   }
 }

@@ -107,8 +107,9 @@ const Services = () => {
                   <p>
                     Currently the team is engaged in doing research to improve
                     the mileage and efficiency of Electric-Solar Vehicle. The
-                    team is also looking forward to make an ultra-light. The
-                    team switched into the Electric Solar Hybrid Category
+                    team is also looking forward to make an ultra-light
+                    cost,effective hybrid vehicle. The team switched into the
+                    Electric Solar Hybrid Category.
                   </p>
                 </div>
               </div>

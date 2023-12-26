@@ -32,7 +32,7 @@ const About = () => {
               <div className="img-box">
                 {/* <img src="images/about-image.jpg" alt="hjbj" /> */}
                 <img
-                  src="./images/participation/img43.JPG"
+                  src="./images/car/Screenshot (137).png"
                   alt="hjbj"
                   style={{ borderRadius: "12px" }}
                 />

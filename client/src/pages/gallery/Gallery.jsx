@@ -12,48 +12,48 @@ import {
 } from "./data";
 
 const Gallery = () => {
-  const [selectedBatch, setSelectedBatch] = useState("Manufacturing");
+  const [selectedbatch, setSelectedbatch] = useState("Manufacturing");
 
-  const handleBatchSelect = (batch) => {
-    setSelectedBatch(batch);
+  const handlebatchSelect = (batch) => {
+    setSelectedbatch(batch);
   };
 
   return (
-    <div className="gallery-container">
-      <div className="batch-dropdown">
+    <div className="gallery-containers">
+      <div className="batch-dropdowns">
         <Dropdown>
           <Dropdown.Toggle variant="primary" id="dropdown-basic">
-            {selectedBatch}
+            {selectedbatch}
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item onClick={() => handleBatchSelect("Manufacturing")}>
+            <Dropdown.Item onClick={() => handlebatchSelect("Manufacturing")}>
               Manufacturing
             </Dropdown.Item>
             <Dropdown.Item
-              onClick={() => handleBatchSelect("Our Participation")}
+              onClick={() => handlebatchSelect("Our Participation")}
             >
               Our Participation
             </Dropdown.Item>
-            <Dropdown.Item onClick={() => handleBatchSelect("Events")}>
+            <Dropdown.Item onClick={() => handlebatchSelect("Events")}>
               Events
             </Dropdown.Item>
-            <Dropdown.Item onClick={() => handleBatchSelect("Celebration")}>
+            <Dropdown.Item onClick={() => handlebatchSelect("Celebration")}>
               Celebration
             </Dropdown.Item>
-            <Dropdown.Item onClick={() => handleBatchSelect("Group Photos")}>
+            <Dropdown.Item onClick={() => handlebatchSelect("Group Photos")}>
               Group Photos
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </div>
 
-      <div className="image-gallery">
+      <div className="image-gallerys">
         {/* Images for Events */}
-        {selectedBatch === "Celebration" && (
-          <div className="batch-list">
+        {selectedbatch === "Celebration" && (
+          <div className="batch-lists">
             {Celebration.map((batch) => (
-              <div key={batch.id} className="batch-item">
+              <div key={batch.id} className="batch-items">
                 <img src={batch.img} alt={batch.name} />
               </div>
             ))}
@@ -61,19 +61,19 @@ const Gallery = () => {
         )}
 
         {/* Images for Manufacturing */}
-        {selectedBatch === "Manufacturing" && (
-          <div className="batch-list">
+        {selectedbatch === "Manufacturing" && (
+          <div className="batch-lists">
             {Manufacturing.map((batch) => (
-              <div key={batch.id} className="batch-item">
+              <div key={batch.id} className="batch-items">
                 <img src={batch.img} alt={batch.name} />
               </div>
             ))}
           </div>
         )}
-        {selectedBatch === "Group Photos" && (
-          <div className="batch-list">
+        {selectedbatch === "Group Photos" && (
+          <div className="batch-lists">
             {Group.map((batch) => (
-              <div key={batch.id} className="batch-item">
+              <div key={batch.id} className="batch-items">
                 <img src={batch.img} alt={batch.name} />
               </div>
             ))}
@@ -81,10 +81,10 @@ const Gallery = () => {
         )}
 
         {/* Images for Our Participation */}
-        {selectedBatch === "Our Participation" && (
-          <div className="batch-list">
+        {selectedbatch === "Our Participation" && (
+          <div className="batch-lists">
             {Participation.map((batch) => (
-              <div key={batch.id} className="batch-item">
+              <div key={batch.id} className="batch-items">
                 <img src={batch.img} alt={batch.name} />
               </div>
             ))}
@@ -92,10 +92,10 @@ const Gallery = () => {
         )}
 
         {/* Images for Events */}
-        {selectedBatch === "Events" && (
-          <div className="batch-list">
+        {selectedbatch === "Events" && (
+          <div className="batch-lists">
             {Events.map((batch) => (
-              <div key={batch.id} className="batch-item">
+              <div key={batch.id} className="batch-items">
                 <img src={batch.img} alt={batch.name} />
               </div>
             ))}

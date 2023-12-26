@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
-
+.Sponser_us{
+    margin-bottom: 10%;
+}
 .Sponser_heading{
     width: 100%;
     height: 100px;
@@ -21,9 +23,16 @@
   font-size: 20px;
   margin-left: 40%;
   margin-top: 2px;
+  border-radius: 6px;
  
  
 }
+.sponsor-download:hover{
+    background-color: #da7426;
+}
+
+
+
 .PreviousSponsors{
 padding-top: 6%;
 }
@@ -66,7 +75,7 @@ padding-top: 6%;
     margin: 10px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    background: -webkit-linear-gradient(#cac8ff 0%, #b8c8ff 100%);
+    background: -webkit-linear-gradient(#423ce8 0%, #b8c8ff 100%);
     transition: transform 0.3s ease-in-out;
 
 }
@@ -200,13 +209,26 @@ margin-bottom: 40px;
     margin-bottom: 40px;
     }
 .BankDetails{
-  padding-bottom: 15%;
+  padding-bottom: 10%;
 }
 
 }
+@media (max-width: 679px){
+    .Sponser_us{
+        margin-bottom: 35%;
+    } 
+}
 @media(max-width:400px){
+    .WhySponsors {
+       
+       padding-bottom: 5%;
+      }
+      .why_spo_ul {
+       
+        padding-left: 0;
+      }
   .BankDetails{
-    padding-bottom: 300px;
+    padding-bottom: 100px;
   }
   .sponsor-download{
     
@@ -225,3 +247,49 @@ margin-bottom: 40px;
     font-weight: 700;
   }
 }
+.WhySponsors {
+    
+    padding: 40px 0;
+    height: 100%;
+    width: 100%;
+    letter-spacing: normal;
+    /* overflow:scroll; */
+    
+  }
+  
+  .WhySponsors .Sponser_heading {
+    text-align: center;
+    margin-bottom:45%;
+    font-weight: 900;
+    
+  }
+  
+
+  
+  .WhySponsors .Sponser_subhead {
+    max-width:97%;
+    margin: 0 auto;
+    line-height: 1.2;
+
+    
+  }
+  
+  .why_spo_ul {
+    list-style:circle;
+    padding: 0;
+    margin: 20px 0;
+    padding-left: 5%;
+  }
+  
+  .why_spo_li {
+    text-align:left;
+    margin-bottom: 10px;
+    
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .WhySponsors .Sponser_subhead {
+      padding: 0 20px; /* Adjust the padding as needed for smaller screens */
+    }
+  }
