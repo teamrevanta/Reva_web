@@ -224,7 +224,17 @@ a:focus {
 .navbar_brand_mobile {
   display: none;
 }
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
+.blinking-link {
+  animation: blink 1.5s infinite; /* Adjust the animation duration as needed */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+ font-weight: 600;
+}
 .custom_nav-container {
   padding: 0;
 }
@@ -708,6 +718,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          min-height: 450px;
 }
 
 .service_section .box .img-box {
@@ -798,7 +809,9 @@ a:focus {
 .contact_section .form_container {
   background-color: #003471;
   padding: 45px;
+  min-height: 530px;
 }
+
 
 .contact_section .form_container .form-control {
   width: 100%;

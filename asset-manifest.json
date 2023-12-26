@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Reva_web/static/css/main.1a284d5d.css",
-    "main.js": "/Reva_web/static/js/main.3db19425.js",
+    "main.css": "/Reva_web/static/css/main.b80c2e21.css",
+    "main.js": "/Reva_web/static/js/main.904d6972.js",
     "index.html": "/Reva_web/index.html",
-    "main.1a284d5d.css.map": "/Reva_web/static/css/main.1a284d5d.css.map",
-    "main.3db19425.js.map": "/Reva_web/static/js/main.3db19425.js.map"
+    "main.b80c2e21.css.map": "/Reva_web/static/css/main.b80c2e21.css.map",
+    "main.904d6972.js.map": "/Reva_web/static/js/main.904d6972.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a284d5d.css",
-    "static/js/main.3db19425.js"
+    "static/css/main.b80c2e21.css",
+    "static/js/main.904d6972.js"
   ]
 }
