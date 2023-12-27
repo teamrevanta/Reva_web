@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Footer from "./components/footer/Footer";
 import { Routes, Route } from "react-router-dom";
 
-import Services from "./pages/Services";
+// import Services from "./pages/Services";
 
 import AboutPage from "./pages/aboutPage/AboutPage";
 import AchievementPage from "./pages/achievementPage/AchievementPage";
@@ -22,7 +22,7 @@ const App = () => {
       <Routes>
         <Route exact path="/Reva_web/" element={<Home />} />
 
-        <Route path="/Reva_web/achievements" element={<Services />} />
+        <Route path="/Reva_web/achievements" element={<AchievementPage />} />
         <Route path="/Reva_web/Gallery" element={<Gallery />} />
         <Route path="/Reva_web/contact" element={<ContactPage />} />
 

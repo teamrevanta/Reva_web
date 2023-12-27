@@ -6,6 +6,7 @@ import Services from "./Services";
 import Contact from "../components/contact/Contact";
 import Testmonial from "../components/testmonial/Testmonial";
 import Slider from "../components/sliderComp/Slider";
+import SponsorComp from "../components/SponsorComp/SponsorComp";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Portfolio />
       <Services />
       <Testmonial />
+      <SponsorComp />
       <Contact />
     </div>
   );

@@ -1,145 +1,192 @@
+import React from "react";
 import "./achievement.css";
 
 const AchievementPage = () => {
   return (
-    <div className="custom-services-container">
-      <section className="custom-service-section layout-padding">
-        <div className="custom-container">
-          <div className="custom-heading-container custom-heading-center">
-            <h2 className="custom-heading">
+    <div className="">
+      {" "}
+      <section className="service_section layout_padding">
+        <div className="container ">
+          <div className="heading_container heading_center">
+            <h2>
               Our <span>Achievements</span>
             </h2>
           </div>
-
-          <div className="custom-row">
-            {/* Achievement Boxes */}
-            <div className="custom-col-md-4">
-              <div className="custom-achievement-box">
-                <h3>
-                  Shining Bright at the Electric Solar Vehicle Championship
-                </h3>
-                <p>
-                  In the year 2019, Revanta Supermileage showcased their
-                  exceptional talent at the Electric Solar Vehicle
-                  Championship-2019 in Chandigarh. Under the capable leadership
-                  of Agarwal Nidhaan Nawalkishore (PIE), the team's vehicle
-                  'IMPERIUM 2.0' stood out for its outstanding features.
-                  Notably, it secured the first position in suspension,
-                  demonstrated impressive design expertise by clinching the
-                  fourth position, and stood sixth in the Business Plan
-                  category. Moreover, the team exhibited creativity through over
-                  30 innovations, including pioneering technologies like the
-                  Drift Monitoring System, Lane Change Indicator, and Rough
-                  Driving Alert System. Their remarkable performance underscored
-                  their commitment to innovation and excellence.
-                </p>
+          <div className="row">
+            <div className="col-sm-4 col-md-4">
+              <div className="box ">
+                <div className="img-box">
+                  <img src="images/s7.png" alt="" />
+                </div>
+                <div className="detail-box">
+                  <h5>SAE SUPERMILEAGE, USA</h5>
+                  <p>
+                    Our team participated in SAE Supermileage 2010 held in
+                    Michigan, USA. Through collaborative efforts, innovation,
+                    and dedication, we have secured the overall 3rd position.
+                    Team Revanta’s success at SAE brings unparalleled glory and
+                    pride to our Institute NIT Jamshedpur.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="custom-col-md-4">
-              <div className="custom-achievement-box">
-                <h3>Triumph at Electric Solar Vehicle Championship 2017</h3>
-                <p>
-                  In 2017, Revanta Supermileage made waves at the Electric Solar
-                  Vehicle Championship-2017 in A.P., under the leadership of
-                  Gaurav Kumar Singh (EEE). Their creation, 'ELAN', garnered
-                  acclaim as one of the event's lightest and most efficient
-                  vehicles. This achievement was not only a source of pride for
-                  the team but also for the entire institute. Amongst stiff
-                  competition from 85 teams nationwide, Revanta Supermileage
-                  displayed exceptional prowess, securing the impressive 9th
-                  position. Their success highlighted their dedication to
-                  innovation, efficiency, and a relentless pursuit of excellence
-                  in the field of solar-powered vehicles.
-                </p>
+            <div className="col-sm-4 col-md-4">
+              <div className="box ">
+                <div className="img-box">
+                  <img src="images/s2.png" alt="" />
+                </div>
+                <div className="detail-box">
+                  <h5>Shell Eco Marathon, Malaysia</h5>
+                  <p>
+                    Driven by passion, Team Revanta , share immense pride to
+                    announce that we secured 2nd rank among all technical teams
+                    in Shell Eco Marathon Asia 2012 held in Kuala Lumpur ,
+                    Malaysia. It's not just the accolades we've earned. It's
+                    about the journey we undertook. Let's carry this spirit
+                    forward, continue to support each other, and conquer new
+                    heights together.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="custom-col-md-4">
-              <div className="custom-achievement-box">
-                <h3>
-                  Revanta Supermileage Soars at Indo-Asian Solar Challenge 2016
-                </h3>
-                <p>
-                  In 2016, Revanta Supermileage made a remarkable mark in the
-                  Indo-Asian Solar Challenge-2016, under the leadership of Akash
-                  Arnav (PIE). Their outstanding performance not only made the
-                  institute proud but also left an indelible mark in the
-                  competition. Out of 195 competitive teams hailing from all
-                  corners of the nation, Revanta Supermileage secured an
-                  impressive 14th rank. This achievement stood as a testament to
-                  their unwavering dedication, technical expertise, and
-                  innovative spirit. The unbeatable result of Revax showcased
-                  their commitment to excellence, earning well-deserved
-                  recognition for the team and the institute alike.
-                </p>
+            <div className="col-sm-4 col-md-4">
+              <div className="box ">
+                <div className="img-box">
+                  <img src="images/s3.png" alt="" />
+                </div>
+                <div className="detail-box">
+                  <h5>ESVC'21</h5>
+                  <p>
+                    In the year 2021, team participated in Electric Solar
+                    Vehicle Championship, led by Abhisekh Kumar(PIE). With our
+                    hard work and collective efforts, team secured 5th rank in
+                    design report and 7th in Virtuals. It's all about the
+                    challenges we faced , the team efforts that brought us to
+                    this moment, and at last We stood United as a Team.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="custom-col-md-4">
-              <div className="custom-achievement-box">
-                <h3>
-                  Leading the Charge: Revanta Supermileage's Triumph at
-                  Indo-Asian Solar Challenge 2015
-                </h3>
-                <p>
-                  In 2015, Revanta Supermileage, under the guidance of Avinash
-                  Kumar (EEE), took the Indo-Asian Solar Challenge by storm with
-                  their innovative Electric Solar Vehicle design. Their
-                  dedication and ingenuity not only made the institute proud but
-                  also set new standards in the competition. Revanta
-                  Supermileage achieved a significant milestone by securing the
-                  first rank in the virtuals category. This remarkable feat
-                  showcased their exceptional skills in the virtual arena,
-                  marking the team as pioneers in the realm of solar-powered
-                  vehicle technology. Their victory underscored their commitment
-                  to excellence and laid the foundation for future successes.
-                </p>
+            <div className="col-sm-4 col-md-4">
+              <div className="box ">
+                <div className="img-box">
+                  <img src="images/s4.png" alt="" />
+                </div>
+                <div className="detail-box">
+                  <h5>ESVC'23</h5>
+                  <p>
+                    In the year 2023, Our team participated in Electric Solar
+                    Vehicle Championship, led by Rajat Raj(ME). The team secured
+                    1st rank in Business plan, 3rd in Cost and Manufacturing
+                    round. We embraced the challenges not as obstacles, but as
+                    opportunities to prove the strength of our team. Here's to
+                    Team Revanta - to our success, to our hard work and to
+                    countless victories that lie ahead. Cheers !!
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="custom-col-md-4">
-              <div className="custom-achievement-box">
-                <h3>
-                  {" "}
-                  Revanta Supermileage's Stellar Performance at Electric Solar
-                  Vehicle Championship 2014
-                </h3>
-                <p>
-                  In 2014, Revanta Supermileage, under the leadership of Gaurav
-                  Singh (MME), exhibited exceptional prowess at the Electric
-                  Solar Vehicle Championship. Their remarkable performance
-                  painted a picture of dedication and innovation. The team
-                  achieved a commendable fourth rank in the virtuals, showcasing
-                  their expertise in the digital realm. Moreover, their overall
-                  performance in the dynamic events was nothing short of
-                  remarkable, earning them recognition and admiration. Revanta
-                  Supermileage's success highlighted their technical acumen,
-                  strategic approach, and ability to excel under pressure,
-                  setting a high standard for future competitions and
-                  solidifying their reputation as leaders in the field.
-                </p>
+            <div className="col-sm-4 col-md-4">
+              <div className="box ">
+                <div className="img-box">
+                  <img src="images/s1.png" alt="" />
+                </div>
+                <div className="detail-box">
+                  <h5>IMPERIUM 2.0</h5>
+                  <p>
+                    In the year 2019 the team took part in Electric Solar
+                    Vehicle Championship-2019 held at Chandigarh, led by Agarwal
+                    Nidhaan Nawalkishore(PIE). Our vehicle 'IMPERIUM 2.0' was
+                    proven best in suspension , 4th in designing , 6th in B Plan
+                    , 30+ innovations
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="custom-col-md-4">
-              <div className="custom-achievement-box">
-                <h3>
-                  Revanta Supermileage: Pioneering Research and Innovation
-                </h3>
-                <p>
-                  Revanta Supermileage is at the forefront of groundbreaking
-                  research, focusing on enhancing the mileage and efficiency of
-                  Electric-Solar Vehicles. The team's relentless dedication to
-                  innovation is driving them to explore new horizons, aiming to
-                  create an ultra-light and cost-effective Hybrid Vehicle. A
-                  significant milestone in this journey is the team's transition
-                  into the Electric Solar Hybrid category, marking a strategic
-                  move towards sustainable and eco-friendly transportation
-                  solutions. Revanta Supermileage's commitment to pushing
-                  boundaries and embracing advanced technologies is shaping the
-                  future of green mobility, setting a remarkable example for the
-                  automotive industry.
-                </p>
+            <div className="col-sm-4 col-md-4">
+              <div className="box ">
+                <div className="img-box">
+                  <img src="images/s2.png" alt="" />
+                </div>
+                <div className="detail-box">
+                  <h5>ELAN</h5>
+                  <p>
+                    In the year 2017 the team took part in Electric Solar
+                    Vehicle Championship-2017 held at A.P., led by Gaurav Kumar
+                    Singh(EEE).Our vehicle 'ELAN' was declared lightest &
+                    efficient vehicle of the event.It is a matter of proud for
+                    the institute as we stood 9th among 85 teams.
+                  </p>
+                </div>
               </div>
             </div>
-
-            {/* Add more achievement boxes similarly */}
+            <div className="col-sm-4 col-md-4">
+              <div className="box ">
+                <div className="img-box">
+                  <img src="images/s3.png" alt="" />
+                </div>
+                <div className="detail-box">
+                  <h5>Revax</h5>
+                  <p>
+                    In the year 2016, the team participated in Indo-Asian Solar
+                    Challenge-2016 led by Akash Arnav (PIE) . It has made the
+                    insitute proud by securing 14th rank out of 195 teams
+                    participating from all over the nation.The institute is
+                    proud to see the unbeatable result of Revax.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-4 col-md-4">
+              <div className="box ">
+                <div className="img-box">
+                  <img src="images/s4.png" alt="" />
+                </div>
+                <div className="detail-box">
+                  <h5>Indo-Asian Solar</h5>
+                  <p>
+                    In the year 2015, the team participated in Indo-Asian Solar
+                    Challenge-2015 led by Avinash Kumar (EEE) with an improvised
+                    design of the Electric Solar Vehicle. It has already made
+                    the insitute proud by securing first rank in the virtuals.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-4 col-md-4">
+              <div className="box ">
+                <div className="img-box">
+                  <img src="images/s5.png" alt="" />
+                </div>
+                <div className="detail-box">
+                  <h5>Championship-2014</h5>
+                  <p>
+                    The team participated in the Electric Solar Vehicle
+                    Championship-2014 led by Gaurav Singh (MME) and came out
+                    with flying colours, securing the fourth rank in the
+                    virtuals and an over all remarkable performance in the
+                    dynamic event.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-4 col-md-4">
+              <div className="box ">
+                <div className="img-box">
+                  <img src="images/s6.png" alt="" />
+                </div>
+                <div className="detail-box">
+                  <h5>Hybrid-Vehicle</h5>
+                  <p>
+                    Currently the team is engaged in doing research to improve
+                    the mileage and efficiency of Electric-Solar Vehicle. The
+                    team is also looking forward to make an ultra-light
+                    cost,effective hybrid vehicle. The team switched into the
+                    Electric Solar Hybrid Category.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

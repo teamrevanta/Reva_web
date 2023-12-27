@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div>
       <section className="about_section layout_padding">
@@ -15,17 +21,22 @@ const About = () => {
                   </h2>
                 </div>
                 <p>
-                  Revanta Supermileage was started in the year 2009 as a result
-                  of the dream of a group of students who wanted to break the
-                  barriers of mileage. The team is being guided by Dr. KDP Singh
-                  (Mech. Dept) and Dr. Madhu Singh (Elect. Dept). Within a year
-                  of its inception, it participated in two International events,
-                  namely- SAE Supermileage-2010, held in Michigan, USA and Shell
-                  Eco Marathon Asia- 2011 and 2012, successively held in
-                  Kualalumpur, Malaysia. Both of these were under the Gasoline
-                  category.
+                  Team Revanta is the official technical team of NIT Jamshedpur
+                  which design solar electric vehicles.
+                  <br /> We aim for designing a highly efficient mileage hybrid
+                  solar electric vehicle with minimal carbon footprint. Revanta
+                  Supermileage was started in the year 2009 as a result of the
+                  dream of a group of students who wanted to break the barriers
+                  of mileage. The team is being guided by Dr. KDP Singh (Mech.
+                  Dept) and Dr. Madhu Singh (Elect. Dept).
+                  <br />
+                  Switching from gasoline vehicles to electric vehicles in 2014.
+                  Just after the break of approx. 2 years which corona pandemic
+                  imposed on us, we shifted to four wheels.
                 </p>
-                <Link to="/Reva_web/aboutPage">Read More</Link>
+                <Link to="/Reva_web/aboutPage" onClick={scrollToTop}>
+                  Read More
+                </Link>
               </div>
             </div>
             <div className="col-md-5 ">

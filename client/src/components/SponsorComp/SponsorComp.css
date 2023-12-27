@@ -1,0 +1,12 @@
+.Down_button{
+    margin-left: 46%;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    border-radius: 8px;
+}
+@media (max-width:400px) {
+    .Down_button{
+        margin-left: 40%;
+        
+    }
+}

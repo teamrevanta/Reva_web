@@ -12,9 +12,19 @@
   }
 }
 
-@media (max-width: 1120px) {}
+@media (max-width:400px) {
+
+}
+@media (max-width: 1220px) {
+  .service_section .box{
+    min-height: 700px;
+  }
+}
 
 @media (max-width: 992px) {
+  .service_section .box{
+    min-height: 600px;
+  }
   .hero_area {
     height:auto;
     
