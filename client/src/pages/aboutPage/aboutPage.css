@@ -66,6 +66,9 @@
     flex: 0 0 100%; /* One column per row on even smaller screens */
     max-width: 90%;
   }
+  .row{
+    padding-left: 8%;
+  }
   .container {
     max-width: 70%;
     overflow: hidden; /* Prevent content overflow */
