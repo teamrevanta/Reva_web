@@ -38,13 +38,11 @@ const AchievementPage = () => {
                 <div className="detail-box">
                   <h5>Shell Eco Marathon, Malaysia</h5>
                   <p>
-                    Driven by passion, Team Revanta , share immense pride to
-                    announce that we secured 2nd rank among all technical teams
-                    in Shell Eco Marathon Asia 2012 held in Kuala Lumpur ,
-                    Malaysia. It's not just the accolades we've earned. It's
-                    about the journey we undertook. Let's carry this spirit
-                    forward, continue to support each other, and conquer new
-                    heights together.
+                    Team Revanta proudly announces 2nd place in Shell Eco
+                    Marathon Asia 2012 in Kuala Lumpur, Malaysia. Beyond
+                    accolades, it's about the journey and conquering new heights
+                    together, fostering a spirit of continuous improvement and
+                    teamwork led by our passionate members.
                   </p>
                 </div>
               </div>
@@ -57,12 +55,11 @@ const AchievementPage = () => {
                 <div className="detail-box">
                   <h5>ESVC'21</h5>
                   <p>
-                    In the year 2021, team participated in Electric Solar
-                    Vehicle Championship, led by Abhisekh Kumar(PIE). With our
-                    hard work and collective efforts, team secured 5th rank in
-                    design report and 7th in Virtuals. It's all about the
-                    challenges we faced , the team efforts that brought us to
-                    this moment, and at last We stood United as a Team.
+                    In 2021, Team Revanta in Electric Solar Vehicle Championship
+                    secured 5th in design and 7th in Virtuals. United as a team,
+                    we faced challenges, emerged stronger, and remain committed
+                    to pushing the boundaries of sustainable technology, led by
+                    the visionary Abhisekh Kumar(PIE).
                   </p>
                 </div>
               </div>
@@ -75,13 +72,11 @@ const AchievementPage = () => {
                 <div className="detail-box">
                   <h5>ESVC'23</h5>
                   <p>
-                    In the year 2023, Our team participated in Electric Solar
-                    Vehicle Championship, led by Rajat Raj(ME). The team secured
-                    1st rank in Business plan, 3rd in Cost and Manufacturing
-                    round. We embraced the challenges not as obstacles, but as
-                    opportunities to prove the strength of our team. Here's to
-                    Team Revanta - to our success, to our hard work and to
-                    countless victories that lie ahead. Cheers !!
+                    In 2023, Revanta in Electric Solar Vehicle Championship
+                    secured 1st in Business plan, 3rd in Cost and Manufacturing.
+                    Cheers to countless victories ahead, as we look forward to
+                    pioneering innovations in the field of electric vehicles,
+                    led by the dynamic leadership of Rajat Raj(ME).
                   </p>
                 </div>
               </div>

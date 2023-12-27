@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className="header_bottom">
           <div className="container-fluid">
             <nav className="navbar navbar-expand-lg custom_nav-container ">
-              <a className="navbar-brand navbar_brand_mobile" href="index.html">
+              <a className="navbar-brand navbar_brand_mobile" href="#">
                 {" "}
                 Team<span>Revanta</span>{" "}
               </a>
@@ -118,11 +118,10 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      to="/Reva_web/sponsor"
-                      className="nav-link blinking-link"
-                    >
-                      Sponsor Us
+                    <Link to="/Reva_web/sponsor" className="nav-link">
+                      <span style={{ color: "orange", fontWeight: "900" }}>
+                        Sponsor Us{" "}
+                      </span>
                     </Link>
                   </li>
                   <li className="nav-item" style={{ fontSize: "24px" }}>

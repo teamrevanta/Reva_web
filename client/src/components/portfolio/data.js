@@ -25,55 +25,67 @@ export const leads = [
 // data.js
 const images = [
   {
-    url: "https://i.ibb.co/HGRR7wG/achiv.jpg",
+    url: "./images/Portfolio/Part1.jpg",
     category: "Our Participation",
   },
   {
-    url: "https://i.ibb.co/0sns4bH/shivshakti.jpg",
+    url: "./images/Portfolio/Part2.jpg",
     category: "Our Participation",
   },
   {
-    url: "images/car/ESVC (83).jpg",
+    url: "./images/Portfolio/Manu1.jpg",
     category: "Manufacturing",
   },
   {
-    url: "images/car/ESVC (89).jpg",
+    url: "./images/Portfolio/Manu2.jpg",
     category: "Manufacturing",
   },
+  // {
+  //   url: "images/car/ESVC (89).jpg",
+  //   category: "Manufacturing",
+  // },
+  // {
+  //   url: "images/car/revantacar-removebg-preview.png",
+  //   category: "Manufacturing",
+  // },
+  // {
+  //   url: "images/events/m2.jpg",
+  //   category: "Manufacturing",
+  // },
+  // {
+  //   url: "images/events/m3.jpg",
+  //   category: "Manufacturing",
+  // },
+  // {
+  //   url: "images/events/m4.jpg",
+  //   category: "Manufacturing",
+  // },
+  // {
+  //   url: "images/events/m5.jpg",
+  //   category: "Manufacturing",
+  // },
+  // {
+  //   url: "images/events/m6.jpg",
+  //   category: "Manufacturing",
+  // },
   {
-    url: "images/car/revantacar-removebg-preview.png",
-    category: "Manufacturing",
-  },
-  {
-    url: "images/events/m2.jpg",
-    category: "Manufacturing",
-  },
-  {
-    url: "images/events/m3.jpg",
-    category: "Manufacturing",
-  },
-  {
-    url: "images/events/m4.jpg",
-    category: "Manufacturing",
-  },
-  {
-    url: "images/events/m5.jpg",
-    category: "Manufacturing",
-  },
-  {
-    url: "images/events/m6.jpg",
-    category: "Manufacturing",
-  },
-  {
-    url: "https://i.ibb.co/1J3Yr8H/IMG-20230317-195534.jpg",
+    url: "./images/Portfolio/Events1.jpg",
     category: "Events",
   },
   {
-    url: "https://i.ibb.co/5YN8cYx/IMG-20230317-184025.jpg",
+    url: "./images/Portfolio/Events2.jpg",
+    category: "Events",
+  },
+  // {
+  //   url: "./images/Portfolio/Events3.dng",
+  //   category: "Events",
+  // },
+  {
+    url: "./images/Portfolio/Events4.jpg",
     category: "Events",
   },
   {
-    url: "https://i.ibb.co/kSdgkTD/IMG-20230317-184044.jpg",
+    url: "./images/Portfolio/Events5.jpg",
     category: "Events",
   },
 
