@@ -719,7 +719,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-          min-height:520px;
+          min-height:480px;
 }
 
 .service_section .box .img-box {
