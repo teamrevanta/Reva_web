@@ -16,15 +16,15 @@
 
 }
 @media (max-width: 1220px) {
-  .service_section .box{
+  /* .service_section .box{
     min-height: 700px;
-  }
+  } */
 }
 
 @media (max-width: 992px) {
-  .service_section .box{
+  /* .service_section .box{
     min-height: 600px;
-  }
+  } */
   .hero_area {
     height:auto;
     
