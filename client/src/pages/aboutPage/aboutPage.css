@@ -50,7 +50,7 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
   .col-md-4 {
     flex: 0 0 50%; /* Two columns per row on smaller screens */
     max-width: 50%;
@@ -61,10 +61,10 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 760px) {
   .col-md-4 {
     flex: 0 0 100%; /* One column per row on even smaller screens */
-    max-width: 100%;
+    max-width: 90%;
   }
   .container {
     max-width: 70%;

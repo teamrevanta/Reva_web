@@ -16,8 +16,8 @@ const Sponsor = () => {
         <h3>Sponsor Us</h3>
 
         <div className="Sponser_subhead">
-          "Contribute towards a greener India and play your role in bringing it
-          to forefront in the solar race."
+          "Contribute towards a greener India and play your role in to forefront
+          in the solar race"
         </div>
         <button onClick={downloadPdf} className="sponsor-download">
           REVANTA BROCHURE
@@ -115,17 +115,6 @@ const Sponsor = () => {
         </div>
       </div>
 
-      <div className="BankDetails">
-        <div className="Sponser_heading">
-          <h3>Bank Details</h3>
-
-          <div className="details">
-            <p>Account Name - REVANTA N.I.T JAMSHEDPUR</p>
-            <p>Account Number - 31071926039</p>
-            <p>IFSC CODE - SBIN0001882</p>
-          </div>
-        </div>
-      </div>
       <div className="WhySponsors">
         <div className="Sponser_heading">
           <h3>Why Should You Help Us?</h3>
@@ -149,6 +138,17 @@ const Sponsor = () => {
                 a developed nation.
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div className="BankDetails">
+        <div className="Sponser_heading">
+          <h3>Bank Details</h3>
+
+          <div className="details">
+            <p>Account Name - REVANTA N.I.T JAMSHEDPUR</p>
+            <p>Account Number - 31071926039</p>
+            <p>IFSC CODE - SBIN0001882</p>
           </div>
         </div>
       </div>
