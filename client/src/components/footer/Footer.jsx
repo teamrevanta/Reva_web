@@ -84,9 +84,10 @@ const Footer = () => {
                 <div className="col-md-3">
                   <h5>Nit Jamshedpur</h5>
                   <p>
-                    It is the top educational institue under central government
-                    promoting various clubs for development of budding
-                    engineers.
+                    NIT Jamshedpur is an Institute of National Importance for
+                    Technical Education located at Jamshedpur, Jharkhand, India
+                    and is directly under the control of the Ministry of
+                    Education (MHRD).
                   </p>
                 </div>
               </div>

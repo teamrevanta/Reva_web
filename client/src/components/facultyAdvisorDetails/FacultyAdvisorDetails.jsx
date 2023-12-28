@@ -4,7 +4,11 @@ import "./FacultyAdvisorDetails.css";
 const FacultyAdvisorDetails = () => {
   return (
     <>
-      <h2 className="faculty-advisor-heading">Faculty Advisors</h2>
+      <div className="heading_container heading_center">
+        <h2>
+          Faculty <span> Advisior</span>
+        </h2>
+      </div>
       <div className="faculty-advisor-details">
         <div className="faculty-advisor">
           <img

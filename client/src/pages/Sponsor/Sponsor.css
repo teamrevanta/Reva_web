@@ -11,8 +11,9 @@
     justify-content: center;
     font-family:"Rajdhani" ;
     letter-spacing: 5px;
-    font-size: 30px;
+    font-size: 40px;
     padding-top:3%;
+    font-weight:800;
     
 }
 .sponsor-download{
@@ -51,7 +52,7 @@ padding-top: 6%;
 .Sponser_subhead{
     display: flex;
     justify-content: center;
-    font-family:"Rajdhani" ;
+    /* font-family:"Rajdhani" ; */
     font-weight: 600;
     margin-left: 20px;
     letter-spacing: 2px;
@@ -93,7 +94,7 @@ padding-top: 6%;
 .Sponser_plans h3{
     font-family:"Rajdhani" ;
     font-weight: 600;
-    font-weight: 900;
+    
     color: white;
     letter-spacing: 2px;
 

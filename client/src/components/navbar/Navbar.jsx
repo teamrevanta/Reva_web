@@ -114,7 +114,7 @@ const Navbar = () => {
 
                   <li className="nav-item">
                     <Link to="/Reva_web/ourteam" className="nav-link">
-                      Team
+                      Our Team
                     </Link>
                   </li>
                   <li className="nav-item">

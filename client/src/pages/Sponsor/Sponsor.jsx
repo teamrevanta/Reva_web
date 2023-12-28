@@ -36,7 +36,7 @@ const Sponsor = () => {
           <h3>INR 41,000 And Above</h3>
           <ul>
             <li>Large size logo on the team website,banners, and posters.</li>
-            <li>Prederred position for a large size logo on a team car.</li>
+            <li>Preferred position for a large size logo on a team car.</li>
             <li>Special acknowledgment in media and press releases.</li>
             <li>
               Special mention and promotion in events and public gatherings
@@ -57,7 +57,7 @@ const Sponsor = () => {
           <h3>INR 21,000 - 40,000</h3>
           <ul>
             <li>Large size logo on the team website,banners, and posters.</li>
-            <li>Prederred position for a logo on a team car.</li>
+            <li>Preferred position for a logo on a team car.</li>
             <li>Acknowledgment in media and press releases.</li>
             <li>
               Mention and promotion in events and public gatherings where the
@@ -104,14 +104,10 @@ const Sponsor = () => {
       </div>
       <div className="PreviousSponsors">
         <div className="Sponser_heading">
-          <div className="heading_container heading_center">
-            <h2>
-              Our Previous <span>Sponsors</span>
-            </h2>
-          </div>
+          <h3>Our Previous Sponsors</h3>
 
           <div className="Sponser_subhead">
-            it was only possible because of the support of these companies that
+            It was only possible because of the support of these companies that
             our journey has been successful. <br />
             So, as a token of respect,we put out the names of these companies in
             front of you dignitaries
@@ -124,11 +120,7 @@ const Sponsor = () => {
 
       <div className="WhySponsors">
         <div className="Sponser_heading">
-          <div className="heading_container heading_center">
-            <h2>
-              Why Should You <span>Sponsor Us?</span>
-            </h2>
-          </div>
+          <h3>Why Should You Sponsor Us?</h3>
 
           <div className="Sponser_subhead">
             <ul className="why_spo_ul">
@@ -154,11 +146,7 @@ const Sponsor = () => {
       </div>
       <div className="BankDetails">
         <div className="Sponser_heading">
-          <div className="heading_container heading_center">
-            <h2>
-              Bank <span> Details</span>
-            </h2>
-          </div>
+          <h3>Bank Details</h3>
 
           <div className="details">
             <p>Account Name - REVANTA N.I.T JAMSHEDPUR</p>

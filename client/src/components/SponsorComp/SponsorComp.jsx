@@ -35,7 +35,7 @@ const SponsorComp = () => {
           <h3>INR 41,000 And Above</h3>
           <ul>
             <li>Large size logo on the team website,banners, and posters.</li>
-            <li>Prederred position for a large size logo on a team car.</li>
+            <li>Preferred position for a large size logo on a team car.</li>
             <li>Special acknowledgment in media and press releases.</li>
             <li>
               Special mention and promotion in events and public gatherings
@@ -56,7 +56,7 @@ const SponsorComp = () => {
           <h3>INR 21,000 - 40,000</h3>
           <ul>
             <li>Large size logo on the team website,banners, and posters.</li>
-            <li>Prederred position for a logo on a team car.</li>
+            <li>Preferred position for a logo on a team car.</li>
             <li>Acknowledgment in media and press releases.</li>
             <li>
               Mention and promotion in events and public gatherings where the

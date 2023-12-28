@@ -440,7 +440,7 @@ export const Participation = [
 ];
 
 export const Group = [
-  { id: 1, img: "./images/events/IMG_3202.JPG", name: "Event Image 1" },
+  // { id: 1, img: "./images/events/IMG_3202.JPG", name: "Event Image 1" },
   { id: 2, img: "./images/events/IMG_3207.JPG", name: "Event Image 2" },
   { id: 3, img: "./images/events/IMG_3216.JPG", name: "Event Image 3" },
   { id: 4, img: "./images/events/IMG_3222.JPG", name: "Event Image 4" },
@@ -452,6 +452,6 @@ export const Group = [
   { id: 10, img: "./images/events/IMG_3283.JPG", name: "Event Image 10" },
   { id: 11, img: "./images/events/IMG_3294.JPG", name: "Event Image 11" },
   { id: 12, img: "./images/events/IMG_3310.JPG", name: "Event Image 12" },
-  { id: 13, img: "./images/events/IMG_3328.JPG", name: "Event Image 13" },
-  { id: 14, img: "./images/events/IMG_3334.JPG", name: "Event Image 14" },
+  // { id: 13, img: "./images/events/IMG_3328.JPG", name: "Event Image 13" },
+  // { id: 14, img: "./images/events/IMG_3334.JPG", name: "Event Image 14" },
 ];
