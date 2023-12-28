@@ -33,6 +33,14 @@ const images = [
     category: "Our Participation",
   },
   {
+    url: "./images/participation/img7.JPG",
+    category: "Our Participation",
+  },
+  {
+    url: "./images/participation/img62.JPG",
+    category: "Our Participation",
+  },
+  {
     url: "./images/Portfolio/Manu1.jpg",
     category: "Manufacturing",
   },
@@ -56,14 +64,14 @@ const images = [
   //   url: "images/events/m3.jpg",
   //   category: "Manufacturing",
   // },
-  // {
-  //   url: "images/events/m4.jpg",
-  //   category: "Manufacturing",
-  // },
-  // {
-  //   url: "images/events/m5.jpg",
-  //   category: "Manufacturing",
-  // },
+  {
+    url: "images/events/m4.jpg",
+    category: "Manufacturing",
+  },
+  {
+    url: "images/events/m5.jpg",
+    category: "Manufacturing",
+  },
   // {
   //   url: "images/events/m6.jpg",
   //   category: "Manufacturing",

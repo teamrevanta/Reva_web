@@ -49,7 +49,7 @@ const ContactPage = () => {
         </div>
 
         <div className="profile-card">
-          <img src="images/members2k21/Ayushi.jpeg" alt="Vice Captain" />
+          <img src="images/members2k21/Ayushi.jpg" alt="Vice Captain" />
           <div className="profile-details">
             <h3>Ayushi Kumari</h3>
             <h5>Vice Captain</h5>

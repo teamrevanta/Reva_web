@@ -1,47 +1,3 @@
-export const events = [
-  {
-    name: "ESVC",
-    date: "2k22",
-    img: "images/events/achiv.jpg",
-  },
-  {
-    name: "Manufacturing",
-    date: "2k22",
-    img: "images/events/shivshakti.jpg",
-  },
-  {
-    name: "Manufacturing",
-    date: "2k22",
-    img: "images/events/m2.jpg",
-  },
-  {
-    name: "Manufacturing",
-    date: "2k22",
-    img: "images/events/m3.jpg",
-  },
-  {
-    name: "Manufacturing",
-    date: "2k22",
-    img: "images/events/m4.jpg",
-  },
-  {
-    name: "Manufacturing",
-    date: "2k22",
-    img: "images/events/m1.jpg",
-  },
-  {
-    name: "Manufacturing",
-    date: "2k22",
-    img: "images/events/m5.jpg",
-  },
-  {
-    name: "Manufacturing",
-    date: "2k22",
-    img: "images/events/m6.jpg",
-  },
-
-  // Add more member objects as needed
-];
 export const members2k22 = [
   {
     name: "Shivam kumar ",
@@ -114,13 +70,13 @@ export const members2k22 = [
       "https://www.linkedin.com/in/sohan-bhowmick-3225b0249?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXC7kH8pVSo%2BK6B0nPAfNwg%3D%3D",
     img: "./images/members2k22/Sohan bhowmick.jpeg",
   },
-  {
-    name: "Suman maity",
-    post: "member",
-    linkedinLink:
-      "https://www.linkedin.com/in/suman-maity-b093b1253?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BODSjUggTR2KESHdAVaYkaw%3D%3D",
-    img: "./images/members2k22/Suman maity.jpeg",
-  },
+  // {
+  //   name: "Suman maity",
+  //   post: "member",
+  //   linkedinLink:
+  //     "https://www.linkedin.com/in/suman-maity-b093b1253?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BODSjUggTR2KESHdAVaYkaw%3D%3D",
+  //   img: "./images/members2k22/Suman maity.jpeg",
+  // },
   {
     name: "Aditya raj",
     post: "member",
@@ -129,13 +85,13 @@ export const members2k22 = [
     img: "./images/members2k22/Aditya raj.jpeg",
   },
 
-  {
-    name: "Mayank raj ",
-    post: "member",
-    linkedinLink:
-      "https://www.linkedin.com/in/mayank-raj-1858b3288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLEz7WDkPRimsVNqzQPILkg%3D%3D",
-    img: "./images/members2k22/Mayank raj.jpeg",
-  },
+  // {
+  //   name: "Mayank raj ",
+  //   post: "member",
+  //   linkedinLink:
+  //     "https://www.linkedin.com/in/mayank-raj-1858b3288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLEz7WDkPRimsVNqzQPILkg%3D%3D",
+  //   img: "./images/members2k22/Mayank raj.jpeg",
+  // },
   {
     name: " Prashant kumar",
     post: "member",
@@ -157,13 +113,13 @@ export const members2k22 = [
       "https://www.linkedin.com/in/abhiram-gattamneni-309183258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtV2eG2E4Q1%2BYYXP5HGpJuw%3D%3D",
     img: "./images/members2k22/Abhiram gattamneni.jpeg",
   },
-  {
-    name: "Khushi",
-    post: "member",
-    linkedinLink:
-      "https://www.linkedin.com/in/khushi-585ba327b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNH30o5S4SbOpvhqym33sUA%3D%3D",
-    img: "./images/members2k22/khushi.jpeg",
-  },
+  // {
+  //   name: "Khushi",
+  //   post: "member",
+  //   linkedinLink:
+  //     "https://www.linkedin.com/in/khushi-585ba327b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNH30o5S4SbOpvhqym33sUA%3D%3D",
+  //   img: "./images/members2k22/khushi.jpeg",
+  // },
 
   {
     name: "Shubham kumar sinha",
@@ -172,13 +128,13 @@ export const members2k22 = [
       "https://www.linkedin.com/in/shubham-kumar-sinha-137a68257?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTkpAfXTJR4%2B6lCSquTH%2BXA%3D%3D",
     img: "./images/members2k22/Shubham kumar sinha.jpeg",
   },
-  {
-    name: "Priyanshu dev",
-    post: "member",
-    linkedinLink:
-      "https://www.linkedin.com/in/priyanshu-dev-9671b2252?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRogmjVqMROefP3RuW8hjlg%3D%3D",
-    img: "./images/members2k22/Priyanshu dev.jpeg",
-  },
+  // {
+  //   name: "Priyanshu dev",
+  //   post: "member",
+  //   linkedinLink:
+  //     "https://www.linkedin.com/in/priyanshu-dev-9671b2252?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRogmjVqMROefP3RuW8hjlg%3D%3D",
+  //   img: "./images/members2k22/Priyanshu dev.jpeg",
+  // },
   {
     name: "Shreya kumari ",
     post: "member",
@@ -200,6 +156,77 @@ export const members2k22 = [
       "https://www.linkedin.com/in/sampriti-chatterjee-24a23a270?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BzHns332LTHe1n4qNRbTaww%3D%3D",
     img: "./images/members2k22/sampriti chatterje.jpeg.jpg",
   },
+
+  {
+    name: "Satya Narayan Lal ",
+    post: "member",
+    linkedinLink:
+      "https://www.linkedin.com/in/satya-narayan-lal-a8a284251?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bna%2B4XGsuRVixflSFcj9wXA%3D%3D",
+    img: "./images/members2k22/satya narayan lal.jpeg.jpg",
+  },
+  {
+    name: "Prakhar Pragya",
+    post: "member",
+    linkedinLink:
+      "https://www.linkedin.com/in/prakhar-pragya-6073322a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    img: "./images/members2k22/Prakhar.jpg",
+  },
+  {
+    name: "Sourya Dey",
+    post: "member",
+    linkedinLink:
+      "https://www.linkedin.com/in/sourya-dey-4b27961b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    img: "./images/members2k22/Sourya.jpg",
+  },
+  {
+    name: "Abhinav Nishith",
+    post: "member",
+    linkedinLink:
+      "https://www.linkedin.com/in/abhinav-nishith-63b332206?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    img: "./images/members2k22/Abhinav.jpg",
+  },
+  {
+    name: "Raju Sen",
+    post: "member",
+    linkedinLink:
+      "https://www.linkedin.com/in/raju-sen-555592270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    img: "./images/members2k22/Raju.jpg",
+  },
+  {
+    name: "Jogindra Nath",
+    post: "member",
+    linkedinLink:
+      "https://www.linkedin.com/in/jogindra-nath-gond-b3b461258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    img: "./images/members2k22/Jogindra.jpg",
+  },
+  {
+    name: "Ankita Prasad",
+    post: "member",
+    linkedinLink:
+      "https://www.linkedin.com/in/ankita-prasad-77270a271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    img: "./images/members2k22/Ankita.jpg",
+  },
+  {
+    name: "Amit",
+    post: "member",
+    linkedinLink:
+      "https://www.linkedin.com/in/amit-a0997924a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    img: "./images/members2k22/Amit.jpg",
+  },
+  {
+    name: "Ajay Prajapati",
+    post: "member",
+    linkedinLink:
+      "https://www.linkedin.com/in/ajay-prajapati-62a56727b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    img: "./images/members2k22/Ajay.jpeg",
+  },
+  {
+    name: "Rathlavath Lokesh",
+    post: "member",
+    linkedinLink:
+      "https://www.linkedin.com/in/rathlavath-lokesh-5b32bb268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    img: "./images/members2k22/Rathlavath.jpg",
+  },
   {
     name: "Vedha Sharma ",
     post: "member",
@@ -207,13 +234,6 @@ export const members2k22 = [
       "https://www.linkedin.com/in/vedha-sharma-985768271?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXmnIGwI6SiC6REB6HoY1xg%3D%3D",
     // img: "https://www.vhv.rs/dpng/d/15-155087_dummy-image-of-user-hd-png-download.png",
     img: "./images/members2k22/VedhaSharma.JPG",
-  },
-  {
-    name: "Satya Narayan Lal ",
-    post: "member",
-    linkedinLink:
-      "https://www.linkedin.com/in/satya-narayan-lal-a8a284251?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bna%2B4XGsuRVixflSFcj9wXA%3D%3D",
-    img: "./images/members2k22/satya narayan lal.jpeg.jpg",
   },
 
   // 2k22 member's
@@ -231,7 +251,7 @@ export const members2k21 = [
     post: "Vice Captain",
     linkedinLink:
       "https://www.linkedin.com/in/ayushi-kumari-366540246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    img: "images/members2k21/Ayushi.jpeg",
+    img: "images/members2k21/Ayushi.jpg",
   },
   {
     name: "Aditya Pal",
@@ -448,19 +468,19 @@ export const members2k20 = [
     name: "Anushka",
     post: "PR Head",
     linkedinLink: "https://www.linkedin.com/in/anushka-0bb29b216/",
-    img: "./images/members2k20/Anushka.JPG",
+    img: "./images/members2k20/Anushka.jpg",
   },
   {
     name: "Hemanth Venkat",
     post: "Manufacturing Head",
     linkedinLink: "",
-    img: "https://www.vhv.rs/dpng/d/15-155087_dummy-image-of-user-hd-png-download.png",
+    img: "./images/members2k20/Venkat.jpg",
   },
   {
     name: "Anshu Kumari",
     post: "PR Head",
     linkedinLink: "",
-    img: "https://www.vhv.rs/dpng/d/15-155087_dummy-image-of-user-hd-png-download.png",
+    img: "./images/members2k20/Anshu.jpg",
   },
   // Add more member objects as needed
 ];

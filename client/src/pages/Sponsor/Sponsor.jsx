@@ -16,8 +16,8 @@ const Sponsor = () => {
         <h3>Sponsor Us</h3>
 
         <div className="Sponser_subhead">
-          "Contribute towards a greener India and play your role in to forefront
-          in the solar race"
+          "Contribute towards a greener India and play your role in bringing it
+          to forefront in the solar race."
         </div>
         <button onClick={downloadPdf} className="sponsor-download">
           REVANTA BROCHURE
