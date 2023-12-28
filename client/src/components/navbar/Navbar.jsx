@@ -119,8 +119,8 @@ const Navbar = () => {
                   </li>
                   <li className="nav-item">
                     <Link to="/Reva_web/sponsor" className="nav-link">
-                      {/* <span style={{ color: "orange", fontWeight: "900" }}> */}
-                      Sponsor Us {/* </span> */}
+                      <span style={{ color: "orange", fontWeight: "900" }}>
+                      Sponsor Us  </span> 
                     </Link>
                   </li>
                   <li className="nav-item" style={{ fontSize: "24px" }}>
