@@ -1,12 +1,24 @@
-.Down_button{
-    margin-left: 46%;
-    margin-bottom: 3%;
-    margin-top: 5%;
-    border-radius: 8px;
+.Down_button {
+    display: inline-block;
+    padding: 8px 35px;
+    background-color: #da7426;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: 1px solid #da7426;
+    margin-left: 45%;
+    margin-top: 10px;
 }
-@media (max-width:400px) {
-    .Down_button{
-        margin-left: 40%;
-        
+.Down_button:hover{
+    background-color: transparent;
+    color: #da7426;
+}
+@media (max-width: 768px) {
+    .Down_button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width:auto; /* Adjust the width as needed */
     }
 }

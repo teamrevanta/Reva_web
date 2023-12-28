@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
 .Sponser_us{
-    margin-bottom: 10%;
+    margin-bottom: 20%;
 }
 .Sponser_heading{
     width: 100%;
@@ -24,6 +24,7 @@
   margin-left: 40%;
   margin-top: 2px;
   border-radius: 6px;
+  font-weight: 700;
  
  
 }
@@ -54,6 +55,7 @@ padding-top: 6%;
     font-weight: 600;
     margin-left: 20px;
     letter-spacing: 2px;
+  
    
 }
 .Sponser_row{
@@ -63,6 +65,7 @@ padding-top: 6%;
     justify-content: space-between;
     margin-left: 10PX;
     margin-right: 1%;
+    
     
 }
 .Sponser_plans{
@@ -140,6 +143,7 @@ padding-top: 6%;
 }
 .BankDetails{
   padding-bottom: 15%;
+  
 }
 .Sponser_img{
   padding-top: 4%;
@@ -173,7 +177,20 @@ margin-bottom: 40px;
      align-items: center;
     
 }
+
+@media(min-width:1300px){
+  .Sponser_subhead{
+    font-size: 25px;
+  }
+}
+@media (min-width: 402px) and (max-width: 874px) {
+  .sponsor-download {
+    display: none;
+  }
+}
+
 @media(max-width:1000px){
+
     .redline{
         display: none;
 
@@ -184,6 +201,7 @@ margin-bottom: 40px;
     .redline3{
         display: none;
     }
+
   
 }
 @media(max-width:900px){

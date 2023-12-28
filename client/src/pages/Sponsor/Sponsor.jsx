@@ -13,14 +13,17 @@ const Sponsor = () => {
   return (
     <div className="Sponser_us">
       <div className="Sponser_heading">
-        <h3>Sponsor Us</h3>
-
+        <div className="heading_container heading_center">
+          <h2>
+            Sponsor <span> Us</span>
+          </h2>
+        </div>
         <div className="Sponser_subhead">
           "Contribute towards a greener India and play your role in bringing it
           to forefront in the solar race."
         </div>
         <button onClick={downloadPdf} className="sponsor-download">
-          REVANTA BROCHURE
+          OUR BROCHURE
           <i className="fa fa-download" aria-hidden="true"></i>
         </button>
       </div>
@@ -101,7 +104,11 @@ const Sponsor = () => {
       </div>
       <div className="PreviousSponsors">
         <div className="Sponser_heading">
-          <h3>Our Previous Sponsors</h3>
+          <div className="heading_container heading_center">
+            <h2>
+              Our Previous <span>Sponsors</span>
+            </h2>
+          </div>
 
           <div className="Sponser_subhead">
             it was only possible because of the support of these companies that
@@ -117,7 +124,11 @@ const Sponsor = () => {
 
       <div className="WhySponsors">
         <div className="Sponser_heading">
-          <h3>Why Should You Help Us?</h3>
+          <div className="heading_container heading_center">
+            <h2>
+              Why Should You <span>Sponsor Us?</span>
+            </h2>
+          </div>
 
           <div className="Sponser_subhead">
             <ul className="why_spo_ul">
@@ -143,7 +154,11 @@ const Sponsor = () => {
       </div>
       <div className="BankDetails">
         <div className="Sponser_heading">
-          <h3>Bank Details</h3>
+          <div className="heading_container heading_center">
+            <h2>
+              Bank <span> Details</span>
+            </h2>
+          </div>
 
           <div className="details">
             <p>Account Name - REVANTA N.I.T JAMSHEDPUR</p>

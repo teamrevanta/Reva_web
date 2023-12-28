@@ -11,9 +11,12 @@ const SponsorComp = () => {
   };
   return (
     <div className="Sponser_us">
+      <div className="heading_container heading_center">
+        <h2>
+          Sponsor <span> Us</span>
+        </h2>
+      </div>
       <div className="Sponser_heading">
-        <h3>Sponsor Us</h3>
-
         <div className="Sponser_subhead">
           "Contribute towards a greener India and play your role in bringing it
           to forefront in the solar race."
@@ -98,12 +101,15 @@ const SponsorComp = () => {
           </button>
         </div>
       </div>
-      <button className="Down_button">
+      {/* <div className="service_section btn-box">
         <Link to="./sponsor" onClick={scrollToTop}>
-          {" "}
-          Read More{" "}
+          Read More
         </Link>
-      </button>
+      </div> */}
+      <Link to="./sponsor" onClick={scrollToTop}>
+        {" "}
+        <button className="Down_button"> Read More </button>{" "}
+      </Link>
     </div>
   );
 };

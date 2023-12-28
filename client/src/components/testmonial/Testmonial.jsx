@@ -6,7 +6,9 @@ const Testmonial = () => {
       <section className="client_section layout_padding">
         <div className="container">
           <div className="heading_container heading_center">
-            <h2>Captain's Voice</h2>
+            <h2>
+              Captain's <span>Voice</span>
+            </h2>
           </div>
           <div className="row">
             <div className="col-md-9 mx-auto">
