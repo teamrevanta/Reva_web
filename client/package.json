@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "http://www.teamrevanta.in/",
+  "homepage": "https://Bittu04567891.github.io/Reva_web",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
