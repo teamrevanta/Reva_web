@@ -39,7 +39,7 @@ const Portfolio = () => {
                 {filters.map((filterItem) => (
                   <Link
                     key={filterItem}
-                    to="/Reva_web/"
+                    to="/"
                     className={`item ${filter === filterItem ? "active" : ""}`}
                     onClick={() => handleFilterClick(filterItem)}
                   >

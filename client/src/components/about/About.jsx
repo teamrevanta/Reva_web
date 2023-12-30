@@ -34,7 +34,7 @@ const About = () => {
                   Just after the break of approx. 2 years which corona pandemic
                   imposed on us, we shifted to four wheels.
                 </p>
-                <Link to="/Reva_web/aboutPage" onClick={scrollToTop}>
+                <Link to="/aboutPage" onClick={scrollToTop}>
                   Read More
                 </Link>
               </div>

@@ -123,7 +123,7 @@ const Services = () => {
             </div>
           </div>
           <div className="btn-box">
-            <Link to="/Reva_web/achievementPage" onClick={scrollToTop}>
+            <Link to="/achievementPage" onClick={scrollToTop}>
               Read More
             </Link>
           </div>

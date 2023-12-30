@@ -91,34 +91,34 @@ const Navbar = () => {
               >
                 <ul className="navbar-nav  ">
                   <li className="nav-item active">
-                    <Link to="/Reva_web/" className="nav-link">
+                    <Link to="/" className="nav-link">
                       Home
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/Reva_web/achievements" className="nav-link">
+                    <Link to="/achievements" className="nav-link">
                       Achievements
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link to="/Reva_web/Gallery" className="nav-link">
+                    <Link to="/Gallery" className="nav-link">
                       Gallery
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/Reva_web/contact" className="nav-link">
+                    <Link to="/contact" className="nav-link">
                       Contact Us
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link to="/Reva_web/ourteam" className="nav-link">
+                    <Link to="/ourteam" className="nav-link">
                       Our Team
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/Reva_web/sponsor" className="nav-link">
+                    <Link to="/sponsor" className="nav-link">
                       <span style={{ color: "orange", fontWeight: "900" }}>
                         Sponsor Us{" "}
                       </span>
@@ -126,7 +126,7 @@ const Navbar = () => {
                   </li>
                   <li className="nav-item" style={{ fontSize: "24px" }}>
                     <Link
-                      to="/Reva_web/youtube"
+                      to="/youtube"
                       className="nav-link"
                       style={{ fontSize: "24px" }}
                     >

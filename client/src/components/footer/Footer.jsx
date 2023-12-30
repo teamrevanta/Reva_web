@@ -20,27 +20,27 @@ const Footer = () => {
                     <h5>Useful Link</h5>
                     <ul className="info_link-ul">
                       <li className=" info_link-li">
-                        <Link to="/Reva_web/" className=" ">
+                        <Link to="/" className=" ">
                           Home
                         </Link>
                       </li>
                       <li className="info_link-li">
-                        <Link to="/Reva_web/ourteam" className=" ">
+                        <Link to="/ourteam" className=" ">
                           Team
                         </Link>
                       </li>
                       <li className="info_link-li">
-                        <Link to="/Reva_web/achievements" className=" ">
+                        <Link to="/achievements" className=" ">
                           Achievements
                         </Link>
                       </li>
                       <li className="info_link-li">
-                        <Link to="/Reva_web/Gallery" className=" ">
+                        <Link to="/Gallery" className=" ">
                           Gallery
                         </Link>
                       </li>
                       <li className="info_link-li">
-                        <Link to="/Reva_web/contact" className=" ">
+                        <Link to="/contact" className=" ">
                           Contact Us
                         </Link>
                       </li>

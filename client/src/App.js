@@ -22,16 +22,16 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
 
-        <Route path="/Reva_web/achievements" element={<AchievementPage />} />
-        <Route path="/Reva_web/Gallery" element={<Gallery />} />
-        <Route path="/Reva_web/contact" element={<ContactPage />} />
+        <Route path="/achievements" element={<AchievementPage />} />
+        <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/contact" element={<ContactPage />} />
 
-        <Route path="/Reva_web/aboutPage" element={<AboutPage />} />
-        <Route path="/Reva_web/achievementPage" element={<AchievementPage />} />
-        <Route path="/Reva_web/PhotoPage" element={<PhotoPage />} />
-        <Route path="/Reva_web/youtube" element={<Youtube />} />
-        <Route path="/Reva_web/ourTeam" element={<OurTeam />} />
-        <Route path="/Reva_web/sponsor" element={<Sponsor />} />
+        <Route path="/aboutPage" element={<AboutPage />} />
+        <Route path="/achievementPage" element={<AchievementPage />} />
+        <Route path="/PhotoPage" element={<PhotoPage />} />
+        <Route path="/youtube" element={<Youtube />} />
+        <Route path="/ourTeam" element={<OurTeam />} />
+        <Route path="/sponsor" element={<Sponsor />} />
       </Routes>
       <Footer />
     </div>
