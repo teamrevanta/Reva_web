@@ -13,7 +13,7 @@
     letter-spacing: 5px;
     font-size: 40px;
     padding-top:3%;
-    font-weight:800;
+    font-weight:600;
     
 }
 .sponsor-download{
@@ -143,7 +143,7 @@ padding-top: 6%;
     background-color: red;
 }
 .BankDetails{
-  padding-bottom: 15%;
+  padding-top: 5%;
   
 }
 .Sponser_img{
@@ -173,7 +173,7 @@ margin-bottom: 40px;
      display: flex;
      flex-direction: column;
      font-family: 'Rajdhani';
-     font-weight: 600;
+     font-weight:normal;
      font-size: 20px;
      align-items: center;
     
@@ -187,6 +187,15 @@ margin-bottom: 40px;
 @media (min-width: 402px) and (max-width: 874px) {
   .sponsor-download {
     display: none;
+  }
+}
+@media (max-width:345px) {
+  .sponsor-download {
+    display: none;
+  }
+  .BankDetails{
+
+    padding-top:70%;
   }
 }
 
@@ -228,20 +237,20 @@ margin-bottom: 40px;
     margin-bottom: 40px;
     }
 .BankDetails{
-  padding-bottom: 10%;
-  padding-top: 10%;
+
+  padding-top: 25%;
 }
 
 }
-@media (max-width: 679px){
+@media (max-width: 619px){
     .Sponser_us{
         margin-bottom: 35%;
     } 
     .BankDetails{
-      padding-top: 48%;
+      padding-top: 45%;
     }
 }
-@media(max-width:400px){
+@media(max-width:480px){
     .WhySponsors {
        
        padding-bottom: 5%;
@@ -252,7 +261,8 @@ margin-bottom: 40px;
       }
   .BankDetails{
     padding-bottom: 100px;
-    padding-top: 65%;
+    margin-top:50%;
+    
     
   }
   .sponsor-download{

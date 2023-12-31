@@ -98,7 +98,7 @@ const ContactPage = () => {
 
             <p>
               <a
-                href="https://wa.me/9760446768"
+                href="https://wa.me/91+ 9760446768"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -228,6 +228,12 @@ export const members2k22 = [
     img: "./images/members2k22/Rathlavath.jpg",
   },
   {
+    name: "Swadhinta Verma",
+    post: "member",
+    linkedinLink: "https://www.linkedin.com/in/swadhinta-verma-8213582a7/",
+    img: "./images/members2k22/Swadhinta.jpeg",
+  },
+  {
     name: "Vedha Sharma ",
     post: "member",
     linkedinLink:
