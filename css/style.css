@@ -226,15 +226,15 @@ a:focus {
 }
 @keyframes blink {
   0% { opacity: 1; }
-  50% { opacity: 0; }
+  50% { opacity: 0.2; }
   100% { opacity: 1; }
 }
 
 .blinking-link {
-  animation: blink 1.5s infinite; /* Adjust the animation duration as needed */
+  animation:blink 2s infinite; /* Adjust the animation duration as needed */
   font-family:Verdana, Geneva, Tahoma, sans-serif;
  font-weight: 600;
- background-color:#da7426;
+ /* background-color:#da7426; */
 }
 .custom_nav-container {
   padding: 0;
