@@ -124,6 +124,13 @@ const Navbar = () => {
                       </span>
                     </Link>
                   </li>
+                  <li className="nav-item">
+                    <Link to="/notice" className="nav-link blinking-link">
+                      <span style={{ fontWeight: "900", color: "greenyellow" }}>
+                        Result{" "}
+                      </span>
+                    </Link>
+                  </li>
                   <li className="nav-item" style={{ fontSize: "24px" }}>
                     <Link
                       to="/youtube"

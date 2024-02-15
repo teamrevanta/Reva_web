@@ -14,6 +14,7 @@ import OurTeam from "./pages/ourTeam/OurTeam";
 import Gallery from "./pages/gallery/Gallery";
 import Sponsor from "./pages/Sponsor/Sponsor";
 import ContactPage from "./pages/contactPage/ContactPage";
+import Notice from "./pages/notice/Notice";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/youtube" element={<Youtube />} />
         <Route path="/ourTeam" element={<OurTeam />} />
         <Route path="/sponsor" element={<Sponsor />} />
+        <Route path="/notice" element={<Notice />} />
       </Routes>
       <Footer />
     </div>
