@@ -122,7 +122,7 @@ const Footer = () => {
                           <span>Call +91 9155360718</span>
                         </a>
                       </div>
-                      <div className="col-md-2">
+                      <div className="col-md-4">
                         <a
                           href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=teamrevanta@gmail.com"
                           target="_blank"
