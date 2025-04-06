@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Col} from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -47,9 +48,12 @@ const Contact = () => {
       <section className="contact_section ">
         <div className="container">
           <div className="heading_container heading_center">
-            <h2>
-              Get In <span>Touch</span>
-            </h2>
+             <Col xs={12} className="text-center">
+                         <h2 className="section-title">
+                           Get <span>In Touch</span>
+                         </h2>
+                         <div className="section-divider"></div>
+              </Col>
           </div>
           <div className="form-row">
             <div className="col-md-6 px-0">

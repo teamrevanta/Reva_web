@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { Col} from "react-bootstrap";
 const Services = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -14,9 +14,12 @@ const Services = () => {
       <section className="service_section layout_padding">
         <div className="container ">
           <div className="heading_container heading_center">
-            <h2>
-              Our <span>Achievements</span>
-            </h2>
+          <Col xs={12} className="text-center">
+                                 <h2 className="section-title">
+                                 Our <span>Achievements</span>
+                                 </h2>
+                                 <div className="section-divider"></div>
+         </Col>
           </div>
           <div className="row">
             <div className="col-sm-4 col-md-4">

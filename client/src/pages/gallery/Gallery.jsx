@@ -1,107 +1,90 @@
-import { useState } from "react";
-import { Dropdown } from "react-bootstrap";
-
+// Gallery.jsx
+import React, { useState } from "react";
+import { Container, Row, Col, Card, Dropdown } from "react-bootstrap";
 import "./Gallery.css";
-
-import {
-  Manufacturing,
-  Celebration,
-  Events,
-  Participation,
-  Group,
-} from "./data";
+import { Manufacturing, Celebration, Events, Participation, Group } from "./data";
 
 const Gallery = () => {
-  const [selectedbatch, setSelectedbatch] = useState("Manufacturing");
+  const [selectedBatch, setSelectedBatch] = useState("Manufacturing");
 
-  const handlebatchSelect = (batch) => {
-    setSelectedbatch(batch);
+  const handleBatchSelect = (batch) => {
+    setSelectedBatch(batch);
   };
 
+  const renderGallery = (galleryData) => (
+    <Row className="g-4 justify-content-center">
+      {galleryData.map((item) => (
+        <Col key={item.id} xl={3} lg={4} md={6} sm={12}>
+          <Card className="gallery-card shadow">
+            <div className="gallery-image-container ratio ratio-4x3">
+              <Card.Img
+                src={item.img}
+                alt={item.name}
+                className="img-fluid"
+              />
+            </div>
+          </Card>
+        </Col>
+      ))}
+    </Row>
+  );
+
   return (
-    <div className="gallery-containers">
-      <div className="batch-dropdowns">
-        <Dropdown>
-          <Dropdown.Toggle variant="primary" id="dropdown-basic">
-            {selectedbatch}
-          </Dropdown.Toggle>
+    <div className="gallery-page">
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-overlay">
+          <Container>
+            <div className="hero-content text-center">
+              <h1 className="hero-title">Our Gallery</h1>
+              <p className="hero-subtitle">Capturing our moments of innovation and celebration</p>
+              <div className="hero-divider"></div>
+            </div>
+          </Container>
+        </div>
+      </section>
 
-          <Dropdown.Menu>
-            <Dropdown.Item onClick={() => handlebatchSelect("Manufacturing")}>
-              Manufacturing
-            </Dropdown.Item>
-            <Dropdown.Item
-              onClick={() => handlebatchSelect("Our Participation")}
-            >
-              Our Participation
-            </Dropdown.Item>
-            <Dropdown.Item onClick={() => handlebatchSelect("Events")}>
-              Events
-            </Dropdown.Item>
-            <Dropdown.Item onClick={() => handlebatchSelect("Celebration")}>
-              Celebration
-            </Dropdown.Item>
-            <Dropdown.Item onClick={() => handlebatchSelect("Group Photos")}>
-              Group Photos
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-      </div>
+      {/* Gallery Section */}
+      <section className="gallery-section py-5">
+        <Container>
+          <Row className="justify-content-center mb-5">
+            <Col xs={12} className="text-center">
+              <h2 className="section-title">
+                Explore Our <span>Moments</span>
+              </h2>
+              <div className="section-divider"></div>
+              <Dropdown className="d-inline-block mt-3">
+                <Dropdown.Toggle variant="orange" id="batch-dropdown">
+                  {selectedBatch}
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item onClick={() => handleBatchSelect("Manufacturing")}>
+                    Manufacturing
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleBatchSelect("Our Participation")}>
+                    Our Participation
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleBatchSelect("Events")}>
+                    Events
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleBatchSelect("Celebration")}>
+                    Celebration
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleBatchSelect("Group Photos")}>
+                    Group Photos
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </Col>
+          </Row>
 
-      <div className="image-gallerys">
-        {/* Images for Events */}
-        {selectedbatch === "Celebration" && (
-          <div className="batch-lists">
-            {Celebration.map((batch) => (
-              <div key={batch.id} className="batch-items">
-                <img src={batch.img} alt={batch.name} />
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Images for Manufacturing */}
-        {selectedbatch === "Manufacturing" && (
-          <div className="batch-lists">
-            {Manufacturing.map((batch) => (
-              <div key={batch.id} className="batch-items">
-                <img src={batch.img} alt={batch.name} />
-              </div>
-            ))}
-          </div>
-        )}
-        {selectedbatch === "Group Photos" && (
-          <div className="batch-lists">
-            {Group.map((batch) => (
-              <div key={batch.id} className="batch-items">
-                <img src={batch.img} alt={batch.name} />
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Images for Our Participation */}
-        {selectedbatch === "Our Participation" && (
-          <div className="batch-lists">
-            {Participation.map((batch) => (
-              <div key={batch.id} className="batch-items">
-                <img src={batch.img} alt={batch.name} />
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Images for Events */}
-        {selectedbatch === "Events" && (
-          <div className="batch-lists">
-            {Events.map((batch) => (
-              <div key={batch.id} className="batch-items">
-                <img src={batch.img} alt={batch.name} />
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
+          {selectedBatch === "Manufacturing" && renderGallery(Manufacturing)}
+          {selectedBatch === "Our Participation" && renderGallery(Participation)}
+          {selectedBatch === "Events" && renderGallery(Events)}
+          {selectedBatch === "Celebration" && renderGallery(Celebration)}
+          {selectedBatch === "Group Photos" && renderGallery(Group)}
+        </Container>
+      </section>
     </div>
   );
 };

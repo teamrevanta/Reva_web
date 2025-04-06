@@ -1,56 +1,170 @@
-/* Add your existing styles if any */
+.contact-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  width: 100%;
+}
 
-.contact-profiles {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 30px;
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #2c3e50 0%, #da7426 100%);
+  padding: 6rem 0;
+  position: relative;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+}
+
+.hero-divider {
+  width: 80px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 2rem auto;
+}
+
+/* Common Section Styles */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.section-title span {
+  color: #da7426;
+}
+
+.section-divider {
+  width: 100px;
+  height: 4px;
+  background-color: #da7426;
+  margin: 1rem auto;
+}
+
+/* Contact Card Styles */
+.contact-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-image-container {
+  width: 100%;
+  height: 250px; /* Fixed height to maintain aspect ratio */
+  overflow: hidden;
+}
+
+.contact-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.contact-info {
+  padding: .1rem; /* Increased padding for better spacing */
+}
+
+.contact-name {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.contact-role {
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+.contact-department,
+.contact-email,
+.contact-whatsapp {
+  font-size: 0.95rem;
+  color: #495057;
+  margin: 0.5rem 0;
+}
+
+.contact-email a,
+.contact-whatsapp a {
+  color: #da7426;
+  text-decoration: none;
+}
+
+.contact-email a:hover,
+.contact-whatsapp a:hover {
+  color: #b85e1d;
+}
+
+.social-icon {
+  color: #da7426;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #b85e1d;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
   }
-  
-  .profile-card {
-    width: 400px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.3s ease-in-out;
+
+  .hero-subtitle {
+    font-size: 1rem;
   }
-  
-  .profile-card img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+
+  .section-title {
+    font-size: 2rem;
   }
-  
-  .profile-card h3 {
-    margin: 10px 0;
+
+  .contact-name {
+    font-size: 1.3rem;
   }
-  
-  .profile-details p {
-    margin: 5px 0;
-    color: #666;
+
+  .contact-role {
+    font-size: 1rem;
   }
-  
-  .profile-details a {
-    color: #007bff;
-    text-decoration: none;
+
+  .contact-image-container {
+    height: 150px; /* Adjusted height for smaller screens */
   }
-  
-  .profile-details a:hover {
-    text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 4rem 0;
   }
-  .profile-card:hover {
-    transform: scale(1.1); /* Enlarge the advisor box on hover */
+
+  .form-section,
+  .contacts-section {
+    padding: 2rem 0;
   }
-  @media (max-width: 768px) {
-    .contact-profiles {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .profile-card {
-      width: 80%;
-    }
+
+  .contact-info {
+    padding: 1rem;
   }
-  
+
+  .contact-image-container {
+    height: 120px; /* Adjusted height for smaller screens */
+  }
+}

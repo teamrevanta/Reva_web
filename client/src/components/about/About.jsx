@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Col} from "react-bootstrap";
 
 const About = () => {
   const scrollToTop = () => {
@@ -16,9 +17,12 @@ const About = () => {
             <div className="col-md-6">
               <div className="detail-box">
                 <div className="heading_container">
-                  <h2>
-                    Welcome to <span>Team Revanta</span>
-                  </h2>
+                <Col xs={12} className="text-center">
+                         <h2 className="section-title">
+                         Welcome to <span>Team Revanta</span>
+                         </h2>
+                         <div className="section-divider"></div>
+              </Col>
                 </div>
                 <p>
                   Team Revanta is the official technical team of NIT Jamshedpur

@@ -1,330 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
-.Sponser_us{
-    margin-bottom: 20%;
+.sponsor-page {
+  background-color: #f8f9fa;
+  font-family: 'Rajdhani', sans-serif;
 }
-.Sponser_heading{
-    width: 100%;
-    height: 100px;
-}
-.Sponser_heading h3{
-    display: flex;
-    justify-content: center;
-    font-family:"Rajdhani" ;
-    letter-spacing: 5px;
-    font-size: 40px;
-    padding-top:3%;
-    font-weight:600;
-    
-}
-.sponsor-download{
+
+.sponsor-card {
+  background: white;
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
-  justify-content: center;
-  font-family:"Rajdhani" ;
-  letter-spacing: 5px;
-  font-size: 20px;
-  margin-left: 40%;
-  margin-top: 2px;
-  border-radius: 6px;
+  flex-direction: column;
+  color: #333;
+  border-top: 4px solid #da7426;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(218, 116, 38, 0.1) !important;
+}
+
+.sponsor-card h3 {
   font-weight: 700;
- 
- 
-}
-.sponsor-download:hover{
-    background-color: #da7426;
+  letter-spacing: 1px;
+  color: #333;
 }
 
-
-
-.PreviousSponsors{
-padding-top: 6%;
-}
-.redline{
-    width: 114px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 711px;
-    border-radius: 166px;
-    top: 68px;
-    height: 3px;
-    background-color: red;
-}
-.Sponser_subhead{
-    display: flex;
-    justify-content: center;
-    /* font-family:"Rajdhani" ; */
-    font-weight: 400;
-    margin-left: 20px;
-    letter-spacing: 2px;
-  
-   
-}
-.Sponser_row{
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 10PX;
-    margin-right: 1%;
-    
-    
-}
-.Sponser_plans{
-    flex-basis: 31%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    margin: 10px;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    background: -webkit-linear-gradient(#423ce8 0%, #b8c8ff 100%);
-    transition: transform 0.3s ease-in-out;
-
-}
-.Sponser_plans:hover {
-  transform: scale(1.1); /* Enlarge the advisor box on hover */
-}
-.Sponser_plans img{
-    width: 110px;
-    height: 100px;
-   
-}
-.Sponser_plans h3{
-    font-family:"Rajdhani" ;
-    font-weight: 600;
-    
-    color: white;
-    letter-spacing: 2px;
-
-}
-.Sponser_plans ul {
-    list-style:square;
-    display: inline-block;
-}
-.Sponser_plans ul li {
-    padding-top: 10px;
-    font-family: "Rajdhani";
-    letter-spacing: 1px;
-    font-weight: 600;
-    color: white;
-}
-.Sponser_plans button{
-    margin-top: auto;
-    margin-bottom: 10px;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 30px;
-    outline: 0;
-    font-family: "Rajdhani";
-    letter-spacing: 2px;
-    font-weight: 700;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: 0.5s ease;
-    cursor: pointer;
-    
-}
-.Sponser_plans button:hover{
-    background-color: white;
-    color: black;
-}
-.redline2{
-    width: 171px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 683px;
-    border-radius: 166px;
-    top: 836px;
-    height: 3px;
-    background-color: red;
-}
-.BankDetails{
-  padding-top: 5%;
-  
-}
-.Sponser_img{
-  padding-top: 4%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.Sponser_img img{
-width: 700px;
-height: 500px;
-margin-bottom: 40px;
-}
-.redline3{
-    width: 131px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 697px;
-    border-radius: 166px;
-    top: 1521px;
-    height: 3px;
-    background-color: red;
-}
-.details{
-     display: flex;
-     flex-direction: column;
-     font-family: 'Rajdhani';
-     font-weight:normal;
-     font-size: 20px;
-     align-items: center;
-    
+.sponsor-card ul {
+  text-align: left;
+  padding-left: 20px;
 }
 
-@media(min-width:1300px){
-  .Sponser_subhead{
-    font-size: 25px;
-  }
+.sponsor-card ul li {
+  margin-bottom: 10px;
+  position: relative;
+  line-height: 1.5;
 }
-@media (min-width: 402px) and (max-width: 874px) {
-  .sponsor-download {
-    display: none;
-  }
-}
-@media (max-width:345px) {
-  .sponsor-download {
-    display: none;
-  }
-  .BankDetails{
 
-    padding-top:70%;
+.sponsor-card ul li::before {
+  content: "•";
+  color: #da7426;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.btn-outline:hover {
+  background-color: #da7426;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .sponsor-card {
+    margin-bottom: 30px;
   }
 }
 
-@media(max-width:1000px){
-
-    .redline{
-        display: none;
-
-    }
-    .redline2{
-        display: none;
-    }
-    .redline3{
-        display: none;
-    }
-
-  
-}
-@media(max-width:900px){
-
-    .Sponser_row{
-        margin-top: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-left: 10PX;
-        margin-right: 1%;
-        
-    }
-    .Sponser_img{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-    }
-    .Sponser_img img{
-    width: 700px;
-    height: 500px;
-    margin-bottom: 40px;
-    }
-.BankDetails{
-
-  padding-top: 25%;
-}
-
-}
-@media (max-width: 619px){
-    .Sponser_us{
-        margin-bottom: 35%;
-    } 
-    .BankDetails{
-      padding-top: 45%;
-    }
-}
-@media(max-width:480px){
-    .WhySponsors {
-       
-       padding-bottom: 5%;
-      }
-      .why_spo_ul {
-       
-        padding-left: 0;
-      }
-  .BankDetails{
-    padding-bottom: 100px;
-    margin-top:50%;
-    
-    
-  }
-  .sponsor-download{
-    
-   position:absolute;
-   font-size: smaller;
-   letter-spacing: normal;
-   margin-left: 30%;
-   margin-top: 5px;
-   
-  }
-  .Sponser_row{
-    padding-top: 15%;
-  }
-  .PreviousSponsors h3{
-    padding-left:25% ;
-    font-weight: 700;
-  }
-}
-.WhySponsors {
-    
-    padding: 40px 0;
-    height: 100%;
-    width: 100%;
-    letter-spacing: normal;
-    /* overflow:scroll; */
-    
+@media (max-width: 768px) {
+  .sponsor-page h2 {
+    font-size: 2.2rem;
   }
   
-  .WhySponsors .Sponser_heading {
-    text-align: center;
-    margin-bottom:10%;
-    font-weight: 900;
-    
+  .sponsor-page h3 {
+    font-size: 1.8rem;
   }
-  
+}
 
-  
-  .WhySponsors .Sponser_subhead {
-    max-width:97%;
-    margin: 0 auto;
-    line-height: 1.2;
-
-    
+@media (max-width: 576px) {
+  .sponsor-card {
+    padding: 20px 15px;
   }
   
-  .why_spo_ul {
-    list-style:circle;
-    padding: 0;
-    margin: 20px 0;
-    padding-left: 5%;
+  .sponsor-page h2 {
+    font-size: 1.8rem;
   }
   
-  .why_spo_li {
-    text-align:left;
-    margin-bottom: 10px;
-    
+  .sponsor-page h3 {
+    font-size: 1.5rem;
   }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .WhySponsors .Sponser_subhead {
-      padding: 0 20px; /* Adjust the padding as needed for smaller screens */
-    }
-  }
+}

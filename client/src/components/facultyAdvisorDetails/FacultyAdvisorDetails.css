@@ -1,53 +1,88 @@
-.faculty-advisor-heading {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #58bff7; /* Adjust color as needed */
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-.faculty-advisor-details {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-  }
-  
-  .faculty-advisor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px; /* Adjust the margin to control the space between advisors */
-    max-width: 400px; /* Set a maximum width for each advisor on larger screens */
-    text-align:left; /* Center text within the advisor box */
-    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
-  }
-  
-  .faculty-advisor:hover {
-    transform: scale(1.1); /* Enlarge the advisor box on hover */
-  }
-  
-  .faculty-advisor img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .faculty-advisor h4 {
-    margin: 0;
-    font-size: 18px;
-  }
-  
-  .faculty-advisor p {
-    margin: 5px 0;
-  }
-  
-  .faculty-advisor a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .faculty-advisor a:hover {
-    text-decoration: underline;
-  }
-  
+.faculty-advisors-section {
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.section-title span {
+  color: #da7426;
+}
+
+.section-divider {
+  width: 100px;
+  height: 4px;
+  background-color: #da7426;
+  margin: 0 auto 2rem;
+}
+
+.faculty-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.faculty-image-container {
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-image-container img {
+  object-fit: cover;
+}
+
+.faculty-info {
+  padding: 1.5rem;
+}
+
+.faculty-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.faculty-designation {
+  font-size: 1rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.faculty-department,
+.faculty-email {
+  font-size: 0.9rem;
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+
+.faculty-email a {
+  color: #da7426;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.faculty-email a:hover {
+  color: #b85e1d;
+  text-decoration: underline;
+}
+
+.btn-outline-orange {
+  color: #da7426;
+  border-color: #da7426;
+}
+
+.btn-outline-orange:hover {
+  background-color: #da7426;
+  color: white;
+}

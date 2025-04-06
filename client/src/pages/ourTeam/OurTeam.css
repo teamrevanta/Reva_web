@@ -1,0 +1,190 @@
+/* OurTeam.css */
+.our-team-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(135deg, #a08656 0%, #da7426 100%);
+    padding: 6rem 0;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-title {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.25rem;
+  }
+  
+  .hero-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 2rem auto;
+  }
+  
+  /* Common Section Styles */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+  
+  .section-title span {
+    color: #da7426;
+  }
+  
+  .section-divider {
+    width: 100px;
+    height: 4px;
+    background-color: #da7426;
+    margin: 1rem auto;
+  }
+  
+  /* Faculty Section */
+  .faculty-card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .faculty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .faculty-image-container {
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .faculty-info {
+    padding: 1.5rem;
+  }
+  
+  .faculty-name {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .faculty-designation {
+    color: #6c757d;
+    font-size: 1rem;
+  }
+  
+  .faculty-department,
+  .faculty-email {
+    font-size: 0.9rem;
+    color: #495057;
+  }
+  
+  .faculty-email a {
+    color: #da7426;
+    text-decoration: none;
+  }
+  
+  .faculty-email a:hover {
+    color: #b85e1d; /* Darker shade of #da7426 for hover */
+    text-decoration: underline;
+  }
+  
+  /* Team Section */
+  .team-card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-image-container {
+    background-color: #f1f1f1;
+    overflow: hidden;
+  }
+  
+  .team-image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .team-name {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .team-post {
+    color: #6c757d;
+    font-size: 0.95rem;
+  }
+  
+  .social-icon {
+    color: #da7426;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #b85e1d; /* Darker shade for hover */
+    transform: scale(1.1);
+  }
+  
+  #batch-dropdown {
+    background-color: #da7426;
+    border: none;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .faculty-name {
+      font-size: 1.3rem;
+    }
+  
+    .team-name {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-section {
+      padding: 4rem 0;
+    }
+  
+    .faculty-info {
+      padding: 1rem;
+    }
+  }

@@ -1,4 +1,5 @@
 import "./aboutPage.css";
+import { Col} from "react-bootstrap";
 
 const AboutPage = () => {
   return (
@@ -10,9 +11,12 @@ const AboutPage = () => {
               <div className="col-md-6">
                 <div className="detail-box">
                   <div className="heading_container">
-                    <h2>
-                      Welcome to <span>Team Revanta</span>
-                    </h2>
+                  <Col xs={12} className="text-center">
+                         <h2 className="section-title">
+                         Welcome to <span>Team Revanta</span>
+                         </h2>
+                         <div className="section-divider"></div>
+              </Col>
                   </div>
                   <p>
                     Revanta Supermileage was started in the year 2009 as a
