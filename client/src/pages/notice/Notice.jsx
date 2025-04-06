@@ -22,7 +22,7 @@ const Notice = () => {
             <li>HARSHITHA – 2024UGEE066</li>
             <li>RITESH MHASKE – 2024UGEE093</li>
             <li>VEDANT SINGH PARMAR – 2024UGEE098</li>
-            <li>KRISHNA NAGLE – 2024UGEE100</li>
+            <li>KRISHLA NAGLE – 2024UGEE100</li>
             <li>ANISHA KUMARI – 2024UGEE103</li>
             <li>ROSHNI KUMARI – 2024UGEE110</li>
           </ul>
