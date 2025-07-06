@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { FiDownload } from "react-icons/fi";
 import "./Sponsor.css";
 
 const Sponsor = () => {
@@ -66,7 +67,7 @@ const Sponsor = () => {
       {/* Main Heading */}
       <Row className="justify-content-center mb-5">
         <Col xs={12} className="text-center">
-          <h2 className="display-4 fw-bold mb-3">
+          <h2 className="display-4 fw-bold mb-3 sponsor-color">
             Sponsor <span style={{ color: "#da7426" }}>Us</span>
           </h2>
           <div className="mx-auto" style={{ width: "80px", height: "4px", backgroundColor: "#da7426" }}></div>
@@ -76,14 +77,16 @@ const Sponsor = () => {
           <Button 
             onClick={downloadPdf} 
             variant="outline" 
-            className="mt-3 px-4 py-2 fw-bold"
+            className="mt-3 px-6 py-2 fw-bold"
             style={{ 
               borderColor: "#da7426",
               color: "#000000",
               transition: "all 0.3s"
             }}
           >
-            <i className="fas fa-download me-2"></i> DOWNLOAD BROCHURE
+            <FiDownload className="download-icon" style={{
+              fontSize: "18px",
+            }} />DOWNLOAD BROCHURE
           </Button>
         </Col>
       </Row>

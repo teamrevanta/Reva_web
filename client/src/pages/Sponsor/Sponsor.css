@@ -2,7 +2,9 @@
   background-color: #f8f9fa;
   font-family: 'Rajdhani', sans-serif;
 }
-
+.sponsor-color{
+  color: #2c3e50;
+}
 .sponsor-card {
   background: white;
   border-radius: 10px;

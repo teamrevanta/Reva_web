@@ -1,19 +1,15 @@
-/* Gallery.css */
+/* Gallery.module.css */
 .gallery-page {
   background-color: #f8f9fa;
   min-height: 100vh;
 }
 
 /* Hero Section */
-.hero-section {
-  background: linear-gradient(135deg, #2c3e50 0%, #da7426 100%);
+.hero-section{
   padding: 6rem 0;
   position: relative;
-}
-
-.hero-overlay {
-  position: relative;
-  z-index: 1;
+  background: linear-gradient(135deg,#45617e   0%, #da7426 100%);
+ 
 }
 
 .hero-title {
@@ -63,8 +59,8 @@
   overflow: hidden;
   transition: all 0.3s ease;
   width: 100%;
-  max-width: 450px; /* Increased width */
-  margin: 0 auto; /* Center the card in its column */
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .gallery-card:hover {
@@ -75,7 +71,7 @@
 .gallery-image-container {
   background-color: #f1f1f1;
   overflow: hidden;
-  height: 300px; /* Increased height */
+  height: 300px;
 }
 
 .gallery-image-container img {
@@ -89,15 +85,14 @@
   transform: scale(1.05);
 }
 
-#batch-dropdown {
-  background-color: #da7426;
-  border: none;
+.batch-dropdown {
+  border:#da7426 1px solid ;
   padding: 0.5rem 1.5rem;
 }
-
 .btn-outline-orange {
   color: #da7426;
   border-color: #da7426;
+  color: wheat;
 }
 
 .btn-outline-orange:hover {

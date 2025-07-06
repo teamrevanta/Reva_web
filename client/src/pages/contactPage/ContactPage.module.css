@@ -1,16 +1,17 @@
-.contact-page {
+/* OurTeam.css */
+.our-team-page {
   background-color: #f8f9fa;
   min-height: 100vh;
   width: 100%;
 }
 
 /* Hero Section */
-.hero-section {
-  background: linear-gradient(135deg, #2c3e50 0%, #da7426 100%);
+.hero-section{
   padding: 6rem 0;
   position: relative;
+  background: linear-gradient(135deg, #45617e 0%, #da7426 100%);
+ 
 }
-
 .hero-overlay {
   position: relative;
   z-index: 1;
@@ -34,7 +35,6 @@
   background-color: #ffffff;
   margin: 2rem auto;
 }
-
 /* Common Section Styles */
 .section-title {
   font-size: 2.5rem;
@@ -65,10 +65,9 @@
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
-
 .contact-image-container {
   width: 100%;
-  height: 250px; /* Fixed height to maintain aspect ratio */
+  height: 350px; /* Fixed height to maintain aspect ratio */
   overflow: hidden;
 }
 
@@ -144,10 +143,6 @@
   .contact-role {
     font-size: 1rem;
   }
-
-  .contact-image-container {
-    height: 150px; /* Adjusted height for smaller screens */
-  }
 }
 
 @media (max-width: 576px) {
@@ -162,9 +157,5 @@
 
   .contact-info {
     padding: 1rem;
-  }
-
-  .contact-image-container {
-    height: 120px; /* Adjusted height for smaller screens */
   }
 }

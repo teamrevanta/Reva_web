@@ -6,7 +6,7 @@
   
   /* Hero Section */
   .hero-section {
-    background: linear-gradient(135deg, #a08656 0%, #da7426 100%);
+    background: linear-gradient(135deg,  #45617e 0%, #da7426 100%);
     padding: 6rem 0;
     position: relative;
   }
@@ -150,9 +150,8 @@
     transform: scale(1.1);
   }
   
-  #batch-dropdown {
-    background-color: #da7426;
-    border: none;
+  .batch-dropdown {
+    border:#da7426 1px solid ;
     padding: 0.5rem 1.5rem;
   }
   

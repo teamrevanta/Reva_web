@@ -1,7 +1,7 @@
 // Gallery.jsx
 import React, { useState } from "react";
 import { Container, Row, Col, Card, Dropdown } from "react-bootstrap";
-import "./Gallery.css";
+import styles from "./Gallery.module.css";
 import { Manufacturing, Celebration, Events, Participation, Group } from "./data";
 
 const Gallery = () => {
@@ -15,8 +15,8 @@ const Gallery = () => {
     <Row className="g-4 justify-content-center">
       {galleryData.map((item) => (
         <Col key={item.id} xl={3} lg={4} md={6} sm={12}>
-          <Card className="gallery-card shadow">
-            <div className="gallery-image-container ratio ratio-4x3">
+          <Card className={`${styles['gallery-card']} shadow`}>
+            <div className={`${styles['gallery-image-container']} ratio ratio-4x3`}>
               <Card.Img
                 src={item.img}
                 alt={item.name}
@@ -30,31 +30,31 @@ const Gallery = () => {
   );
 
   return (
-    <div className="gallery-page">
+    <div className={styles['gallery-page']}>
       {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-overlay">
+      <section className={styles['hero-section']}>
+        <div className={styles['hero-overlay']}>
           <Container>
-            <div className="hero-content text-center">
-              <h1 className="hero-title">Our Gallery</h1>
-              <p className="hero-subtitle">Capturing our moments of innovation and celebration</p>
-              <div className="hero-divider"></div>
+            <div className={`${styles['hero-content']} text-center`}>
+              <h1 className={styles['hero-title']}>Our Gallery</h1>
+              <p className={styles['hero-subtitle']}>Capturing our moments of innovation and celebration</p>
+              <div className={styles['hero-divider']}></div>
             </div>
           </Container>
         </div>
       </section>
 
       {/* Gallery Section */}
-      <section className="gallery-section py-5">
+      <section className={`${styles['gallery-section']} py-5`}>
         <Container>
           <Row className="justify-content-center mb-5">
             <Col xs={12} className="text-center">
-              <h2 className="section-title">
+              <h2 className={styles['section-title']}>
                 Explore Our <span>Moments</span>
               </h2>
-              <div className="section-divider"></div>
+              <div className={styles['section-divider']}></div>
               <Dropdown className="d-inline-block mt-3">
-                <Dropdown.Toggle variant="orange" id="batch-dropdown">
+                <Dropdown.Toggle variant="orange" id="batch-dropdown" className={styles['batch-dropdown']}>
                   {selectedBatch}
                 </Dropdown.Toggle>
                 <Dropdown.Menu>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Contact from "../../components/contact/Contact";
-import "./ContactPage.css";
+import styles from "./ContactPage.module.css";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
@@ -39,73 +39,66 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className="contact-page">
+    <div className={styles['contact-page']}>
       {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-overlay">
+      <section className={styles['hero-section']}>
+        <div className={styles['hero-overlay']}>
           <Container>
-            <div className="hero-content text-center">
-              <h1 className="hero-title">Contact Us</h1>
-              <p className="hero-subtitle">Get in touch with our team leaders</p>
-              <div className="hero-divider"></div>
+            <div className={`${styles['hero-content']} text-center`}>
+              <h1 className={styles['hero-title']}>Contact Us</h1>
+              <p className={styles['hero-subtitle']}>Get in touch with our team leaders</p>
+              <div className={styles['hero-divider']}></div>
             </div>
           </Container>
         </div>
       </section>
-
-      {/* Contact Form Section */}
-      <section className="form-section py-5">
-        <Container>
-          <Contact />
-        </Container>
-      </section>
-
+      
       {/* Team Contacts Section */}
-      <section className="contacts-section py-5">
-        <Container>
+      <section className={`${styles['contacts-section']} py-5 px-4`}>
+      
           <Row className="justify-content-center mb-5">
             <Col xs={12} className="text-center">
-              <h2 className="section-title">
+              <h2 className={styles['section-title']}>
                 Our <span>Team Contacts</span>
               </h2>
-              <div className="section-divider"></div>
+              <div className={styles['section-divider']}></div>
             </Col>
           </Row>
           <Row className="g-4 justify-content-center">
             {teamContacts.map((contact, index) => (
               <Col key={index} xl={4} lg={4} md={6} sm={12}>
-                <Card className="contact-card h-100 shadow">
-                  <div className="contact-image-container">
+                <Card className={`${styles['contact-card']} h-100 shadow`}>
+                  <div className={styles['contact-image-container']}>
                     <Card.Img
                       src={contact.image}
                       alt={contact.name}
                       className="img-fluid"
                     />
                   </div>
-                  <Card.Body className="contact-info text-center d-flex flex-column">
-                    <Card.Title className="contact-name">{contact.name}</Card.Title>
-                    <Card.Subtitle className="contact-role mb-3">{contact.role}</Card.Subtitle>
-                    <Card.Text className="contact-department">
+                  <Card.Body className={`${styles['contact-info']} text-center d-flex flex-column`}>
+                    <Card.Title className={styles['contact-name']}>{contact.name}</Card.Title>
+                    <Card.Subtitle className={`${styles['contact-role']} mb-3`}>{contact.role}</Card.Subtitle>
+                    <Card.Text className={styles['contact-department']}>
                       <EngineeringIcon className="me-2" />
                       {contact.department}
                     </Card.Text>
-                    <Card.Text className="contact-email">
+                    <Card.Text className={styles['contact-email']}>
                       <a href={`mailto:${contact.email}`} target="_blank" rel="noreferrer">
                         <EmailIcon className="me-2" />
                       </a>
                       {contact.email}
                     </Card.Text>
                     {contact.whatsapp && (
-                      <Card.Text className="contact-whatsapp">
+                      <Card.Text className={styles['contact-whatsapp']}>
                         <a href={`https://wa.me/${contact.whatsapp.replace(/\s+/g, '')}`} target="_blank" rel="noreferrer">
                           <WhatsAppIcon className="me-2" />
                         </a>
                         {contact.whatsapp}
                       </Card.Text>
                     )}
-                    <div className="contact-links mt-auto">
+                    <div className={styles['contact-links']}>
                       <a href={contact.linkedin} target="_blank" rel="noreferrer">
-                        <LinkedIn className="social-icon" />
+                        <LinkedIn className={styles['social-icon']} />
                       </a>
                     </div>
                   </Card.Body>
@@ -113,7 +106,11 @@ const ContactPage = () => {
               </Col>
             ))}
           </Row>
-        </Container>
+        
+      </section>
+      {/* Contact Form Section */}
+      <section className={`${styles['form-section']} py-5`}>
+          <Contact />
       </section>
     </div>
   );

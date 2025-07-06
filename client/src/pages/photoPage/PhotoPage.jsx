@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Dropdown, Container, Row, Col, Card } from "react-bootstrap";
-import "./photoPage.css";
+import "./photoPage.module.css";
 import { members2k21, members2k19, members2k20, members2k22 } from "./data";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import GitHub from "@mui/icons-material/GitHub";

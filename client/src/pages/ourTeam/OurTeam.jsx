@@ -1,11 +1,10 @@
-// OurTeam.jsx
 import React, { useState } from "react";
 import { Container, Row, Col, Card, Dropdown } from "react-bootstrap";
 import { FaEnvelope, FaUser, FaLinkedin, FaUniversity } from "react-icons/fa";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import GitHub from "@mui/icons-material/GitHub";
 import Email from "@mui/icons-material/Email";
-import "./OurTeam.css";
+import styles from "./OurTeam.module.css";
 import { members2k21, members2k19, members2k20, members2k22 } from "./data";
 
 const OurTeam = () => {
@@ -39,11 +38,11 @@ const OurTeam = () => {
   };
 
   const renderBatch = (batchData) => (
-    <Row className="g-4 justify-content-center">
+    <Row className="g-4 justify-content-center py-5 px-4">
       {batchData.map((member) => (
         <Col key={member.id} xl={3} lg={4} md={6} sm={12}>
-          <Card className="team-card h-100 shadow">
-            <div className="team-image-container ratio ratio-1x1">
+          <Card className={`${styles['team-card']} h-100 shadow`}>
+            <div className={`${styles['team-image-container']} ratio ratio-1x1`}>
               <Card.Img
                 src={member.img}
                 alt={member.name}
@@ -51,24 +50,24 @@ const OurTeam = () => {
               />
             </div>
             <Card.Body className="text-center d-flex flex-column">
-              <Card.Title className="team-name">{member.name}</Card.Title>
-              <Card.Subtitle className="team-post mb-3">
+              <Card.Title className={styles['team-name']}>{member.name}</Card.Title>
+              <Card.Subtitle className={`${styles['team-post']} mb-3`}>
                 {member.post}
               </Card.Subtitle>
-              <div className="social-links mt-auto">
+              <div className={styles['social-links']}>
                 {member.linkedinLink && (
                   <a href={member.linkedinLink} target="_blank" rel="noopener noreferrer">
-                    <LinkedIn className="social-icon" />
+                    <LinkedIn className={styles['social-icon']} />
                   </a>
                 )}
                 {member.githubLink && (
                   <a href={member.githubLink} target="_blank" rel="noopener noreferrer">
-                    <GitHub className="social-icon" />
+                    <GitHub className={styles['social-icon']} />
                   </a>
                 )}
                 {member.email && (
                   <a href={`mailto:${member.email}`}>
-                    <Email className="social-icon" />
+                    <Email className={styles['social-icon']} />
                   </a>
                 )}
               </div>
@@ -80,38 +79,37 @@ const OurTeam = () => {
   );
 
   return (
-    <div className="our-team-page">
+    <div className={styles['our-team-page']}>
       {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-overlay">
+      <section className={styles['hero-section']}>
+        <div className={styles['hero-overlay']}>
           <Container>
-            <div className="hero-content text-center">
-              <h1 className="hero-title">Our Team</h1>
-              <p className="hero-subtitle">Meet the brilliant minds behind our success</p>
-              <div className="hero-divider"></div>
+            <div className={`${styles['hero-content']} text-center`}>
+              <h1 className={styles['hero-title']}>Our Team</h1>
+              <p className={styles['hero-subtitle']}>Meet the brilliant minds behind our success</p>
+              <div className={styles['hero-divider']}></div>
             </div>
           </Container>
         </div>
       </section>
 
       {/* Faculty Advisors Section */}
-      <section className="faculty-section py-5">
-        <Container>
+      <section className={`${styles['faculty-section']} py-5 px-4`}>
           <Row className="justify-content-center mb-5">
             <Col xs={12} className="text-center">
-              <h2 className="section-title">
+              <h2 className={styles['section-title']}>
                 Faculty <span>Advisors</span>
               </h2>
-              <div className="section-divider"></div>
+              <div className={styles['section-divider']}></div>
             </Col>
           </Row>
           <Row className="g-4 justify-content-center">
             {advisors.map((advisor) => (
               <Col key={advisor.id} xl={6} lg={6} md={12} sm={12}>
-                <Card className="faculty-card h-100 shadow">
+                <Card className={`${styles['faculty-card']} h-100 shadow`}>
                   <Row className="g-0 h-100">
                     <Col md={4} className="d-flex align-items-center justify-content-center p-3">
-                      <div className="faculty-image-container ratio ratio-1x1">
+                      <div className={`${styles['faculty-image-container']} ratio ratio-1x1`}>
                         <Card.Img
                           src={advisor.image}
                           alt={advisor.name}
@@ -120,25 +118,25 @@ const OurTeam = () => {
                       </div>
                     </Col>
                     <Col md={8}>
-                      <Card.Body className="faculty-info d-flex flex-column">
-                        <Card.Title className="faculty-name">{advisor.name}</Card.Title>
-                        <Card.Subtitle className="faculty-designation mb-2">
+                      <Card.Body className={`${styles['faculty-info']} d-flex flex-column`}>
+                        <Card.Title className={styles['faculty-name']}>{advisor.name}</Card.Title>
+                        <Card.Subtitle className={`${styles['faculty-designation']} mb-2`}>
                           {advisor.designation}
                         </Card.Subtitle>
-                        <Card.Text className="faculty-department">
+                        <Card.Text className={styles['faculty-department']}>
                           <FaUniversity className="me-2" />
                           {advisor.department}
                         </Card.Text>
-                        <Card.Text className="faculty-email">
+                        <Card.Text className={styles['faculty-email']}>
                           <FaEnvelope className="me-2" />
                           <a href={`mailto:${advisor.email}`}>{advisor.email}</a>
                         </Card.Text>
-                        <div className="faculty-links mt-auto">
+                        <div className={styles['faculty-links']}>
                           <a
                             href={advisor.profileLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn btn-outline-orange btn-sm me-2"
+                            className={`btn btn-outline-orange btn-sm me-2`}
                           >
                             <FaUser className="me-1" /> Profile
                           </a>
@@ -147,7 +145,7 @@ const OurTeam = () => {
                               href={advisor.linkedinLink}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="btn btn-outline-orange btn-sm"
+                              className={`btn btn-outline-orange btn-sm`}
                             >
                               <FaLinkedin className="me-1" /> LinkedIn
                             </a>
@@ -160,20 +158,20 @@ const OurTeam = () => {
               </Col>
             ))}
           </Row>
-        </Container>
+        
       </section>
 
       {/* Team Members Section */}
-      <section className="team-section py-5">
-        <Container>
+      <section className={`${styles['team-section']} py-4 px-2`}>
+       
           <Row className="justify-content-center mb-5">
             <Col xs={12} className="text-center">
-              <h2 className="section-title">
+              <h2 className={styles['section-title']}>
                 Our <span>Team</span>
               </h2>
-              <div className="section-divider"></div>
+              <div className={styles['section-divider']}></div>
               <Dropdown className="d-inline-block mt-3">
-                <Dropdown.Toggle variant="orange" id="batch-dropdown">
+                <Dropdown.Toggle variant="orange" className={styles['batch-dropdown']}>
                   {selectedBatch}
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
@@ -197,7 +195,7 @@ const OurTeam = () => {
           {selectedBatch === "Batch 2021" && renderBatch(members2k21)}
           {selectedBatch === "Batch 2020" && renderBatch(members2k20)}
           {selectedBatch === "Batch 2019" && renderBatch(members2k19)}
-        </Container>
+      
       </section>
     </div>
   );
