@@ -31,9 +31,14 @@ exports.submitRegistration = async (req, res) => {
         console.log('req.files:', JSON.stringify(req.files, null, 2));
 
         // Check if email already exists
-        const existingUser =  await Registration.findOne({ email });
+        const existingUser = await Registration.findOne({ email });
         if (existingUser) {
-            return res.status(400).json({ error: 'Email already registered' });
+            if (existingUser.paymentStatus === 'completed') {
+                return res.status(400).json({ error: 'Email already registered with completed payment' });
+            } else {
+                // Optionally, delete the pending registration to allow a retry
+                await Registration.deleteOne({ email, paymentStatus: 'pending' });
+            }
         }
 
         // Check if files are uploaded and have path
@@ -42,47 +47,38 @@ exports.submitRegistration = async (req, res) => {
             return res.status(400).json({ error: 'Both ID card and member images are required and must be uploaded to Cloudinary' });
         }
 
-        // Create registration entry
-        const registration = new Registration({
-            fullName,
-            email,
-            branch,
-            year: parseInt(year),
-            batch,
-            firstPriorityDomain,
-            secondPriorityDomain, // Handle empty string
-            tshirtSize,
-            nameOnTshirt,
-            linkedinId,
-            idCardImage: req.files.idCardImage[0].path,
-            memberImage: req.files.memberImage[0].path
-        });
-
-        await registration.save();
-
         // Create Razorpay order
         const paymentAmount = 150000; // ₹1500 in paisa
         const order = await razorpay.orders.create({
             amount: paymentAmount,
             currency: 'INR',
-            receipt: `reg_${registration._id}`,
+            receipt: `reg_${Date.now()}`, // Use a temporary unique receipt
             notes: {
-                registrationId: registration._id.toString(),
-                email: email
+                email: email // Store minimal data in notes
             }
         });
 
-        // Update registration with order ID
-        registration.razorpayOrderId = order.id;
-        await registration.save();
-
+        // Return registration data and order details to client
         res.json({
             success: true,
             orderId: order.id,
             amount: paymentAmount,
             currency: order.currency,
-            registrationId: registration._id,
-            razorpayKey: process.env.RAZORPAY_KEY_ID
+            razorpayKey: process.env.RAZORPAY_KEY_ID,
+            registrationData: {
+                fullName,
+                email,
+                branch,
+                year: parseInt(year),
+                batch,
+                firstPriorityDomain,
+                secondPriorityDomain,
+                tshirtSize,
+                nameOnTshirt,
+                linkedinId,
+                idCardImage: req.files.idCardImage[0].path,
+                memberImage: req.files.memberImage[0].path
+            }
         });
 
     } catch (error) {
@@ -97,7 +93,7 @@ exports.verifyPayment = async (req, res) => {
             razorpay_order_id,
             razorpay_payment_id,
             razorpay_signature,
-            registrationId
+            registrationData
         } = req.body;
 
         // Verify signature
@@ -109,21 +105,21 @@ exports.verifyPayment = async (req, res) => {
             // Verify payment with Razorpay API
             const payment = await razorpay.payments.fetch(razorpay_payment_id);
             if (payment.status === 'captured') {
-                await Registration.findByIdAndUpdate(registrationId, {
+                // Save registration to database only after successful payment
+                const registration = new Registration({
+                    ...registrationData,
                     paymentStatus: 'completed',
-                    razorpayPaymentId: razorpay_payment_id
+                    razorpayOrderId: razorpay_order_id,
+                    razorpayPaymentId: razorpay_payment_id,
+                    registrationDate: new Date()
                 });
-                res.json({ success: true, message: 'Registration completed successfully' });
+
+                await registration.save();
+                res.json({ success: true, message: 'Registration completed successfully', registrationId: registration._id });
             } else {
-                await Registration.findByIdAndUpdate(registrationId, {
-                    paymentStatus: 'failed'
-                });
                 res.status(400).json({ error: 'Payment not captured' });
             }
         } else {
-            await Registration.findByIdAndUpdate(registrationId, {
-                paymentStatus: 'failed'
-            });
             res.status(400).json({ error: 'Invalid payment signature' });
         }
     } catch (error) {

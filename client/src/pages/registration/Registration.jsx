@@ -26,18 +26,16 @@ const Registration = () => {
   const [success, setSuccess] = useState("");
   const [registrationId, setRegistrationId] = useState(null);
 
-  // Validation function
+  // Validation function (unchanged)
   const validateForm = () => {
     const newErrors = {};
 
-    // Full Name validation
     if (!form.fullName.trim()) {
       newErrors.fullName = "Full name is required";
     } else if (form.fullName.length < 2 || form.fullName.length > 50) {
       newErrors.fullName = "Full name must be between 2 and 50 characters";
     }
 
-    // Email validation
     if (!form.email.trim()) {
       newErrors.email = "Email is required";
     } else if (!form.email.endsWith("@nitjsr.ac.in")) {
@@ -46,33 +44,28 @@ const Registration = () => {
       newErrors.email = "Invalid email format";
     }
 
-    // Branch validation
     if (!form.branch.trim()) {
       newErrors.branch = "Branch is required";
     }
 
-    // Year validation
     if (!form.year) {
       newErrors.year = "Year is required";
     } else if (!["1", "2", "3", "4"].includes(form.year)) {
       newErrors.year = "Year must be between 1 and 4";
     }
 
-    // Batch validation
     if (!form.batch) {
       newErrors.batch = "Batch is required";
     } else if (!batches.includes(form.batch)) {
       newErrors.batch = "Please select a valid batch";
     }
 
-    // First Priority Domain validation
     if (!form.firstPriorityDomain) {
       newErrors.firstPriorityDomain = "First priority domain is required";
     } else if (!domains.includes(form.firstPriorityDomain)) {
       newErrors.firstPriorityDomain = "Please select a valid first priority domain";
     }
 
-    // Second Priority Domain validation
     if (!form.secondPriorityDomain) {
       newErrors.secondPriorityDomain = "Second priority domain is required";
     } else if (!domains.includes(form.secondPriorityDomain)) {
@@ -81,28 +74,24 @@ const Registration = () => {
       newErrors.secondPriorityDomain = "Second priority domain must be different from first priority domain";
     }
 
-    // T-shirt Size validation
     if (!form.tshirtSize) {
       newErrors.tshirtSize = "T-shirt size is required";
     } else if (!tshirtSizes.includes(form.tshirtSize)) {
       newErrors.tshirtSize = "Please select a valid T-shirt size";
     }
 
-    // Name on T-shirt validation
     if (!form.nameOnTshirt.trim()) {
       newErrors.nameOnTshirt = "Name on T-shirt is required";
     } else if (form.nameOnTshirt.length > 20) {
       newErrors.nameOnTshirt = "Name on T-shirt must be less than or equal to 20 characters";
     }
 
-    // LinkedIn ID validation
     if (!form.linkedinId.trim()) {
       newErrors.linkedinId = "LinkedIn profile URL is required";
     } else if (!/^https?:\/\/(www\.)?linkedin\.com\/in\/[a-zA-Z0-9_-]+\/?$/.test(form.linkedinId)) {
       newErrors.linkedinId = "Please enter a valid LinkedIn profile URL";
     }
 
-    // File validations
     if (!form.idCardImage) {
       newErrors.idCardImage = "College ID card image is required";
     } else if (!['image/jpeg', 'image/png'].includes(form.idCardImage.type)) {
@@ -126,7 +115,6 @@ const Registration = () => {
     } else {
       setForm({ ...form, [name]: value });
     }
-    // Clear error for the field being edited
     setErrors(prev => ({ ...prev, [name]: '' }));
   };
 
@@ -141,7 +129,6 @@ const Registration = () => {
   };
 
   const handlePayment = async () => {
-    // Validate form before proceeding
     if (!validateForm()) {
       Swal.fire({
         title: 'Something went wrong',
@@ -189,12 +176,13 @@ const Registration = () => {
                 razorpay_order_id: response.razorpay_order_id,
                 razorpay_payment_id: response.razorpay_payment_id,
                 razorpay_signature: response.razorpay_signature,
-                registrationId: data.registrationId
+                registrationData: data.registrationData // Include registrationData
               })
             });
             const verifyData = await verifyRes.json();
             if (verifyRes.ok) {
               setSuccess(verifyData.message);
+              setRegistrationId(verifyData.registrationId);
               Swal.fire({
                 title: 'Success!',
                 text: 'You have registered successfully!',
@@ -216,7 +204,6 @@ const Registration = () => {
                 idCardImage: null,
                 memberImage: null
               });
-              // Clear file input fields
               document.getElementById("idCardImage").value = "";
               document.getElementById("memberImage").value = "";
               setErrors({});
@@ -259,8 +246,9 @@ const Registration = () => {
     }
   };
 
+  // Rest of the component (form rendering) remains unchanged
   return (
-    <div className="container py-5">
+    <div className="py-5  px-4 px-sm-0 ">
       <div className="row justify-content-center">
         <div className="col-lg-10">
           <div className="text-center mb-5">
@@ -299,7 +287,7 @@ const Registration = () => {
 
             <form className="needs-validation" noValidate>
               <div className="row g-3">
-                <div className="col-md-6">
+                <div className="col-md-4">
                   <label htmlFor="fullName" className="form-label fw-bold" style={{ color: "#003471" }}>
                     Full Name<span style={{ color: "#da7426" }}> *</span>
                   </label>
@@ -325,7 +313,7 @@ const Registration = () => {
                   )}
                 </div>
 
-                <div className="col-md-6">
+                <div className="col-md-8">
                   <label htmlFor="email" className="form-label fw-bold" style={{ color: "#003471" }}>
                     Email<span style={{ color: "#da7426" }}> *</span>
                   </label>
@@ -351,7 +339,7 @@ const Registration = () => {
                   )}
                 </div>
 
-                <div className="col-md-6">
+                <div className="col-md-4">
                   <label htmlFor="branch" className="form-label fw-bold" style={{ color: "#003471" }}>
                     Branch<span style={{ color: "#da7426" }}> *</span>
                   </label>
@@ -377,7 +365,7 @@ const Registration = () => {
                   )}
                 </div>
 
-                <div className="col-md-6">
+                <div className="col-md-4">
                   <label htmlFor="batch" className="form-label fw-bold" style={{ color: "#003471" }}>
                     Batch<span style={{ color: "#da7426" }}> *</span>
                   </label>
@@ -408,7 +396,7 @@ const Registration = () => {
                   )}
                 </div>
 
-                <div className="col-md-6">
+                <div className="col-md-4">
                   <label htmlFor="year" className="form-label fw-bold" style={{ color: "#003471" }}>
                     Year<span style={{ color: "#da7426" }}> *</span>
                   </label>
@@ -634,10 +622,10 @@ const Registration = () => {
                   )}
                 </div>
 
-                <div className="col-12 mt-4">
+                <div className="col-12 mt-4 text-center">
                   <button
                     type="button"
-                    className="btn btn-lg w-100 py-3 fw-bold"
+                    className="btn btn-lg py-3 fw-bold mx-auto d-block"
                     onClick={handlePayment}
                     disabled={loading}
                     style={{

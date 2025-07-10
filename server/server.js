@@ -6,6 +6,7 @@ const path = require('path');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const registrationRoutes = require('./routes/registration');
+const contactRoutes = require('./routes/contact');
 require('dotenv').config();
 
 const app = express();
@@ -39,7 +40,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 // Routes
 app.use('/api/registration',registrationRoutes);
-
+app.use('/api/contact', contactRoutes); 
 // Error handling middleware
 app.use((err, req, res, next) => {
     console.error(err.stack);
