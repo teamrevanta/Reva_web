@@ -41,7 +41,7 @@ exports.submitRegistration = async (req, res) => {
         }
 
         // Create Razorpay order
-        const paymentAmount = 150000; // ₹1500 in paisa
+        const paymentAmount = 100; // ₹1 in paisa
         const order = await razorpay.orders.create({
             amount: paymentAmount,
             currency: 'INR',
