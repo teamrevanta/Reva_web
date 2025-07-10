@@ -15,6 +15,11 @@ import Gallery from "./pages/gallery/Gallery";
 import Sponsor from "./pages/Sponsor/Sponsor";
 import ContactPage from "./pages/contactPage/ContactPage";
 import Notice from "./pages/notice/Notice";
+import Registration from "./pages/registration/Registration";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import TermAndCondition from "./pages/termAndCondition/TermAndCondition";
+import RefundAndCancellation from "./pages/refundAndCancellation/RefundAndCancellation";
+import ShippingPolicy from "./pages/shippingPolicy/ShippingPolicy";
 
 const App = () => {
   return (
@@ -26,7 +31,7 @@ const App = () => {
         <Route path="/achievements" element={<AchievementPage />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/contact" element={<ContactPage />} />
-
+        <Route path="/registration" element={<Registration />} />
         <Route path="/aboutPage" element={<AboutPage />} />
         <Route path="/achievementPage" element={<AchievementPage />} />
         <Route path="/PhotoPage" element={<PhotoPage />} />
@@ -34,10 +39,13 @@ const App = () => {
         <Route path="/ourTeam" element={<OurTeam />} />
         <Route path="/sponsor" element={<Sponsor />} />
         <Route path="/notice" element={<Notice />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/TermAndCondition" element={<TermAndCondition />} />
+         <Route path="/refundAndCancellation" element={<RefundAndCancellation />} />
+          <Route path="/shippingPolicy" element={<ShippingPolicy />} />
       </Routes>
       <Footer />
     </div>
   );
 };
-
 export default App;

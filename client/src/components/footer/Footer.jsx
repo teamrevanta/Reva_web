@@ -5,7 +5,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <div>
-      <section className="info_section ">
+      <section className="info_section my-font">
         <div className="info_container layout_padding2">
           <div className="container">
             <a href="" className=" navbar-brand ">
@@ -15,7 +15,7 @@ const Footer = () => {
             </a>
             <div className="info_main">
               <div className="row">
-                <div className="col-md-3 col-lg-2">
+                <div className="col-md-2 col-lg-2">
                   <div className="info_link-box">
                     <h5>Useful Link</h5>
                     <ul className="info_link-ul">
@@ -39,22 +39,17 @@ const Footer = () => {
                           Gallery
                         </Link>
                       </li>
-                      <li className="info_link-li">
-                        <Link to="/contact" className=" ">
-                          Contact Us
-                        </Link>
-                      </li>
                     </ul>
                   </div>
                 </div>
-                <div className="col-md-3 ">
+                <div className="col-md-2 ">
                   <h5>Manufacturing</h5>
                   <p>
                     Sokhi Enterprise Pvt Ltd sponsors us to do fabrication
                     works.
                   </p>
                 </div>
-                <div className="col-md-3 mx-auto  ">
+                <div className="col-md-2 mx-auto  ">
                   <h5>social media</h5>
                   <div className="social_box">
                     <a
@@ -81,9 +76,42 @@ const Footer = () => {
                     </a>
                   </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-2">
+                   <div className="info_link-box">
+                    <h5>User Policy</h5>
+                    <ul className="info_link-ul">
+                      <li className=" info_link-li">
+                        <Link to="/PrivacyPolicy" className=" ">
+                          Privacy & Policy
+                        </Link>
+                      </li>
+                      <li className="info_link-li">
+                        <Link to="/TermAndCondition" className=" ">
+                          Terms & Conditions
+                        </Link>
+                      </li>
+                      <li className="info_link-li">
+                        <Link to="/refundAndCancellation" className=" ">
+                          Refund & Cancellation
+                        </Link>
+                      </li>
+                      <li className="info_link-li">
+                        <Link to="/shippingPolicy" className=" ">
+                          Shipping Policy
+                        </Link>
+                      </li>
+                      <li className="info_link-li">
+                        <Link to="/contact" className=" ">
+                          Contact Us
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                 
+                </div>
+                 <div className="col-md-2">
                   <h5>Nit Jamshedpur</h5>
-                  <p>
+                  <p className="">
                     NIT Jamshedpur is an Institute of National Importance for
                     Technical Education located at Jamshedpur, Jharkhand, India
                     and is directly under the control of the Ministry of
@@ -113,13 +141,13 @@ const Footer = () => {
                       </div>
                       <div className="col-md-4">
                         <a
-                          href="https://wa.me/9155360718"
+                          href="https://wa.me/8210839665"
                           target="_blank"
                           rel="noreferrer"
                           className="link-box"
                         >
                           <i className="fa fa-phone" aria-hidden="true"></i>
-                          <span>Call +91 9155360718</span>
+                          <span>Call +91 8210839665</span>
                         </a>
                       </div>
                       <div className="col-md-4">
