@@ -28,7 +28,6 @@ const storage = new CloudinaryStorage({
             .trim('_'); // Remove leading/trailing underscores
         // Determine folder based on fieldname
         const folder = file.fieldname === 'idCardImage' ? 'idCardImage' : 'memberImage';
-        console.log('Uploading to folder:', folder, 'with filename:', sanitizedFileName); // Debug log
         return {
             folder: folder,
             allowed_formats: ['jpg', 'jpeg', 'png'],
@@ -45,7 +44,6 @@ const upload = multer({
         const filetypes = /jpeg|jpg|png/;
         const mimetype = filetypes.test(file.mimetype);
         const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
-        console.log('File validation:', { file: file.originalname, mimetype, extname }); // Debug log
         if (mimetype && extname) {
             return cb(null, true);
         }
