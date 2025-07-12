@@ -89,7 +89,7 @@ const Registration = () => {
     if (!form.linkedinId.trim()) {
       newErrors.linkedinId = "LinkedIn profile URL is required";
     } else if (!/^https?:\/\/(www\.)?linkedin\.com\/in\/[a-zA-Z0-9_-]+\/?$/.test(form.linkedinId)) {
-      newErrors.linkedinId = "Please enter a valid LinkedIn profile URL";
+      newErrors.linkedinId = "Please enter a valid LinkedIn profile URL(eg.https://www.linkedin.com/in/user-name)";
     }
 
     if (!form.idCardImage) {
@@ -559,7 +559,7 @@ const Registration = () => {
                       background: "#f8fafc"
                     }}
                     id="linkedinId"
-                    placeholder="Enter your LinkedIn profile URL"
+                    placeholder="Enter your LinkedIn profile URL(eg.https://www.linkedin.com/in/user-name)"
                     name="linkedinId"
                     value={form.linkedinId}
                     onChange={handleChange}
