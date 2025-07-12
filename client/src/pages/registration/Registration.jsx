@@ -148,7 +148,7 @@ const Registration = () => {
     });
 
     try {
-      const res = await fetch("http://localhost:5000/api/registration/submit", {
+      const res = await fetch("https://team-revanta-server.onrender.com/api/registration/submit", {
         method: "POST",
         body: formData
       });
@@ -169,7 +169,7 @@ const Registration = () => {
         order_id: data.orderId,
         handler: async function (response) {
           try {
-            const verifyRes = await fetch("http://localhost:5000/api/registration/verify-payment", {
+            const verifyRes = await fetch("https://team-revanta-server.onrender.com/api/registration/verify-payment", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
