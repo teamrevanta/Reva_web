@@ -15,7 +15,10 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(helmet()); // Secure HTTP headers
 app.use(cors({
-    origin: 'http://localhost:3000', // Update with your client URL in production
+    origin:  [
+  'https://www.teamrevanta.in/', 
+  'http://localhost:3000'
+], // Update with your client URL in production
     credentials: true
 }));
 app.use(express.json({ limit: '10mb' })); // Limit JSON payload size

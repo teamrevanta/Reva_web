@@ -8,7 +8,7 @@ const Navbar = () => {
       <header className="header_section">
         <div className="header_top">
           <div className="container-fluid header_top_container">
-            <a className="navbar-brand " href="">
+            <a className="navbar-brand " href="/">
               {" "}
               Team<span>Revanta</span>{" "}
             </a>
@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className="header_bottom">
           <div className="container-fluid">
             <nav className="navbar navbar-expand-lg custom_nav-container ">
-              <a className="navbar-brand navbar_brand_mobile" href="#">
+              <a className="navbar-brand navbar_brand_mobile" href="/">
                 {" "}
                 Team<span>Revanta</span>{" "}
               </a>
