@@ -210,10 +210,13 @@ const Registration = () => {
 
     try {
       console.log("Sending request to /api/registration/submit");
-      const res = await fetch("https://team-revanta-server.onrender.com/api/registration/submit", {
-        method: "POST",
-        body: formData,
-      });
+      const res = await fetch(
+        "https://team-revanta-server.onrender.com/api/registration/submit",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
       const data = await res.json();
       console.log("Response received:", data);
       if (!res.ok) throw new Error(data.error || "Registration failed");
@@ -333,45 +336,45 @@ const Registration = () => {
                   </div>
 
                   {/* Payment Link - Visible only on mobile */}
-                   <div className="d-lg-none">
-    <button
-      type="button"
-      className="btn btn-lg py-3 fw-bold"
-      onClick={() => {
-        // UPI Payment Deep Link
-        window.location.href = `upi://pay?pa=amitkumarjma-1@okaxis&pn=TeamRevanta&am=1&cu=INR&tn=TeamRevanta%20Registration%20Fee`;
-        
-        // Fallback after delay if UPI app doesn't open
-        setTimeout(() => {
-          window.location.href = `https://upilink.in/pay/amitkumarjma-1@okaxis?amount=1&note=TeamRevanta_Registration`;
-        }, 250);
-      }}
-      disabled={loading}
-      style={{
-        background: "linear-gradient(90deg, #003471 0%, #da7426 100%)",
-        color: "#fff",
-        borderRadius: "8px",
-        border: "none",
-        boxShadow: "0 2px 8px rgba(218,116,38,0.08)",
-        letterSpacing: "1px",
-        width: '100%',
-        maxWidth: '320px'
-      }}
-    >
-      {loading ? (
-        <>
-          <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-          Processing...
-        </>
-      ) : (
-        <>Pay</>
-      )}
-    </button>
-    
-    <p className="small text-muted mt-2">
-      Will open GPay/PhonePe/Paytm/BHIM
-    </p>
-  </div>
+                  <div className="d-lg-none">
+                    <button
+                      type="button"
+                      className="btn btn-lg py-3 fw-bold"
+                      onClick={() => {
+                        // UPI Payment Deep Link
+                        window.location.href = `upi://pay?pa=amitkumarjma-1@okaxis&pn=Amit&cu=INR&am=1`;
+                      }}
+                      disabled={loading}
+                      style={{
+                        background:
+                          "linear-gradient(90deg, #003471 0%, #da7426 100%)",
+                        color: "#fff",
+                        borderRadius: "8px",
+                        border: "none",
+                        boxShadow: "0 2px 8px rgba(218,116,38,0.08)",
+                        letterSpacing: "1px",
+                        width: "100%",
+                        maxWidth: "320px",
+                      }}
+                    >
+                      {loading ? (
+                        <>
+                          <span
+                            className="spinner-border spinner-border-sm me-2"
+                            role="status"
+                            aria-hidden="true"
+                          ></span>
+                          Processing...
+                        </>
+                      ) : (
+                        <>Pay</>
+                      )}
+                    </button>
+
+                    <p className="small text-muted mt-2">
+                      Will open GPay/PhonePe/Paytm/BHIM
+                    </p>
+                  </div>
                 </div>
                 <p
                   className="fw-bold mb-4"
