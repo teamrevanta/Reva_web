@@ -339,11 +339,11 @@ const Registration = () => {
       className="btn btn-lg py-3 fw-bold"
       onClick={() => {
         // UPI Payment Deep Link
-        window.location.href = `upi://pay?pa=amitkumarjma-1@okaxis&pn=TeamRevanta&am=1500&cu=INR&tn=TeamRevanta%20Registration%20Fee`;
+        window.location.href = `upi://pay?pa=amitkumarjma-1@okaxis&pn=TeamRevanta&am=1&cu=INR&tn=TeamRevanta%20Registration%20Fee`;
         
         // Fallback after delay if UPI app doesn't open
         setTimeout(() => {
-          window.location.href = `https://upilink.in/pay/amitkumarjma-1@okaxis?amount=1500&note=TeamRevanta_Registration`;
+          window.location.href = `https://upilink.in/pay/amitkumarjma-1@okaxis?amount=1&note=TeamRevanta_Registration`;
         }, 250);
       }}
       disabled={loading}
