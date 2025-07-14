@@ -180,6 +180,31 @@ const Registration = () => {
     setShowPayment(false);
   };
 
+  const handleCopyText = (text, label) => {
+    navigator.clipboard.writeText(text).then(
+      () => {
+        Swal.fire({
+          title: "Copied!",
+          text: `${label} copied to clipboard.`,
+          icon: "success",
+          confirmButtonText: "OK",
+          confirmButtonColor: "#003471",
+          timer: 1500,
+        });
+      },
+      (err) => {
+        console.error(`Failed to copy ${label}:`, err);
+        Swal.fire({
+          title: "Error!",
+          text: `Failed to copy ${label}.`,
+          icon: "error",
+          confirmButtonText: "OK",
+          confirmButtonColor: "#da7426",
+        });
+      }
+    );
+  };
+
   const handlePaymentSubmit = async () => {
     console.log("Starting handlePaymentSubmit, showPayment:", showPayment);
     if (!validateForm()) {
@@ -244,7 +269,6 @@ const Registration = () => {
         memberImage: null,
         paymentScreenshot: null,
       });
-      // Reset file inputs only if they exist
       const idCardInput = document.getElementById("idCardImage");
       const memberInput = document.getElementById("memberImage");
       const paymentInput = document.getElementById("paymentScreenshot");
@@ -320,67 +344,53 @@ const Registration = () => {
                   Complete Payment
                 </h4>
                 <p style={{ color: "#7f8c8d", fontSize: "1.1rem" }}>
-                  Please make a payment of ₹1500 to the following QR code or UPI
-                  ID:
+                  Please make a payment of ₹1500 to the following QR code, UPI ID, or mobile number:
                 </p>
-                <div className="text-center mb-4">
-                  {/* QR Code - Visible only on desktop and large screens */}
-                  <div className="d-none d-lg-block">
-                    <img
-                      src="./images/amitQR.png"
-                      alt="QR Code"
-                      className="img-fluid border rounded"
-                      style={{ maxWidth: "200px" }}
-                    />
-                    <p className="mt-2">Scan to pay</p>
-                  </div>
-
-                  {/* Payment Link - Visible only on mobile */}
-                  <div className="d-lg-none">
-                    <button
-                      type="button"
-                      className="btn btn-lg py-3 fw-bold"
-                      onClick={() => {
-                        // UPI Payment Deep Link
-                        window.location.href = `upi://pay?pa=amitkumarjma-1@okaxis&pn=Amit&cu=INR&am=1`;
-                      }}
-                      disabled={loading}
-                      style={{
-                        background:
-                          "linear-gradient(90deg, #003471 0%, #da7426 100%)",
-                        color: "#fff",
-                        borderRadius: "8px",
-                        border: "none",
-                        boxShadow: "0 2px 8px rgba(218,116,38,0.08)",
-                        letterSpacing: "1px",
-                        width: "100%",
-                        maxWidth: "320px",
-                      }}
-                    >
-                      {loading ? (
-                        <>
-                          <span
-                            className="spinner-border spinner-border-sm me-2"
-                            role="status"
-                            aria-hidden="true"
-                          ></span>
-                          Processing...
-                        </>
-                      ) : (
-                        <>Pay</>
-                      )}
-                    </button>
-
-                    <p className="small text-muted mt-2">
-                      Will open GPay/PhonePe/Paytm/BHIM
-                    </p>
-                  </div>
+                <div className="mb-8">
+                  <img
+                    src="./images/amitQR.png"
+                    alt="QR Code"
+                    className="img-fluid border rounded"
+                    style={{ maxWidth: "200px" }}
+                  />
+                  <p className="mt-2">Scan to pay</p>
                 </div>
-                <p
-                  className="fw-bold mb-4"
-                  style={{ color: "#da7426", fontSize: "1.2rem" }}
-                >
-                  amitkumarjma-1@okaxis
+                <div className="d-flex flex-row justify-content-center align-items-center mb-8 gap-4">
+                  <p
+                    className="fw-bold mb-0"
+                    style={{ color: "#da7426", fontSize: "1rem" }}
+                  >
+                    amitkumarjma-1@okaxis
+                  </p>
+                  <button
+                    type="button"
+                    className="btn p-1"
+                    onClick={() => handleCopyText("amitkumarjma-1@okaxis", "UPI ID")}
+                    title="Copy UPI ID"
+                    style={{ color: "#003471" }}
+                  >
+                    <i className="bi bi-clipboard fs-5"></i>
+                  </button>
+                </div>
+                <div className="d-flex flex-row justify-content-center align-items-center mb-8 gap-4">
+                  <p
+                    className="fw-bold mb-0"
+                    style={{ color: "#da7426", fontSize: "1rem" }}
+                  >
+                    8210839665
+                  </p>
+                  <button
+                    type="button"
+                    className="btn p-1"
+                    onClick={() => handleCopyText("8210839665", "Mobile number")}
+                    title="Copy Mobile Number"
+                    style={{ color: "#003471" }}
+                  >
+                    <i className="bi bi-clipboard fs-5"></i>
+                  </button>
+                </div>
+                <p className="small text-muted mt-2">
+                  Use GPay/PhonePe/Paytm/BHIM for payment
                 </p>
                 <div className="col-md-6 mx-auto mb-4">
                   <label
