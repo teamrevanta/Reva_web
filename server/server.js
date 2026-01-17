@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5000;
 app.use(helmet()); // Secure HTTP headers
 app.use(cors({
     origin:  [
-  'https://www.teamrevanta.in', 
+  'https://www.teamrevanta.com', 
   'http://localhost:3000'
 ], // Update with your client URL in production
     credentials: true
