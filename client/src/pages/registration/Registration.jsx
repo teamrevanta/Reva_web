@@ -344,11 +344,11 @@ const Registration = () => {
                   Complete Payment
                 </h4>
                 <p style={{ color: "#7f8c8d", fontSize: "1.1rem" }}>
-                  Please make a payment of ₹1500 to the following QR code, UPI ID, or mobile number:
+                  Please make a payment of ₹1000 to the following QR code, UPI ID, or mobile number:
                 </p>
                 <div className="mb-8">
                   <img
-                    src="./images/amitQR.png"
+                    src="./images/AshutoshQR.png"
                     alt="QR Code"
                     className="img-fluid border rounded"
                     style={{ maxWidth: "200px" }}
@@ -360,12 +360,12 @@ const Registration = () => {
                     className="fw-bold mb-0"
                     style={{ color: "#da7426", fontSize: "1rem" }}
                   >
-                    amitkumarjma-1@okaxis
+                    0204ashutosh@oksbi
                   </p>
                   <button
                     type="button"
                     className="btn p-1"
-                    onClick={() => handleCopyText("amitkumarjma-1@okaxis", "UPI ID")}
+                    onClick={() => handleCopyText("0204ashutosh@oksbi", "UPI ID")}
                     title="Copy UPI ID"
                     style={{ color: "#003471" }}
                   >
@@ -377,12 +377,12 @@ const Registration = () => {
                     className="fw-bold mb-0"
                     style={{ color: "#da7426", fontSize: "1rem" }}
                   >
-                    8210839665
+                    6392641446
                   </p>
                   <button
                     type="button"
                     className="btn p-1"
-                    onClick={() => handleCopyText("8210839665", "Mobile number")}
+                    onClick={() => handleCopyText("6392641446", "Mobile number")}
                     title="Copy Mobile Number"
                     style={{ color: "#003471" }}
                   >
